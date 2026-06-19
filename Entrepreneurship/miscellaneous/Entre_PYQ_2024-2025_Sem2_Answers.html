@@ -4,246 +4,515 @@
 <meta charset="UTF-8">
 <title>Entrepreneurship PYQ Answers 2024-2025 Sem 2</title>
 <style>
-  body { font-family: Arial, sans-serif; max-width: 850px; margin: 40px auto; padding: 20px; color: #222; line-height: 1.6; }
-  h1 { text-align: center; font-size: 16px; }
-  h2 { text-align: center; font-size: 14px; font-weight: normal; }
-  .section-title { text-align: center; font-weight: bold; background: #f0f0f0; padding: 6px; margin-top: 30px; }
-  .q { font-weight: bold; margin-top: 18px; }
-  .ans { margin-left: 16px; }
-  hr { margin: 20px 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 900px; margin: 30px auto; padding: 24px; color: #1a1a1a; background: #fff; line-height: 1.8; font-size: 14px; }
+  .header { text-align: center; border: 2px solid #1e5631; border-radius: 8px; padding: 18px; margin-bottom: 30px; background: #eafaf1; }
+  .header h1 { font-size: 15px; color: #1e5631; margin-bottom: 4px; }
+  .header h2 { font-size: 13px; font-weight: normal; color: #333; margin-top: 4px; }
+  .badge { display: inline-block; margin-top: 10px; background: #1e5631; color: #fff; padding: 4px 18px; border-radius: 20px; font-size: 12px; }
+  .group-banner { background: #1e5631; color: #fff; text-align: center; padding: 11px; border-radius: 6px; margin: 36px 0 20px; font-size: 15px; font-weight: bold; }
+  .qblock { border-left: 5px solid #1e5631; background: #f0faf4; border-radius: 0 6px 6px 0; padding: 11px 16px; margin: 28px 0 4px; }
+  .qnum { font-size: 11px; color: #1e5631; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+  .qtxt { font-weight: bold; color: #1a1a1a; margin-top: 3px; font-size: 14px; }
+  .marks-tag { float: right; background: #1e5631; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 12px; margin-top: 2px; }
+  .ans { padding: 12px 4px 4px 4px; }
+  .intro { background: #d5f5e3; border-left: 5px solid #27ae60; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-bottom: 16px; font-size: 13.5px; }
+  .intro-label { font-size: 10px; font-weight: bold; color: #1e5631; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
+  .points-box { background: #fef9e7; border: 1px solid #f9ca74; border-radius: 6px; padding: 12px 16px; margin: 14px 0; }
+  .pts-label { font-size: 10px; font-weight: bold; color: #b7770d; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .points-box ul { padding-left: 20px; }
+  .points-box ul li { margin-bottom: 5px; font-size: 13.5px; }
+  .flow-wrap { margin: 18px 0; }
+  .flow-label { font-size: 10px; font-weight: bold; color: #6c3483; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+  .flow-row { display: flex; align-items: stretch; margin-bottom: 4px; }
+  .fbox { border-radius: 8px; padding: 9px 16px; font-size: 12.5px; font-weight: bold; text-align: center; min-width: 190px; color: #fff; }
+  .fbox.blue   { background: #1e5631; }
+  .fbox.green  { background: #27ae60; }
+  .fbox.orange { background: #ca6f1e; }
+  .fbox.teal   { background: #148f77; }
+  .fbox.purple { background: #6c3483; }
+  .fbox.red    { background: #922b21; }
+  .fdetail { background: #f0faf4; border: 1px solid #a9dfbf; border-radius: 6px; padding: 8px 14px; font-size: 12.5px; color: #222; margin-left: 14px; flex: 1; display: flex; align-items: center; }
+  .farrow { text-align: left; padding-left: 22px; color: #1e5631; font-size: 20px; line-height: 1; margin: 2px 0; }
+  .explain { margin: 16px 0; }
+  .explain-label { font-size: 10px; font-weight: bold; color: #1e5631; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+  .exp-item { display: flex; gap: 12px; margin-bottom: 12px; }
+  .exp-num { background: #1e5631; color: #fff; border-radius: 50%; width: 28px; height: 28px; min-width: 28px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; margin-top: 2px; }
+  .exp-body { flex: 1; }
+  .exp-body strong { color: #1e5631; font-size: 13.5px; }
+  .exp-body p { font-size: 13px; color: #333; margin-top: 2px; }
+  .conclusion { background: #eafaf1; border-left: 5px solid #27ae60; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-top: 18px; }
+  .con-label { font-size: 10px; font-weight: bold; color: #1e5631; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 5px; }
+  .conclusion p { font-size: 13.5px; }
+  .diff-label { font-size: 10px; font-weight: bold; color: #922b21; letter-spacing: 1.5px; text-transform: uppercase; margin: 16px 0 10px; }
+  .diff-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 14px; }
+  .diff-table th { padding: 9px 12px; text-align: left; font-size: 12px; }
+  .diff-table th:first-child { background: #2c3e50; color: #fff; width: 22%; }
+  .diff-table th:nth-child(2) { background: #1e5631; color: #fff; }
+  .diff-table th:nth-child(3) { background: #1a5276; color: #fff; }
+  .diff-table td { padding: 8px 12px; border-bottom: 1px solid #d5f5e3; vertical-align: top; }
+  .diff-table td:first-child { background: #f4f6f7; font-weight: bold; color: #2c3e50; font-size: 12px; }
+  .diff-table tr:nth-child(even) td:nth-child(2) { background: #eafaf1; }
+  .diff-table tr:nth-child(even) td:nth-child(3) { background: #eaf4fb; }
+  hr { border: none; border-top: 2px dashed #a9dfbf; margin: 32px 0; }
+  strong { color: #1e5631; }
 </style>
 </head>
 <body>
+
+<div class="header">
   <h1>MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL</h1>
-  <h2>Entrepreneurship Theory &amp; Practice (GE4B-01) — 2024-2025 Sem 2<br>PYQ Answers</h2>
+  <h2>Paper Code: GE4B-01 &nbsp;|&nbsp; Entrepreneurship Theory &amp; Practice &nbsp;|&nbsp; UPID: 2510014</h2>
+  <h2>Time: 3 Hours &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Semester 2 — 2024–2025</h2>
+  <span class="badge">Complete Answer Key — Exam Ready</span>
+</div>
 
-  <div class="section-title">GROUP-A — Very Short Answer Type (1 Mark Each)</div>
+<!-- ══ GROUP A ══ -->
+<div class="group-banner">GROUP-A &nbsp;|&nbsp; Very Short Answer Type &nbsp;|&nbsp; 1 × 10 = 10 Marks &nbsp;|&nbsp; Answer any TEN</div>
 
-  <div class="q">i. What is intrapreneurship?</div>
-  <div class="ans">Intrapreneurship refers to the practice of entrepreneurship within an existing organization, where employees act like entrepreneurs — innovating, taking initiative, and developing new products or services.</div>
+<div class="qblock"><div class="qnum">Question i</div><div class="qtxt">What is intrapreneurship?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Intrapreneurship</strong> is the practice of entrepreneurship within an existing organization. An intrapreneur is an employee who thinks and acts like an entrepreneur — coming up with new ideas, taking initiative, and building new products or services — but within the safety and resources of the company they already work for. Example: Google employees are encouraged to spend 20% of their time on personal innovation projects — this is intrapreneurship.</div></div>
 
-  <div class="q">ii. What is a business idea?</div>
-  <div class="ans">A business idea is a concept that can be used for commercial purposes, typically involving a product or service that can be offered for money. It is the starting point for any new venture.</div>
+<div class="qblock"><div class="qnum">Question ii</div><div class="qtxt">What is a business idea?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div>A <strong>business idea</strong> is a concept for a product or service that can be offered to customers in exchange for money. It is the starting point — the seed — of any new business venture. A good business idea solves a real problem, meets an existing need, or creates something people want. Example: The idea of delivering food to your door (Swiggy, Zomato) was once just a business idea.</div></div>
 
-  <div class="q">iii. What is disruptive innovation?</div>
-  <div class="ans">Disruptive innovation is an innovation that significantly alters or displaces an existing market, industry, or technology by introducing simpler, more affordable, or more accessible alternatives (e.g., smartphones disrupting cameras and GPS devices).</div>
+<div class="qblock"><div class="qnum">Question iii</div><div class="qtxt">What is disruptive innovation?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Disruptive innovation</strong> is an innovation that fundamentally changes or destroys an existing market by introducing something simpler, cheaper, or more accessible — making the old way of doing things obsolete. It was introduced by Clayton Christensen. <em>Examples: Smartphones disrupted cameras, GPS devices, and music players. Netflix disrupted video rental stores. Ola and Uber disrupted traditional taxi services.</em></div></div>
 
-  <div class="q">iv. What are the types of innovation? Mention anyone.</div>
-  <div class="ans">Types: Product innovation, Process innovation, Market innovation, Organizational innovation. <br><em>Example:</em> Product innovation — creating a new or improved product (e.g., electric vehicles).</div>
+<div class="qblock"><div class="qnum">Question iv</div><div class="qtxt">What are the types of innovation? Mention anyone.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Types of Innovation:</strong> Product Innovation, Process Innovation, Market Innovation, Organizational Innovation, and Disruptive Innovation.<br><em>Example of one: <strong>Product Innovation</strong> — creating a new or significantly improved product. Example: Electric vehicles (EVs) are a product innovation over traditional petrol cars.</em></div></div>
 
-  <div class="q">v. Why is market research important?</div>
-  <div class="ans">Market research helps entrepreneurs understand customer needs, identify market trends, assess competition, reduce business risk, and make informed decisions about pricing, products, and marketing strategies.</div>
+<div class="qblock"><div class="qnum">Question v</div><div class="qtxt">Why is market research important?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Market research</strong> is important because it helps an entrepreneur understand who their customers are, what they need, what competitors are offering, and what price the market will accept. Without market research, a business is built on guesses — which is a major reason most startups fail. Market research reduces risk and increases the chances of launching a product that people actually want to buy.</div></div>
 
-  <div class="q">vi. What are the methods of raising financial resources for a startup? Mention anyone.</div>
-  <div class="ans">Methods: Bootstrapping, Angel investors, Venture capital, Bank loans, Crowdfunding, Government grants. <br><em>Example:</em> Angel investing — high net-worth individuals invest in early-stage startups in exchange for equity.</div>
+<div class="qblock"><div class="qnum">Question vi</div><div class="qtxt">What are the methods of raising financial resources for a startup? Mention anyone.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Methods:</strong> Bootstrapping (self-funding), Angel investors, Venture Capital, Bank loans, Crowdfunding, Government grants (MUDRA, Startup India), Microfinance.<br><em>Example of one: <strong>Angel Investment</strong> — a wealthy individual (angel investor) provides early-stage funding to a startup in exchange for equity (ownership share). Example: Many Indian startups like Ola got early angel funding before attracting venture capital.</em></div></div>
 
-  <div class="q">vii. Why is financial planning important in business?</div>
-  <div class="ans">Financial planning ensures that a business has enough funds to operate, helps in setting financial goals, controls expenditure, prepares for contingencies, and supports sustainable growth.</div>
+<div class="qblock"><div class="qnum">Question vii</div><div class="qtxt">Why is financial planning important in business?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Financial planning</strong> is important because it ensures that a business always has enough money to operate — paying salaries, buying raw materials, covering rent, and handling unexpected costs. Without financial planning, even a profitable business can run out of cash and shut down. It also helps in setting financial goals, controlling spending, and attracting investors who need to see a clear financial roadmap.</div></div>
 
-  <div class="q">viii. Point out the role of mentor in Entrepreneurship.</div>
-  <div class="ans">A mentor guides entrepreneurs by sharing experience and knowledge, helping them avoid common mistakes, expanding their network, providing emotional support, and helping them develop skills and strategies for success.</div>
+<div class="qblock"><div class="qnum">Question viii</div><div class="qtxt">Point out the role of mentor in Entrepreneurship.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div>A <strong>mentor</strong> in entrepreneurship is an experienced person who guides a new entrepreneur by sharing their own knowledge and experience. The roles of a mentor include: giving advice on business decisions, helping the entrepreneur avoid common mistakes, expanding their professional network, providing emotional support during difficult times, and helping them develop leadership and management skills.</div></div>
 
-  <div class="q">ix. What are the types of entrepreneurs? Mention any one.</div>
-  <div class="ans">Types: Innovative, Imitative, Fabian, Drone, Social entrepreneur. <br><em>Example:</em> Innovative entrepreneur — one who introduces new products, methods, or markets (e.g., Elon Musk).</div>
+<div class="qblock"><div class="qnum">Question ix</div><div class="qtxt">What are the types of entrepreneurs? Mention any one.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Types of Entrepreneurs:</strong> Innovative, Imitative (Adoptive), Fabian, Drone, and Social Entrepreneur.<br><em>Example of one: <strong>Innovative Entrepreneur</strong> — one who constantly introduces new products, new methods of production, or opens new markets. They are the true pioneers of entrepreneurship. Example: Elon Musk (Tesla, SpaceX) is a classic innovative entrepreneur.</em></div></div>
 
-  <div class="q">x. Point out the sources of financing.</div>
-  <div class="ans">Sources: Personal savings, Family and friends, Bank loans, Angel investors, Venture capital, Government schemes (MUDRA, Startup India), Microfinance institutions, Crowdfunding.</div>
+<div class="qblock"><div class="qnum">Question x</div><div class="qtxt">Point out the sources of financing.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Sources of Financing:</strong> Personal savings, Family and friends, Bank loans, Angel investors, Venture capital, Crowdfunding platforms (Kickstarter, Ketto), Government schemes (MUDRA loan, Startup India), Microfinance institutions, and Trade credit from suppliers.</div></div>
 
-  <div class="q">xi. What is lateral thinking?</div>
-  <div class="ans">Lateral thinking is a creative problem-solving approach that involves looking at a problem from new and unexpected angles, rather than following conventional step-by-step logic. Coined by Edward de Bono.</div>
+<div class="qblock"><div class="qnum">Question xi</div><div class="qtxt">What is lateral thinking?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Lateral thinking</strong> is a creative problem-solving method introduced by Edward de Bono. Instead of following the usual logical, step-by-step approach to solving problems, lateral thinking looks at problems from new, unexpected, and indirect angles to find creative solutions. <em>Example: Instead of improving a slow elevator, a lateral thinker suggested installing mirrors in the lobby — people were distracted watching themselves and stopped noticing the wait time.</em></div></div>
 
-  <div class="q">xii. What are the three types of business?</div>
-  <div class="ans">The three types are: (1) Sole Proprietorship, (2) Partnership, (3) Corporation/Company. Alternatively: Service, Manufacturing, and Trading businesses.</div>
+<div class="qblock"><div class="qnum">Question xii</div><div class="qtxt">What are the three types of business?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Three types of business by ownership:</strong> (1) <strong>Sole Proprietorship</strong> — owned and run by one person (e.g., a local shop). (2) <strong>Partnership</strong> — owned by two or more people who share profits and responsibilities. (3) <strong>Company/Corporation</strong> — a legally separate entity owned by shareholders (e.g., Infosys Ltd.). <em>Alternatively by activity: Manufacturing, Trading, and Service businesses.</em></div></div>
 
-  <hr>
-  <div class="section-title">GROUP-B — Short Answer Type (5 Marks Each, Answer any 3)</div>
+<hr>
 
-  <div class="q">Q2. Explain the Need for Achievement Theory.</div>
-  <div class="ans">
-    The Need for Achievement (nAch) Theory was propounded by David McClelland in 1961. It states that individuals are motivated by three needs: Achievement, Affiliation, and Power.<br><br>
-    <strong>Key points:</strong>
+<!-- ══ GROUP B ══ -->
+<div class="group-banner">GROUP-B &nbsp;|&nbsp; Short Answer Type &nbsp;|&nbsp; 5 × 3 = 15 Marks &nbsp;|&nbsp; Answer any THREE</div>
+
+<!-- Q2 -->
+<div class="qblock"><div class="qnum">Question 2</div><div class="qtxt">Explain the Need for Achievement Theory. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>The <strong>Need for Achievement (nAch) Theory</strong> was proposed by David McClelland in 1961. It is one of the most important theories for understanding what drives entrepreneurs. McClelland argued that human motivation can be explained by three core needs: <strong>Achievement (nAch), Affiliation (nAff), and Power (nPow)</strong>. Of these, people with a high need for achievement — the drive to excel, accomplish, and succeed — are most likely to become successful entrepreneurs.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
     <ul>
-      <li>People with high nAch have a strong desire to accomplish challenging goals and receive feedback on their performance.</li>
-      <li>They prefer tasks of moderate difficulty — not too easy (no satisfaction) nor too hard (low probability of success).</li>
-      <li>They take personal responsibility for solving problems.</li>
-      <li>Entrepreneurs typically have high nAch as they are driven to create, innovate, and succeed.</li>
-      <li>McClelland believed nAch can be developed through training and environmental influence.</li>
-    </ul>
-    This theory is important in entrepreneurship as it explains why certain individuals are more driven to start and grow businesses.
-  </div>
-
-  <div class="q">Q3. What are the key functions of an entrepreneur?</div>
-  <div class="ans">
-    <ul>
-      <li><strong>Innovation:</strong> Introducing new products, processes, or markets.</li>
-      <li><strong>Risk-taking:</strong> Bearing financial, social, and psychological risks of the venture.</li>
-      <li><strong>Decision-making:</strong> Making critical business decisions under uncertainty.</li>
-      <li><strong>Resource mobilization:</strong> Arranging capital, labour, and raw materials efficiently.</li>
-      <li><strong>Organizing:</strong> Coordinating all factors of production to achieve business goals.</li>
-      <li><strong>Leadership:</strong> Motivating and guiding employees towards the vision.</li>
-      <li><strong>Market research:</strong> Identifying opportunities and customer needs in the market.</li>
+      <li>Three needs: Achievement, Affiliation, Power</li>
+      <li>High nAch people prefer moderate-difficulty tasks — not too easy, not too hard</li>
+      <li>They take personal responsibility for their outcomes</li>
+      <li>They constantly seek feedback to know how they are performing</li>
+      <li>Entrepreneurs typically score very high on nAch</li>
+      <li>McClelland said nAch can be trained and developed</li>
     </ul>
   </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — Three Needs &amp; Entrepreneurial Link</div>
+    <div class="flow-row"><div class="fbox blue">Need for Achievement (nAch)</div><div class="fdetail">Drive to excel, accomplish challenging goals, and do better than others. Core trait of entrepreneurs. Prefer moderate risk tasks.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Need for Affiliation (nAff)</div><div class="fdetail">Desire to be liked, to belong, and to maintain close relationships. Important for networking but can reduce tough decision-making if too high.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Need for Power (nPow)</div><div class="fdetail">Desire to influence, lead, and control others. Important for leadership but must be used responsibly — to empower others, not just for personal status.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">High nAch = Entrepreneurial Spirit</div><div class="fdetail">People with high nAch set ambitious goals, work hard, take responsibility, seek feedback, and persist through failure — exactly what entrepreneurship requires.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Key Characteristics of High nAch People — Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Prefer Moderate Difficulty Tasks</strong><p>High nAch people choose tasks that are challenging but achievable — not too easy (no sense of achievement) and not too hard (low chance of success). They want to stretch themselves, but they also want to win.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Take Personal Responsibility</strong><p>They do not blame luck, circumstances, or other people when things go wrong. They believe their success or failure is in their own hands — which is exactly the mindset needed to run a business.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Constantly Seek Feedback</strong><p>High nAch individuals want to know how they are doing — are they improving? Is the business growing? They use feedback as fuel to do better, not as criticism to feel bad about.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>nAch Can Be Developed</strong><p>McClelland believed that the need for achievement is not fixed at birth — it can be trained. He ran programs (especially in India and developing countries) to increase nAch in business people, which led to measurable improvements in their entrepreneurial success.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>McClelland's nAch theory explains a crucial truth about entrepreneurship — success comes to those who are internally driven to achieve, not those who are motivated only by money or external rewards. Understanding and building the need for achievement is one of the most effective ways to develop entrepreneurial talent in individuals and economies.</p></div>
+</div>
 
-  <div class="q">Q4. What are the key components of a feasibility report?</div>
-  <div class="ans">
-    A feasibility report evaluates whether a business idea is viable. Key components:
+<!-- Q3 -->
+<div class="qblock"><div class="qnum">Question 3</div><div class="qtxt">What are the key functions of an entrepreneur? <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>An entrepreneur is much more than just someone who starts a business. They play multiple critical roles simultaneously — as an innovator, a risk-taker, a decision-maker, a leader, and an organizer. Understanding the key functions of an entrepreneur helps us see why entrepreneurship is so challenging and why not everyone who tries it succeeds.</div>
+  <div class="points-box"><div class="pts-label">Key Functions at a Glance</div>
     <ul>
-      <li><strong>Executive Summary:</strong> Overview of the business idea.</li>
-      <li><strong>Market Feasibility:</strong> Demand analysis, target market, competition.</li>
-      <li><strong>Technical Feasibility:</strong> Technology, equipment, production process.</li>
-      <li><strong>Financial Feasibility:</strong> Cost estimates, revenue projections, break-even analysis.</li>
-      <li><strong>Legal Feasibility:</strong> Regulatory requirements, licenses, legal structure.</li>
-      <li><strong>Organizational Feasibility:</strong> Management team, human resources needed.</li>
-      <li><strong>Conclusion:</strong> Whether to proceed with the venture or not.</li>
+      <li>Innovation — creating something new or better</li>
+      <li>Risk-taking — bearing financial and personal uncertainty</li>
+      <li>Decision-making — choosing the right path under pressure</li>
+      <li>Resource mobilization — gathering what the business needs</li>
+      <li>Organizing — putting everything in the right place</li>
+      <li>Leadership — guiding and motivating the team</li>
+      <li>Market research — understanding customers and competition</li>
     </ul>
   </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — Entrepreneur's Functions in Action</div>
+    <div class="flow-row"><div class="fbox blue">Spot Opportunity</div><div class="fdetail">Entrepreneur uses market research to identify a gap in the market — something people need but don't yet have.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Innovate</div><div class="fdetail">Develops a new product, service, or method to fill that gap better than existing options.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Mobilize Resources</div><div class="fdetail">Gathers money (investors, loans), people (hiring team), and materials (suppliers) needed to start.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Organise &amp; Lead</div><div class="fdetail">Sets up systems, assigns roles, motivates the team, and steers everyone toward the business goal.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox purple">Take Risks &amp; Decide</div><div class="fdetail">Makes critical decisions under uncertainty — pricing, hiring, expansion — while bearing the financial and personal risk of getting it wrong.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Each Function Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Innovation</strong><p>The entrepreneur introduces new products, new methods of production, or opens entirely new markets. Innovation is what separates an entrepreneur from a mere businessperson — they don't just copy, they create.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Risk-Taking</strong><p>Every entrepreneur accepts financial, social, and emotional risk. They invest their time and money without any guarantee of return. The ability to take calculated — not reckless — risks is what makes entrepreneurs different.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Decision-Making</strong><p>Entrepreneurs make dozens of critical decisions every day — whom to hire, how to price, which market to enter, when to expand. They must do this quickly and often without complete information.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Resource Mobilization</strong><p>Entrepreneurs gather all the resources needed to run the business — capital (loans, investors), human resources (employees), raw materials, technology, and distribution networks. They must do this efficiently, especially when starting with limited funds.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Leadership and Organizing</strong><p>An entrepreneur must build a team, motivate them, assign the right roles, and coordinate all activities so that everyone is working toward the same goal. Strong leadership is what turns a business idea into a thriving organization.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>The functions of an entrepreneur are wide-ranging and demanding. A successful entrepreneur must simultaneously be an innovator, a risk-manager, a decision-maker, a leader, and a resource coordinator. This is why entrepreneurship is considered one of the most challenging — and most rewarding — careers a person can pursue.</p></div>
+</div>
 
-  <div class="q">Q5. Explain the different types of creativity.</div>
-  <div class="ans">
+<!-- Q4 -->
+<div class="qblock"><div class="qnum">Question 4</div><div class="qtxt">What are the key components of a feasibility report? <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>A <strong>Feasibility Report</strong> is a document that an entrepreneur prepares before starting a business to evaluate whether the business idea is actually practical and viable. It answers the fundamental question: <em>"Can this business actually work — and should we go ahead with it?"</em> A well-prepared feasibility report reduces the risk of starting a business that is bound to fail, and helps attract investors and lenders who need to see that the idea has been thoroughly tested.</div>
+  <div class="points-box"><div class="pts-label">Key Components at a Glance</div>
     <ul>
-      <li><strong>Deliberate and Cognitive:</strong> Based on existing knowledge; requires focused thinking (e.g., Edison's experiments).</li>
-      <li><strong>Deliberate and Emotional:</strong> Based on emotional processing through relaxation and reflection.</li>
-      <li><strong>Spontaneous and Cognitive:</strong> "Aha!" moments that arise when the mind is at rest but the brain is still working in the background.</li>
-      <li><strong>Spontaneous and Emotional:</strong> Sudden creative insight driven by deep emotional states (e.g., artistic inspiration).</li>
-      <li><strong>Lateral Creativity:</strong> Thinking outside conventional patterns to find novel solutions.</li>
+      <li>Executive Summary — overview of the whole report</li>
+      <li>Market Feasibility — is there demand for this product?</li>
+      <li>Technical Feasibility — can we actually produce it?</li>
+      <li>Financial Feasibility — will it make money?</li>
+      <li>Legal Feasibility — is it legally allowed?</li>
+      <li>Organizational Feasibility — do we have the right team?</li>
+      <li>Conclusion — should we proceed or not?</li>
     </ul>
   </div>
+  <div class="flow-wrap"><div class="flow-label">Flowchart — Feasibility Report Structure</div>
+    <div class="flow-row"><div class="fbox blue">Executive Summary</div><div class="fdetail">A brief overview of the business idea and the main findings of the feasibility study.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Market Feasibility</div><div class="fdetail">Is there enough demand? Who are the target customers? Who are the competitors? What is the market size?</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Technical Feasibility</div><div class="fdetail">Do we have the technology, equipment, and production process to make the product or deliver the service?</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Financial Feasibility</div><div class="fdetail">What are the startup costs? What will revenue look like? When will we break even? Is the business profitable?</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox purple">Legal Feasibility</div><div class="fdetail">What licenses, registrations, and permits are needed? Are there any regulations that restrict this business?</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox red">Organizational Feasibility</div><div class="fdetail">Do we have the right management team, human resources, and organizational structure to run this business?</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox blue">Conclusion — Go / No-Go Decision</div><div class="fdetail">Based on all findings: Should we proceed, modify the idea, or abandon it?</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Each Component Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Market Feasibility</strong><p>This is the most important section. It answers: Is there a real market for this product? How big is it? Who will buy it? It involves surveys, competitor analysis, and market size estimation. Without demand, no business can survive.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Technical Feasibility</strong><p>Checks if the business can physically produce what it plans to sell — machinery, technology, raw materials, production capacity, quality control. A business idea is useless if it cannot be practically executed.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Financial Feasibility</strong><p>The numbers section — total investment needed, expected revenue, monthly cash flow, break-even point, and expected profit margin. This is what investors and banks look at most carefully before funding a business.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Legal Feasibility</strong><p>Identifies all legal requirements — business registration, GST, trade licenses, FSSAI (food), environmental clearances, intellectual property protection. Starting a business without proper legal clearance can result in fines or closure.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Organizational Feasibility</strong><p>Evaluates whether the founding team has the right skills, experience, and structure to run the business. Many great ideas fail because the team doesn't have the right mix of talent and management ability.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>A feasibility report is the entrepreneur's homework before the exam of actually starting a business. It forces the entrepreneur to think through every aspect of the business critically — before investing money, time, and energy. A thorough feasibility report dramatically increases the chances of building a sustainable, successful business.</p></div>
+</div>
 
-  <div class="q">Q6. Describe the legal formalities in the feasibility report.</div>
-  <div class="ans">
-    Legal formalities in a feasibility report include:
+<!-- Q5 -->
+<div class="qblock"><div class="qnum">Question 5</div><div class="qtxt">Explain the different types of creativity. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div><strong>Creativity</strong> is the ability to generate new, original, and useful ideas. In entrepreneurship, creativity is the engine of innovation — without it, entrepreneurs cannot identify new opportunities, design new products, or solve problems in novel ways. Researchers have identified that creativity is not just one thing — it comes in different forms depending on how it is generated and what kind of thinking drives it. Understanding these types helps entrepreneurs recognize and develop their own creative strengths.</div>
+  <div class="points-box"><div class="pts-label">Types of Creativity</div>
     <ul>
-      <li><strong>Business Registration:</strong> Choosing and registering the legal structure (Sole Proprietorship, Partnership, LLP, Pvt. Ltd.).</li>
-      <li><strong>Licenses and Permits:</strong> Trade license, FSSAI (food), GST registration, etc.</li>
-      <li><strong>Intellectual Property:</strong> Trademark, patent, copyright registration if applicable.</li>
-      <li><strong>Labour Laws:</strong> Compliance with PF, ESI, minimum wage regulations.</li>
-      <li><strong>Environmental Clearances:</strong> Required for manufacturing units.</li>
-      <li><strong>Tax Registrations:</strong> PAN, TAN, GST number.</li>
-      <li><strong>Contracts and Agreements:</strong> Supplier, employee, and investor agreements.</li>
+      <li>Deliberate and Cognitive — focused thinking using existing knowledge</li>
+      <li>Deliberate and Emotional — reflection and emotional processing</li>
+      <li>Spontaneous and Cognitive — sudden "Aha!" insight from the subconscious</li>
+      <li>Spontaneous and Emotional — deep emotional creative bursts</li>
+      <li>Lateral Thinking — indirect, unconventional problem-solving (de Bono)</li>
     </ul>
   </div>
-
-  <hr>
-  <div class="section-title">GROUP-C — Long Answer Type (15 Marks Each, Answer any 3)</div>
-
-  <div class="q">Q7. Explain market sensing and market testing in detail. What roles they play in market research?</div>
-  <div class="ans">
-    <strong>Market Sensing:</strong><br>
-    Market sensing is the process of continuously gathering, interpreting, and acting on information about the market environment. It involves:
-    <ul>
-      <li>Monitoring customer preferences and behaviour.</li>
-      <li>Tracking competitor strategies and industry trends.</li>
-      <li>Identifying emerging opportunities and threats early.</li>
-      <li>Using tools like surveys, focus groups, social media listening, and sales data analysis.</li>
-    </ul>
-    Role in market research: Helps entrepreneurs stay proactive, spot gaps in the market, and align their product/service with actual demand before investing heavily.<br><br>
-
-    <strong>Market Testing:</strong><br>
-    Market testing involves launching a product in a limited, controlled environment before a full-scale launch. Methods include:
-    <ul>
-      <li><strong>Test marketing:</strong> Launching in select cities or regions to gauge response.</li>
-      <li><strong>Pilot testing:</strong> Offering the product to a small sample of the target market.</li>
-      <li><strong>A/B Testing:</strong> Comparing two versions of a product or campaign to see which performs better.</li>
-      <li><strong>Online beta testing:</strong> Releasing a digital product to early adopters for feedback.</li>
-    </ul>
-    Role in market research: Reduces the risk of full-scale failure, provides real-world feedback, allows refinement of the product, pricing, and marketing strategy before mass launch.<br><br>
-
-    <strong>Combined Role:</strong> Together, market sensing and testing form the foundation of informed entrepreneurial decision-making — sensing identifies what customers want, and testing validates whether the business can deliver it profitably.
+  <div class="flow-wrap"><div class="flow-label">Diagram — Wallas's 4-Step Creative Process</div>
+    <div class="flow-row"><div class="fbox blue">① Preparation</div><div class="fdetail">Actively gather information, research the problem, study what exists. Fill your mind with relevant knowledge.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">② Incubation</div><div class="fdetail">Step away. Let the mind work subconsciously. Ideas connect in the background while you sleep, walk, or relax.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">③ Illumination</div><div class="fdetail">The "Aha!" moment — the creative insight suddenly appears, often unexpectedly. Example: Newton and the apple.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">④ Verification</div><div class="fdetail">Test the idea — is it actually practical? Refine it, prototype it, and check if it solves the original problem.</div></div>
   </div>
+  <div class="explain"><div class="explain-label">Each Type of Creativity Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Deliberate and Cognitive Creativity</strong><p>This type comes from deliberately thinking hard using your existing knowledge. It requires focus, expertise, and persistence. Example: Thomas Edison tested over 1,000 materials for his light bulb filament — through deliberate, knowledge-driven thinking. Best for entrepreneurs who are experts in their field.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Deliberate and Emotional Creativity</strong><p>This comes from deliberately reflecting on your feelings, values, and emotional reactions to a problem. Taking a quiet walk, journaling, or sitting alone and thinking deeply can trigger this. Useful for designing products that connect emotionally with customers.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Spontaneous and Cognitive Creativity</strong><p>The classic "Aha!" or "Eureka!" moment — when you are not actively thinking about the problem, the subconscious mind suddenly produces the answer. Example: Archimedes in the bath. This happens after a long period of preparation and incubation. You cannot force it — but you can create conditions for it.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Spontaneous and Emotional Creativity</strong><p>A sudden burst of creative inspiration driven by a powerful emotional state — joy, grief, love, or frustration. Common in artistic and design work. Entrepreneurs use this when they feel deeply frustrated by a problem in the world and are emotionally driven to solve it.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Lateral Thinking (Edward de Bono)</strong><p>Deliberately looking at a problem from an entirely unexpected angle, rather than following conventional logic. Example: Instead of making a faster horse, think of a car. In entrepreneurship, lateral thinking is how disruptive innovations are born — by refusing to accept the existing way of doing things as the only way.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Creativity is not a gift that only some people are born with — it is a skill that can be developed. By understanding the different types of creativity and the four-step creative process, entrepreneurs can actively create conditions that boost their innovative thinking — leading to better products, smarter solutions, and stronger businesses.</p></div>
+</div>
 
-  <div class="q">Q8. Discuss types, steps and importance of creativity in Entrepreneurship.</div>
-  <div class="ans">
-    <strong>Types of Creativity:</strong>
+<!-- Q6 -->
+<div class="qblock"><div class="qnum">Question 6</div><div class="qtxt">Describe the legal formalities in the feasibility report. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>The <strong>legal feasibility section</strong> of a feasibility report examines all the legal requirements that a new business must fulfill before it can operate. This is a critical part of the feasibility report because operating a business without the required registrations and licenses can result in heavy fines, forced closure, or even criminal liability. Every new entrepreneur must understand the legal framework that governs their business type, industry, and location before launching.</div>
+  <div class="points-box"><div class="pts-label">Key Legal Formalities</div>
     <ul>
-      <li>Deliberate & Cognitive, Deliberate & Emotional, Spontaneous & Cognitive, Spontaneous & Emotional, Lateral thinking.</li>
-    </ul>
-
-    <strong>Steps in the Creative Process (Wallas Model):</strong>
-    <ol>
-      <li><strong>Preparation:</strong> Gathering information, researching the problem thoroughly.</li>
-      <li><strong>Incubation:</strong> Letting the mind process ideas subconsciously.</li>
-      <li><strong>Illumination:</strong> The "Aha!" moment when a solution emerges.</li>
-      <li><strong>Verification:</strong> Testing and refining the creative idea to make it practical.</li>
-    </ol>
-
-    <strong>Importance of Creativity in Entrepreneurship:</strong>
-    <ul>
-      <li><strong>Innovation driver:</strong> Creativity leads to new products, services, and business models.</li>
-      <li><strong>Competitive advantage:</strong> Creative entrepreneurs differentiate themselves in crowded markets.</li>
-      <li><strong>Problem-solving:</strong> Helps find unique solutions to business challenges.</li>
-      <li><strong>Resource optimization:</strong> Creative thinking helps do more with limited resources.</li>
-      <li><strong>Market opportunity identification:</strong> Creative entrepreneurs see possibilities others miss.</li>
-      <li><strong>Adaptability:</strong> Creativity enables businesses to pivot and adapt to changing environments.</li>
-      <li><strong>Economic growth:</strong> Creative ventures generate employment and drive economic development.</li>
+      <li>Business registration (choose legal structure)</li>
+      <li>Licenses and permits (trade license, FSSAI, etc.)</li>
+      <li>Tax registrations (PAN, GST, TAN)</li>
+      <li>Intellectual property protection (trademark, patent, copyright)</li>
+      <li>Labour law compliance (PF, ESI, minimum wage)</li>
+      <li>Environmental clearances (for manufacturing)</li>
+      <li>Contracts and legal agreements</li>
     </ul>
   </div>
-
-  <div class="q">Q9. Discuss the role and importance of entrepreneurs in economic growth.</div>
-  <div class="ans">
-    Entrepreneurs are the engines of economic growth. Their contributions include:
-    <ul>
-      <li><strong>Employment generation:</strong> New businesses create jobs, reducing unemployment.</li>
-      <li><strong>Capital formation:</strong> Entrepreneurs mobilize savings and invest in productive activities.</li>
-      <li><strong>Innovation and technology:</strong> They introduce new technologies that improve productivity across sectors.</li>
-      <li><strong>GDP contribution:</strong> Entrepreneurial activity directly increases national output and income.</li>
-      <li><strong>Export promotion:</strong> Entrepreneurs develop export-oriented businesses, earning foreign exchange.</li>
-      <li><strong>Regional development:</strong> Entrepreneurs set up industries in underdeveloped areas, reducing regional imbalances.</li>
-      <li><strong>Social welfare:</strong> CSR activities and social entrepreneurship improve community well-being.</li>
-      <li><strong>Competition and efficiency:</strong> Entrepreneurial competition drives existing firms to innovate and become more efficient.</li>
-      <li><strong>Tax revenue:</strong> Successful ventures contribute significantly to government revenues.</li>
-      <li><strong>Multiplier effect:</strong> One business stimulates demand for suppliers, distributors, and service providers.</li>
-    </ul>
-    In developing countries like India, entrepreneurship is crucial for absorbing a large labour force, reducing poverty, and achieving sustainable development goals.
+  <div class="flow-wrap"><div class="flow-label">Flowchart — Legal Setup Process for a New Business</div>
+    <div class="flow-row"><div class="fbox blue">Choose Business Structure</div><div class="fdetail">Sole Proprietorship / Partnership / LLP / Private Limited Company — each has different legal implications and tax treatment.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Register the Business</div><div class="fdetail">Register with the Registrar of Companies (ROC) or relevant authority. Get Certificate of Incorporation for a company.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Obtain Licenses &amp; Permits</div><div class="fdetail">Trade license from local municipal authority. FSSAI for food businesses. Drug license for pharma. Factory license for manufacturing.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Tax Registrations</div><div class="fdetail">Apply for PAN (Permanent Account Number), TAN (Tax Deduction Account Number), and GST registration.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox purple">Protect Intellectual Property</div><div class="fdetail">Register trademark for brand name/logo, file patent for inventions, copyright for creative work.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox red">Labour Law Compliance</div><div class="fdetail">Register for Employees' Provident Fund (EPF), Employee State Insurance (ESI), and comply with minimum wage laws.</div></div>
   </div>
-
-  <div class="q">Q10. Define an entrepreneur and discuss the key characteristics of successful entrepreneurs.</div>
-  <div class="ans">
-    <strong>Definition:</strong> An entrepreneur is an individual who identifies a business opportunity, organizes resources (capital, labour, materials), takes calculated risks, and creates a new venture to generate profit and value for society.<br><br>
-
-    <strong>Key Characteristics of Successful Entrepreneurs:</strong>
-    <ul>
-      <li><strong>Innovation:</strong> Constantly looking for new ideas and better ways of doing things.</li>
-      <li><strong>Risk-taking ability:</strong> Willing to take calculated risks and learn from failures.</li>
-      <li><strong>Vision:</strong> Clear long-term goal and ability to communicate it to others.</li>
-      <li><strong>Passion and commitment:</strong> Deep dedication to their work even in difficult times.</li>
-      <li><strong>Decision-making:</strong> Ability to make quick, informed decisions under uncertainty.</li>
-      <li><strong>Leadership:</strong> Inspiring and motivating a team towards a shared vision.</li>
-      <li><strong>Resilience:</strong> Bouncing back from setbacks and persisting through challenges.</li>
-      <li><strong>Adaptability:</strong> Flexibility to change strategies as market conditions evolve.</li>
-      <li><strong>Networking:</strong> Building strong relationships with customers, investors, and partners.</li>
-      <li><strong>Financial literacy:</strong> Understanding cash flow, profitability, and financial planning.</li>
-      <li><strong>Customer focus:</strong> Always prioritizing customer needs and feedback.</li>
-      <li><strong>Self-confidence:</strong> Belief in their ability to succeed despite obstacles.</li>
-    </ul>
+  <div class="explain"><div class="explain-label">Each Formality Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Business Registration</strong><p>The first legal step. Choosing the right structure (Sole Proprietorship, Partnership, LLP, or Pvt. Ltd.) determines your personal liability, tax obligations, and ability to raise funding. A Private Limited Company, for example, limits personal liability of founders.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Licenses and Permits</strong><p>Specific to the industry. Every business needs a basic trade license. Food businesses need FSSAI registration. Factories need factory licenses. Importing/exporting requires an IEC (Import Export Code). Operating without the required license is illegal.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Tax Registrations</strong><p>Every business must register for GST if turnover exceeds the threshold (₹20 lakh for services, ₹40 lakh for goods). GST registration allows you to collect tax from customers and claim input tax credit on your purchases.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Intellectual Property Protection</strong><p>Registering a trademark protects your brand name, logo, and slogan from being copied by competitors. A patent protects an invention for 20 years. Copyright automatically protects creative works but registration provides stronger legal proof.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Contracts and Agreements</strong><p>Legal agreements between co-founders, with employees (employment contracts), suppliers (purchase agreements), and investors (term sheets) protect the business from disputes and clearly define each party's rights and responsibilities.</p></div></div>
   </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Legal compliance is not optional — it is the foundation on which every legitimate business is built. A business that does not fulfill its legal formalities operates in constant fear of penalties and closure. The legal feasibility section of a feasibility report ensures that the entrepreneur is fully aware of all legal requirements and has planned for them from day one — building a business that is not just profitable, but also legally sound and trustworthy.</p></div>
+</div>
 
-  <div class="q">Q11. Explain the concept of entrepreneurial motivation and the factors that influence it.</div>
-  <div class="ans">
-    <strong>Entrepreneurial Motivation:</strong><br>
-    Entrepreneurial motivation refers to the internal drive, desire, and willingness that pushes an individual to start, manage, and grow a business venture. It is the force that compels a person to take initiative, accept risks, and persist through challenges to achieve business success.<br><br>
+<hr>
 
-    <strong>Theories of Motivation relevant to Entrepreneurship:</strong>
+<!-- ══ GROUP C ══ -->
+<div class="group-banner">GROUP-C &nbsp;|&nbsp; Long Answer Type &nbsp;|&nbsp; 15 × 3 = 45 Marks &nbsp;|&nbsp; Answer any THREE</div>
+
+<!-- Q7 -->
+<div class="qblock"><div class="qnum">Question 7</div><div class="qtxt">Explain market sensing and market testing in detail. What roles do they play in market research? Elaborate. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>Before launching any product or service, a smart entrepreneur does not just guess what the market wants — they systematically study it. <strong>Market sensing</strong> and <strong>market testing</strong> are two critical tools within market research that help entrepreneurs understand the market deeply and validate their ideas before committing full resources. Together they form the backbone of evidence-based entrepreneurial decision-making — reducing costly mistakes and increasing the chances of a successful launch.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
     <ul>
-      <li>McClelland's Need for Achievement (nAch)</li>
-      <li>Maslow's Hierarchy of Needs</li>
-      <li>Herzberg's Two-Factor Theory</li>
-    </ul>
-
-    <strong>Factors Influencing Entrepreneurial Motivation:</strong>
-    <ul>
-      <li><strong>Personal factors:</strong> Desire for independence, need for achievement, self-confidence, passion for an idea.</li>
-      <li><strong>Financial incentives:</strong> Desire to earn higher income and build wealth.</li>
-      <li><strong>Family background:</strong> Having entrepreneurial parents or role models increases motivation.</li>
-      <li><strong>Education and skills:</strong> Knowledge and capabilities that give confidence to start a business.</li>
-      <li><strong>Market opportunity:</strong> Spotting a gap in the market motivates action.</li>
-      <li><strong>Social recognition:</strong> Desire for status, respect, and social impact.</li>
-      <li><strong>Push factors:</strong> Job dissatisfaction, unemployment, or necessity can push people into entrepreneurship.</li>
-      <li><strong>Pull factors:</strong> Attractive opportunities, government incentives, or a strong business idea pull people toward entrepreneurship.</li>
-      <li><strong>Government support:</strong> Schemes like Startup India, MUDRA loans, and incubators motivate new entrepreneurs.</li>
-      <li><strong>Cultural environment:</strong> A society that celebrates entrepreneurship encourages more people to try it.</li>
+      <li><strong>Market Sensing:</strong> Continuous monitoring of customer needs, competitor moves, and market trends</li>
+      <li><strong>Market Testing:</strong> Launching in a small scale to test the product's real-world response before full launch</li>
+      <li>Sensing = Understanding what the market wants</li>
+      <li>Testing = Validating whether your product meets that want</li>
+      <li>Together they eliminate guesswork and reduce business risk</li>
     </ul>
   </div>
+  <div class="flow-wrap"><div class="flow-label">Flowchart — Market Research: Sensing → Testing → Launch</div>
+    <div class="flow-row"><div class="fbox blue">Market Sensing (Ongoing)</div><div class="fdetail">Entrepreneur continuously monitors: customer behavior, emerging trends, competitor actions, social media feedback, and industry reports.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Identify Opportunity / Gap</div><div class="fdetail">Sensing reveals a gap — something customers need that no one is currently providing well enough.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Develop Product / Service Concept</div><div class="fdetail">Entrepreneur designs a solution based on what sensing revealed about customer needs and preferences.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Market Testing (Limited Scale)</div><div class="fdetail">Launch in one city, or to a small group, or as a beta version. Collect real customer feedback on actual purchasing behavior.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox purple">Analyse Test Results</div><div class="fdetail">What did customers love? What did they hate? What price are they willing to pay? Did they come back to buy again?</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox red">Refine &amp; Full Launch</div><div class="fdetail">Make improvements based on test feedback, then confidently launch to the full market knowing the product works.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Market Sensing — Explained in Detail</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>What is Market Sensing?</strong><p>Market sensing is the continuous, proactive process of gathering and interpreting information about the market environment. It is not a one-time study — it is an ongoing activity that never stops as long as the business exists. A business that stops sensing the market becomes outdated very quickly.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Tools Used for Market Sensing</strong><p>Customer surveys and interviews, focus groups, social media listening (tracking what people say about your industry online), competitor tracking, industry reports, sales data analysis, and attending trade fairs and exhibitions.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Role in Market Research</strong><p>Market sensing gives entrepreneurs a constantly updated picture of: what customers are saying, what competitors are doing, what trends are emerging, and what problems are growing bigger. This allows entrepreneurs to spot opportunities early — before competitors do.</p></div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Market Testing — Explained in Detail</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>What is Market Testing?</strong><p>Market testing means launching a product in a small, controlled environment — to a limited group of real customers — before investing in a full-scale launch. It converts the theoretical insights from market sensing into real-world evidence of whether the product will actually sell.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Methods of Market Testing</strong><p><strong>Test Marketing:</strong> Launch in one or two cities first. <strong>Pilot Testing:</strong> Offer the product to a small sample of target customers. <strong>A/B Testing:</strong> Show two different versions (price, packaging, messaging) to different groups and compare results. <strong>Beta Testing (digital):</strong> Release an app or software to early users and collect feedback before the official launch.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Role in Market Research</strong><p>Market testing answers the most important business question: <em>"Will people actually pay for this?"</em> It prevents the catastrophic mistake of investing millions in a product that customers don't want. It also helps fine-tune pricing, packaging, and marketing messaging before the full launch.</p></div></div>
+  </div>
+  <div class="diff-label">Difference — Market Sensing vs Market Testing</div>
+  <table class="diff-table">
+    <tr><th>Basis of Difference</th><th>Market Sensing</th><th>Market Testing</th></tr>
+    <tr><td>Definition</td><td>Continuously gathering and interpreting information about the market</td><td>Launching the product on a small scale to test real customer response</td></tr>
+    <tr><td>When done</td><td>Ongoing — before, during, and after launch</td><td>Before full-scale launch — between product development and launch</td></tr>
+    <tr><td>What it reveals</td><td>What customers want, competitor moves, market trends</td><td>Whether customers actually buy, at what price, with what feedback</td></tr>
+    <tr><td>Methods</td><td>Surveys, focus groups, social media listening, industry reports</td><td>Test marketing, pilot launches, A/B testing, beta releases</td></tr>
+    <tr><td>Output</td><td>Market intelligence and strategic direction</td><td>Real purchase data and product validation</td></tr>
+  </table>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Market sensing tells you what the market wants, and market testing confirms whether your specific product delivers it. An entrepreneur who skips both is gambling with their investment. One who uses both is building a business on evidence, not hope. Together, they are the entrepreneur's most powerful tools for making informed, confident, and profitable decisions.</p></div>
+</div>
+
+<!-- Q8 -->
+<div class="qblock"><div class="qnum">Question 8</div><div class="qtxt">Discuss types, steps and importance of creativity in Entrepreneurship. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div><strong>Creativity</strong> is the foundation of entrepreneurship. Without creativity, there is no innovation. Without innovation, there is no entrepreneurship. Creativity allows entrepreneurs to see problems that others ignore, imagine solutions that others haven't thought of, and build businesses that change the world. Whether it is Dhirubhai Ambani building a telecom empire, or a young student creating a food delivery app in college — at the heart of every entrepreneurial success is a creative idea that was properly developed and executed.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li><strong>Types:</strong> Deliberate/Cognitive, Deliberate/Emotional, Spontaneous/Cognitive, Spontaneous/Emotional, Lateral thinking</li>
+      <li><strong>Steps (Wallas):</strong> Preparation → Incubation → Illumination → Verification</li>
+      <li><strong>Importance:</strong> Innovation, competitive advantage, problem-solving, adaptability, economic growth</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Flowchart — The 4-Step Creative Process (Wallas Model)</div>
+    <div class="flow-row"><div class="fbox blue">Step 1: Preparation</div><div class="fdetail">Actively research the problem. Read, observe, ask questions, gather all relevant information. Fill your mind with the raw material for creativity.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Step 2: Incubation</div><div class="fdetail">Step away from the problem. Rest. Walk. Sleep. The subconscious mind continues working — connecting ideas in new, unexpected ways you cannot force consciously.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Step 3: Illumination</div><div class="fdetail">The breakthrough moment — the "Aha!" or "Eureka!" A creative solution suddenly appears, often when you least expect it. Example: Newton seeing the apple fall.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Step 4: Verification</div><div class="fdetail">Test the idea. Build a prototype. Is it actually practical? Does it solve the original problem? Refine it until it is ready for the real world.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Types of Creativity — Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Deliberate and Cognitive</strong><p>Generated by focused, intentional thinking using deep existing knowledge. Requires expertise in a field. Example: Scientists and engineers who solve problems through systematic experimentation (like Edison). Best for entrepreneurs with technical expertise solving specific industry problems.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Deliberate and Emotional</strong><p>Generated by deliberately reflecting on emotions and values. Sitting quietly, journaling, or meditating can trigger this. Useful for designing customer experiences, brand identities, or social enterprise missions driven by deep personal values.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Spontaneous and Cognitive</strong><p>The classic "Aha!" insight — sudden, unexpected, after a period of preparation and rest. Cannot be forced but can be cultivated by learning deeply, then stepping away. Example: Archimedes discovering the principle of buoyancy while in the bath.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Spontaneous and Emotional</strong><p>A sudden creative burst driven by a strong emotional state — deep frustration with a problem, or intense passion for a cause. Many social entrepreneurs are driven by this type — they see an injustice and feel an overwhelming need to solve it creatively.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Lateral Thinking (de Bono)</strong><p>Approaching a problem from a completely different, unconventional angle. Instead of improving what exists, question whether it needs to exist at all. Example: Instead of making a better video rental store, Netflix created online streaming. Lateral thinking is the birthplace of disruptive innovation.</p></div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Importance of Creativity in Entrepreneurship — Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Driver of Innovation</strong><p>Every new product, service, or business model starts with a creative idea. Without creativity, entrepreneurs can only copy — and businesses that only copy never lead, they only follow. Creativity is what allows entrepreneurs to create entirely new markets.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Competitive Advantage</strong><p>In a crowded market, creativity differentiates one business from all others. A creative entrepreneur finds unique ways to serve customers better, cheaper, faster, or in a more enjoyable way — making it hard for competitors to catch up.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Problem-Solving Under Constraints</strong><p>Startups always have limited money, time, and resources. Creativity allows entrepreneurs to find ways to achieve more with less — using jugaad (frugal innovation) to build products that work brilliantly at low cost.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Identifying Market Opportunities</strong><p>Creative entrepreneurs see possibilities where others see only problems. They notice unmet needs, frustrated customers, and inefficient processes — and imagine business models that fix them. Creativity is the lens through which opportunity is spotted.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Adaptability and Survival</strong><p>Markets change, technologies evolve, and customer preferences shift. Creative entrepreneurs adapt by constantly reinventing their product, their business model, or their marketing approach — instead of stubbornly sticking to what no longer works.</p></div></div>
+    <div class="exp-item"><div class="exp-num">6</div><div class="exp-body"><strong>Economic Growth and Employment</strong><p>Creative businesses generate new industries, create millions of jobs, and drive economic growth. The tech industry, gig economy, and green energy sector all exist because creative entrepreneurs imagined possibilities that governments and large corporations had not yet seen.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Creativity is not just a nice-to-have quality for entrepreneurs — it is their most fundamental tool. It is what turns problems into products, ideas into industries, and individuals into innovators. The good news is that creativity is a skill that can be deliberately developed — through learning, practice, rest, collaboration, and the courage to think differently. Every great entrepreneurial success story begins with a single creative thought that someone was brave enough to pursue.</p></div>
+</div>
+
+<!-- Q9 -->
+<div class="qblock"><div class="qnum">Question 9</div><div class="qtxt">Discuss the role and importance of entrepreneurs in economic growth. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>Entrepreneurs are often called the <strong>engines of economic growth</strong>. They are the people who take risks, build businesses, create jobs, introduce innovations, and generate wealth — not just for themselves, but for society as a whole. In developing countries like India, entrepreneurship is especially critical because it absorbs millions of workers from the unorganised sector, drives industrialisation, reduces poverty, and helps achieve sustainable development. The relationship between entrepreneurship and economic development is so strong that economists like Joseph Schumpeter argued that entrepreneurship — through "creative destruction" — is the primary driver of economic progress.</div>
+  <div class="points-box"><div class="pts-label">Key Roles of Entrepreneurs in Economic Growth</div>
+    <ul>
+      <li>Employment generation — reducing unemployment</li>
+      <li>Capital formation — mobilizing savings into productive investment</li>
+      <li>Innovation and technology — boosting productivity</li>
+      <li>GDP contribution — increasing national output and income</li>
+      <li>Export promotion — earning foreign exchange</li>
+      <li>Regional development — reducing urban-rural imbalance</li>
+      <li>Multiplier effect — one business stimulates many others</li>
+      <li>Tax revenue — funding government services</li>
+      <li>Social welfare — CSR, social entrepreneurship</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — How One Entrepreneur Creates Economic Growth</div>
+    <div class="flow-row"><div class="fbox blue">Entrepreneur Starts a Business</div><div class="fdetail">Invests capital, takes risk, hires people, and creates a product or service that meets market demand.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Jobs Created</div><div class="fdetail">Direct employment in the new business, plus indirect jobs for suppliers, distributors, and service providers (Multiplier Effect).</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Income Generated</div><div class="fdetail">Employees earn wages → spend on goods and services → stimulating more businesses and more jobs.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Taxes Paid to Government</div><div class="fdetail">Corporate tax, GST, income tax from employees — funds public services like roads, schools, hospitals.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox purple">Innovation Drives Productivity</div><div class="fdetail">New technology and methods make existing industries more efficient — raising output across the whole economy.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox red">Overall GDP Growth</div><div class="fdetail">National income rises, living standards improve, and the country develops economically.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Each Role Explained in Detail</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Employment Generation</strong><p>Every new business creates jobs — directly (workers, managers) and indirectly (suppliers, logistics, retail). India's MSME (Micro, Small and Medium Enterprises) sector — largely entrepreneurial — employs over 11 crore people, making it the second-largest employment provider after agriculture. Without entrepreneurs starting new businesses, unemployment would rise dramatically.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Capital Formation</strong><p>Entrepreneurs mobilize idle savings from individuals and financial institutions and channel them into productive investments — factories, equipment, technology, and human capital. This capital formation is a fundamental driver of economic expansion.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Innovation and Technology Advancement</strong><p>Entrepreneurs introduce new technologies, production methods, and business models that make the entire economy more productive. When one startup introduces a better technology (like mobile payments or cloud computing), it benefits millions of other businesses and people who adopt it.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>GDP Contribution</strong><p>Every business an entrepreneur creates adds to the country's Gross Domestic Product — the total value of goods and services produced. India's startup ecosystem is now one of the largest in the world, contributing significantly to GDP and putting India on the global economic map.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Export Promotion</strong><p>Entrepreneurs who build export-oriented businesses earn foreign exchange for the country — improving the balance of trade and strengthening the national currency. Indian IT companies like Infosys and TCS, built by entrepreneurs, earn billions of dollars in exports every year.</p></div></div>
+    <div class="exp-item"><div class="exp-num">6</div><div class="exp-body"><strong>Regional Development</strong><p>Entrepreneurs setting up industries in smaller towns and rural areas bring infrastructure, employment, and economic activity to underdeveloped regions — reducing the extreme concentration of wealth in big cities like Mumbai, Delhi, and Bangalore.</p></div></div>
+    <div class="exp-item"><div class="exp-num">7</div><div class="exp-body"><strong>Multiplier Effect</strong><p>One business does not operate in isolation. A new factory needs raw material suppliers, equipment manufacturers, transport companies, canteens, security firms, and financial services. Each of these creates more jobs and income — multiplying the economic impact of one entrepreneur's decision to start a business.</p></div></div>
+    <div class="exp-item"><div class="exp-num">8</div><div class="exp-body"><strong>Social Welfare and CSR</strong><p>Many entrepreneurs — especially social entrepreneurs — build businesses that directly address social problems: providing clean water, affordable healthcare, quality education, or sustainable energy to underserved communities. Corporate Social Responsibility (CSR) activities of large companies also fund schools, hospitals, and environmental programmes.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Entrepreneurs are the most powerful force for economic transformation in any society. They take nothing — just an idea, some capital, and immense courage — and build businesses that create jobs, generate wealth, drive innovation, and improve living standards for millions. For a developing country like India with a large young population, entrepreneurship is not just an economic strategy — it is a national necessity. Encouraging and supporting entrepreneurs through policies, infrastructure, and funding is one of the most effective investments any government can make in its country's future.</p></div>
+</div>
+
+<!-- Q10 -->
+<div class="qblock"><div class="qnum">Question 10</div><div class="qtxt">Define an entrepreneur and discuss the key characteristics of successful entrepreneurs. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>The word "entrepreneur" comes from the French word <em>entreprendre</em>, meaning "to undertake." An <strong>entrepreneur</strong> is a person who identifies a business opportunity, organizes the necessary resources (capital, labour, materials, and technology), bears the risks involved, and creates a new venture to generate profit and value — both for themselves and for society. What separates a successful entrepreneur from someone who simply tries and fails is not just luck — it is a specific set of personal characteristics that can be studied, understood, and developed.</div>
+  <div class="points-box"><div class="pts-label">Key Characteristics of Successful Entrepreneurs</div>
+    <ul>
+      <li>Innovation and creativity</li>
+      <li>Calculated risk-taking ability</li>
+      <li>Clear vision and purpose</li>
+      <li>Passion and commitment</li>
+      <li>Strong decision-making under uncertainty</li>
+      <li>Leadership and team-building</li>
+      <li>Resilience — ability to bounce back from failure</li>
+      <li>Adaptability to changing conditions</li>
+      <li>Networking and relationship-building</li>
+      <li>Financial literacy</li>
+      <li>Customer focus</li>
+      <li>Self-confidence</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — From Idea to Successful Venture: Entrepreneur's Journey</div>
+    <div class="flow-row"><div class="fbox blue">Spot Opportunity (Creativity)</div><div class="fdetail">Sees a problem or unmet need that others have ignored or accepted as normal.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Take the Leap (Risk-taking + Vision)</div><div class="fdetail">Decides to pursue the opportunity despite uncertainty. Has a clear picture of what success looks like.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Build the Business (Leadership + Decision-making)</div><div class="fdetail">Recruits a team, mobilizes resources, makes hundreds of daily decisions, and motivates everyone toward the goal.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Face Setbacks (Resilience + Adaptability)</div><div class="fdetail">Things go wrong — products fail, customers leave, funds dry up. Successful entrepreneurs adapt and persist instead of quitting.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox purple">Achieve Success (Customer Focus + Financial Literacy)</div><div class="fdetail">Builds a business that customers love, that is financially sustainable, and that grows steadily over time.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Key Characteristics — Explained in Detail</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Innovation and Creativity</strong><p>Successful entrepreneurs constantly look for better ways to do things. They do not just copy — they improve, disrupt, or completely reimagine. Innovation is what creates value that customers are willing to pay for.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Calculated Risk-Taking</strong><p>Every entrepreneur takes risks — but successful ones take <em>calculated</em> risks. They research, plan, and manage their downside before committing. They are not gamblers — they are informed risk-managers who are comfortable with uncertainty.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Vision</strong><p>A successful entrepreneur has a clear, compelling picture of where they want to take their business — 5 or 10 years into the future. This vision guides every decision and inspires employees, investors, and customers to believe in the journey.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Passion and Commitment</strong><p>Building a business is brutally hard. The only thing that keeps entrepreneurs going through the inevitable setbacks, rejections, and failures is a deep, genuine passion for what they are doing. Without passion, most people quit at the first major obstacle.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Resilience</strong><p>Failure is not the opposite of entrepreneurial success — it is part of the path. Successful entrepreneurs fall down, learn from it, and get back up — stronger and smarter. Ratan Tata, Narayan Murthy, and countless other successful entrepreneurs faced major failures before achieving greatness.</p></div></div>
+    <div class="exp-item"><div class="exp-num">6</div><div class="exp-body"><strong>Leadership and Team-Building</strong><p>No entrepreneur succeeds alone. Building a great team — hiring people smarter than yourself, delegating effectively, and inspiring others to give their best — is one of the most critical skills of a successful entrepreneur.</p></div></div>
+    <div class="exp-item"><div class="exp-num">7</div><div class="exp-body"><strong>Customer Focus</strong><p>The most successful entrepreneurs are obsessively focused on their customers — constantly asking "What does our customer need? Are we solving their problem? Are they satisfied?" Business success follows naturally when customer satisfaction is the north star.</p></div></div>
+    <div class="exp-item"><div class="exp-num">8</div><div class="exp-body"><strong>Financial Literacy</strong><p>Understanding cash flow, profit margins, unit economics, and financial planning is non-negotiable. Many brilliant entrepreneurs with great products have failed because they ran out of money due to poor financial management. Knowing the numbers keeps the business alive.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Successful entrepreneurship is not about luck or brilliant ideas alone — it is about the consistent combination of creativity, courage, discipline, leadership, resilience, and customer focus. These characteristics can be studied, practiced, and developed by anyone who is serious about building a successful business. The most important quality of all is perhaps the simplest: the willingness to start, despite not knowing how it will end.</p></div>
+</div>
+
+<!-- Q11 -->
+<div class="qblock"><div class="qnum">Question 11</div><div class="qtxt">Explain the concept of entrepreneurial motivation and the factors that influence it. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div><strong>Entrepreneurial motivation</strong> refers to the internal drive, desire, and energy that compels a person to start a business, take risks, persist through difficulties, and work toward building something of value. It is the answer to the question: <em>"Why would anyone leave a secure job, risk their savings, and work 80-hour weeks with no guarantee of success?"</em> Understanding what motivates entrepreneurs — and what factors influence that motivation — helps governments design better support systems, helps educators identify and nurture entrepreneurial talent, and helps aspiring entrepreneurs understand their own motivations more clearly.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li>Motivation theories: McClelland's nAch, Maslow's Hierarchy, Herzberg's Two-Factor Theory</li>
+      <li><strong>Push factors:</strong> Unemployment, job dissatisfaction, necessity, family pressure</li>
+      <li><strong>Pull factors:</strong> Profit, independence, opportunity, passion, recognition</li>
+      <li>Both internal (personal) and external (environmental) factors influence entrepreneurial motivation</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — What Motivates an Entrepreneur?</div>
+    <div class="flow-row"><div class="fbox red">Push Factors (Forced out)</div><div class="fdetail">Job loss, low salary, job dissatisfaction, unemployment, no growth in current job, family necessity — push the person toward entrepreneurship.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Pull Factors (Attracted in)</div><div class="fdetail">Desire for independence, profit opportunity, passion for an idea, social recognition, spotting a market gap — pull the person toward entrepreneurship.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox blue">Entrepreneurial Motivation Activated</div><div class="fdetail">The combination of push and pull, shaped by personal traits, family background, education, and environment — creates the drive to start a business.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">New Venture Created</div><div class="fdetail">Motivated entrepreneur takes the leap — starts the business, takes risks, and commits to building something meaningful.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Motivation Theories Relevant to Entrepreneurship</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>McClelland's Need for Achievement (nAch)</strong><p>People with high nAch are intrinsically motivated to excel, take responsibility, seek feedback, and set progressively higher goals. This is the strongest internal motivator for entrepreneurship — the deep personal drive to achieve something meaningful.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Maslow's Hierarchy of Needs</strong><p>Entrepreneurship can be motivated by different levels of Maslow's pyramid — from basic survival needs (starting a business because you lost your job) to self-actualization (starting a business to fulfil your life's purpose and realize your full potential).</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Herzberg's Two-Factor Theory</strong><p>Motivators like achievement, recognition, responsibility, and personal growth are the true drivers of entrepreneurial motivation. The absence of hygiene factors (job security, salary) — as in losing a job — can push a person toward entrepreneurship, but it is the motivators that sustain them through the difficult journey.</p></div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Factors Influencing Entrepreneurial Motivation — Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Personal Factors</strong><p>Desire for independence (being your own boss), need for achievement (nAch), self-confidence, risk appetite, and passion for a specific idea are the most powerful personal motivators. These come from within — they cannot be manufactured externally.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Financial Incentives</strong><p>The prospect of earning significantly more than a salaried job offers motivates many entrepreneurs. Building wealth, financial security, and freedom are powerful pull factors — especially for people from financially challenged backgrounds.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Family Background and Role Models</strong><p>People who grow up in entrepreneurial families, or who have a mentor or role model who is a successful entrepreneur, are significantly more likely to be motivated to start their own ventures. The Tata, Birla, and Ambani families are classic examples of multi-generational entrepreneurial motivation.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Education and Skills</strong><p>Entrepreneurship education — business management courses, startup workshops, incubation programs — builds the knowledge and confidence that motivate people to turn their ideas into action. Skills reduce the fear of starting by making the unknown feel manageable.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Market Opportunity</strong><p>Spotting a clear, large gap in the market — a problem that millions of people face and no one is solving well — is one of the strongest external motivators. Many of India's most successful startups were born from the founder's personal frustration with a problem (e.g., bad taxi service → Ola).</p></div></div>
+    <div class="exp-item"><div class="exp-num">6</div><div class="exp-body"><strong>Government Support and Ecosystem</strong><p>Schemes like Startup India, MUDRA loans, Atal Innovation Mission, and tax benefits for startups reduce the financial risk of entrepreneurship — making it more accessible and motivating to a wider population. A supportive ecosystem (incubators, angel networks, mentorship programs) further increases motivation.</p></div></div>
+    <div class="exp-item"><div class="exp-num">7</div><div class="exp-body"><strong>Cultural Environment</strong><p>In societies that celebrate entrepreneurial success stories — where founding a startup is seen as aspirational — more people are inspired to try. India's changing culture, where being a startup founder now carries high social prestige, has been a significant motivation for the current generation of entrepreneurs.</p></div></div>
+  </div>
+  <div class="diff-label">Difference — Push Factors vs Pull Factors</div>
+  <table class="diff-table">
+    <tr><th>Basis</th><th>Push Factors</th><th>Pull Factors</th></tr>
+    <tr><td>Definition</td><td>Negative circumstances that force a person into entrepreneurship</td><td>Positive opportunities that attract a person toward entrepreneurship</td></tr>
+    <tr><td>Nature</td><td>Reactive — driven by external pressures</td><td>Proactive — driven by internal desires and opportunities</td></tr>
+    <tr><td>Examples</td><td>Job loss, low salary, discrimination, family financial pressure</td><td>Desire for independence, profit opportunity, passion, market gap</td></tr>
+    <tr><td>Motivation quality</td><td>Often creates necessity-based entrepreneurs who may struggle</td><td>Creates opportunity-driven entrepreneurs who tend to build stronger businesses</td></tr>
+    <tr><td>Long-term sustainability</td><td>Lower — motivation fades once immediate problem is solved</td><td>Higher — intrinsic motivation sustains the entrepreneur through difficulties</td></tr>
+  </table>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Entrepreneurial motivation is a complex mix of personal desire, external opportunity, environmental support, and individual circumstances. The most successful and resilient entrepreneurs are typically those who are pulled toward entrepreneurship by genuine passion, a clear vision, and a deep desire to create something meaningful — rather than merely pushed into it by necessity. Understanding what motivates an entrepreneur — and nurturing those motivations — is the key to building a vibrant, innovative, and resilient entrepreneurial ecosystem in any country.</p></div>
+</div>
 
 </body>
 </html>

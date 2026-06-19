@@ -2,260 +2,433 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>OB PYQ 2024-2025 Sem 2 - Answers</title>
+<title>OB PYQ Answers 2024-2025 Sem 2</title>
 <style>
-  body { font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; color: #222; max-width: 900px; margin: 30px auto; padding: 0 20px; }
-  h1 { text-align: center; color: #1a3c6e; font-size: 22px; margin-bottom: 4px; }
-  h2.subtitle { text-align: center; font-size: 15px; color: #555; margin-top: 0; font-weight: normal; }
-  h2.group { background: #1a3c6e; color: #fff; padding: 8px 14px; border-radius: 4px; margin-top: 36px; font-size: 17px; }
-  h3.q { color: #1a3c6e; border-left: 4px solid #1a3c6e; padding-left: 10px; margin-top: 26px; font-size: 16px; }
-  .marks { float: right; background: #eef3fb; color: #1a3c6e; padding: 2px 10px; border-radius: 10px; font-size: 12px; font-weight: bold; }
-  p { margin: 8px 0; text-align: justify; }
-  ul, ol { margin: 6px 0 10px 22px; }
-  li { margin-bottom: 4px; }
-  table { border-collapse: collapse; width: 100%; margin: 10px 0; }
-  table, th, td { border: 1px solid #ccc; }
-  th, td { padding: 6px 10px; text-align: left; font-size: 14px; }
-  th { background: #f0f4fa; }
-  .blank-ans { background: #f7f9fc; border: 1px solid #dde5f0; padding: 10px 14px; border-radius: 5px; margin: 6px 0; }
-  .qtext { background: #fff8e6; border-left: 4px solid #d9a300; padding: 8px 14px; font-weight: 600; margin: 10px 0 0 0; }
-  hr { border: none; border-top: 1px solid #ddd; margin: 30px 0; }
-  .page-break { page-break-before: always; }
-  footer { text-align: center; font-size: 12px; color: #999; margin-top: 40px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 900px; margin: 30px auto; padding: 24px; color: #1a1a1a; background: #fff; line-height: 1.8; font-size: 14px; }
+  .header { text-align: center; border: 2px solid #1a3c6e; border-radius: 8px; padding: 18px; margin-bottom: 30px; background: #eef3fb; }
+  .header h1 { font-size: 15px; color: #1a3c6e; margin-bottom: 4px; }
+  .header h2 { font-size: 13px; font-weight: normal; color: #333; margin-top: 4px; }
+  .badge { display: inline-block; margin-top: 10px; background: #1a3c6e; color: #fff; padding: 4px 18px; border-radius: 20px; font-size: 12px; }
+  .group-banner { background: #1a3c6e; color: #fff; text-align: center; padding: 11px; border-radius: 6px; margin: 36px 0 20px; font-size: 15px; font-weight: bold; }
+  .qblock { border-left: 5px solid #1a3c6e; background: #f0f4fb; border-radius: 0 6px 6px 0; padding: 11px 16px; margin: 28px 0 4px; }
+  .qnum { font-size: 11px; color: #1a3c6e; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+  .qtxt { font-weight: bold; color: #1a1a1a; margin-top: 3px; font-size: 14px; }
+  .marks-tag { float: right; background: #1a3c6e; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 12px; margin-top: 2px; }
+  .ans { padding: 12px 4px 4px 4px; }
+  .intro { background: #dce8f8; border-left: 5px solid #2e6db4; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-bottom: 16px; font-size: 13.5px; }
+  .intro-label { font-size: 10px; font-weight: bold; color: #1a3c6e; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
+  .points-box { background: #fef9e7; border: 1px solid #f9ca74; border-radius: 6px; padding: 12px 16px; margin: 14px 0; }
+  .pts-label { font-size: 10px; font-weight: bold; color: #b7770d; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .points-box ul { padding-left: 20px; }
+  .points-box ul li { margin-bottom: 5px; font-size: 13.5px; }
+  .flow-wrap { margin: 18px 0; }
+  .flow-label { font-size: 10px; font-weight: bold; color: #6c3483; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+  .flow-row { display: flex; align-items: stretch; margin-bottom: 4px; }
+  .fbox { border-radius: 8px; padding: 9px 16px; font-size: 12.5px; font-weight: bold; text-align: center; min-width: 190px; color: #fff; }
+  .fbox.blue   { background: #1a3c6e; }
+  .fbox.green  { background: #1e8449; }
+  .fbox.orange { background: #ca6f1e; }
+  .fbox.teal   { background: #148f77; }
+  .fbox.purple { background: #6c3483; }
+  .fbox.red    { background: #922b21; }
+  .fdetail { background: #f0f4fb; border: 1px solid #b0c4de; border-radius: 6px; padding: 8px 14px; font-size: 12.5px; color: #222; margin-left: 14px; flex: 1; display: flex; align-items: center; }
+  .farrow { text-align: left; padding-left: 22px; color: #1a3c6e; font-size: 20px; line-height: 1; margin: 2px 0; }
+  .explain { margin: 16px 0; }
+  .explain-label { font-size: 10px; font-weight: bold; color: #1e8449; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+  .exp-item { display: flex; gap: 12px; margin-bottom: 12px; }
+  .exp-num { background: #1a3c6e; color: #fff; border-radius: 50%; width: 28px; height: 28px; min-width: 28px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; margin-top: 2px; }
+  .exp-body { flex: 1; }
+  .exp-body strong { color: #1a3c6e; font-size: 13.5px; }
+  .exp-body p { font-size: 13px; color: #333; margin-top: 2px; }
+  .conclusion { background: #eafaf1; border-left: 5px solid #27ae60; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-top: 18px; }
+  .con-label { font-size: 10px; font-weight: bold; color: #1e8449; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 5px; }
+  .conclusion p { font-size: 13.5px; }
+  .diff-label { font-size: 10px; font-weight: bold; color: #922b21; letter-spacing: 1.5px; text-transform: uppercase; margin: 16px 0 10px; }
+  .diff-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 14px; }
+  .diff-table th { padding: 9px 12px; text-align: left; font-size: 12px; }
+  .diff-table th:first-child { background: #2c3e50; color: #fff; width: 22%; }
+  .diff-table th:nth-child(2) { background: #1a3c6e; color: #fff; }
+  .diff-table th:nth-child(3) { background: #1e8449; color: #fff; }
+  .diff-table td { padding: 8px 12px; border-bottom: 1px solid #dce8f0; vertical-align: top; }
+  .diff-table td:first-child { background: #f4f6f7; font-weight: bold; color: #2c3e50; font-size: 12px; }
+  .diff-table tr:nth-child(even) td:nth-child(2) { background: #eef3fb; }
+  .diff-table tr:nth-child(even) td:nth-child(3) { background: #eafaf1; }
+  hr { border: none; border-top: 2px dashed #b0c4de; margin: 32px 0; }
+  strong { color: #1a3c6e; }
 </style>
 </head>
 <body>
 
-<h1>Organization Behaviour (MIM201A) — Previous Year Question Paper</h1>
-<h2 class="subtitle">CS/BBA(C)/EVEN/SEM-2/2500004/2024-2025/I187 &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Time: 3 Hours — Model Answers</h2>
+<div class="header">
+  <h1>MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL</h1>
+  <h2>Paper Code: MIM201A &nbsp;|&nbsp; Organization Behaviour &nbsp;|&nbsp; UPID: 2500004</h2>
+  <h2>Time: 3 Hours &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Semester 2 — 2024–2025</h2>
+  <span class="badge">Complete Answer Key — Exam Ready</span>
+</div>
 
-<h2 class="group">Group-A: Very Short Answer Type (1 × 10 = 10)</h2>
+<!-- ══ GROUP A ══ -->
+<div class="group-banner">GROUP-A &nbsp;|&nbsp; Fill in the Blanks / Short Answer &nbsp;|&nbsp; 1 × 10 = 10 Marks &nbsp;|&nbsp; Answer any TEN</div>
 
-<div class="qtext">(i) Hofstede's cultural dimensions theory identifies dimensions such as power distance, individualism vs. collectivism, and __________.</div>
-<div class="blank-ans"><b>Answer:</b> masculinity vs. femininity (also: uncertainty avoidance, long-term vs. short-term orientation)</div>
+<div class="qblock"><div class="qnum">Question i</div><div class="qtxt">Hofstede's cultural dimensions theory identifies dimensions such as power distance, individualism vs. collectivism, and __________.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Masculinity vs. Femininity</strong> (other dimensions: Uncertainty Avoidance, Long-term vs. Short-term Orientation, Indulgence vs. Restraint). Hofstede studied employees across 70+ countries to identify how national culture shapes workplace behavior.</div></div>
 
-<div class="qtext">(ii) __________ emphasized designing and managing organization on an impersonal, rational basis through such elements as clearly defined authority and responsibility, formal record keeping and uniform application of standard rule.</div>
-<div class="blank-ans"><b>Answer:</b> Bureaucracy (Max Weber's Bureaucratic Theory)</div>
+<div class="qblock"><div class="qnum">Question ii</div><div class="qtxt">__________ emphasized designing and managing organization on an impersonal, rational basis through clearly defined authority, formal record keeping and uniform application of standard rules.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Max Weber's Bureaucracy.</strong> Weber proposed that organizations should be run on rational, impersonal principles — with clearly defined roles, written rules, and formal records — instead of personal relationships or favoritism.</div></div>
 
-<div class="qtext">(iii) The personality type of people who believe that they are the masters of their destiny is __________.</div>
-<div class="blank-ans"><b>Answer:</b> Internal locus of control (Internals)</div>
+<div class="qblock"><div class="qnum">Question iii</div><div class="qtxt">The personality type of people who believe that they are the masters of their destiny is __________.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Internal Locus of Control (Internals).</strong> These people believe their outcomes are determined by their own actions and decisions. They take personal responsibility, work harder, and are generally more motivated than people with external locus of control (who blame luck or circumstances).</div></div>
 
-<div class="qtext">(iv) A group that is relatively permanent and is specified in the organizational structure is called __________.</div>
-<div class="blank-ans"><b>Answer:</b> Formal group</div>
+<div class="qblock"><div class="qnum">Question iv</div><div class="qtxt">A group that is relatively permanent and is specified in the organizational structure is called __________.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Formal Group.</strong> A formal group is officially created by the organization for a specific purpose — like a department, committee, or task force. It has a defined structure, roles, and authority. Example: the Finance Department or the HR Committee.</div></div>
 
-<div class="qtext">(v) Employees engaged in organizational politics often use tactics such as __________ to gain power and influence within the organization.</div>
-<div class="blank-ans"><b>Answer:</b> networking, coalition building, impression management, controlling information</div>
+<div class="qblock"><div class="qnum">Question v</div><div class="qtxt">Employees engaged in organizational politics often use tactics such as __________ to gain power and influence.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Networking, coalition building, impression management, and controlling information.</strong> These are the common political tactics employees use to build influence beyond their formal authority — especially when resources are scarce or decisions are ambiguous.</div></div>
 
-<div class="qtext">(vi) Managing __________ teams requires understanding and leveraging cultural differences for effective collaboration.</div>
-<div class="blank-ans"><b>Answer:</b> Cross-cultural (multicultural/virtual global) teams</div>
+<div class="qblock"><div class="qnum">Question vi</div><div class="qtxt">Managing __________ teams requires understanding and leveraging cultural differences for effective collaboration.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Cross-cultural (multicultural / global) teams.</strong> These are teams made up of members from different countries and cultures. Managing them requires cultural sensitivity, clear communication norms, and an understanding of how different cultures approach hierarchy, conflict, and decision-making.</div></div>
 
-<div class="qtext">(vii) The first set of Hawthorne experiments dealing with lighting, the main conclusion was that __________.</div>
-<div class="blank-ans"><b>Answer:</b> Changes in physical working conditions (like lighting) had little effect on productivity — psychological and social factors, like being observed and feeling important, mattered more.</div>
+<div class="qblock"><div class="qnum">Question vii</div><div class="qtxt">The first set of Hawthorne experiments dealing with lighting — the main conclusion was that __________.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div>Changes in physical working conditions (like lighting) had <strong>little direct effect on productivity.</strong> What actually mattered was that workers felt they were being observed and cared about — this psychological feeling of being special boosted their performance. This is called the <strong>Hawthorne Effect.</strong></div></div>
 
-<div class="qtext">(viii) __________ determines the behaviour of individuals and workgroups and affects the overall performance of the organisation.</div>
-<div class="blank-ans"><b>Answer:</b> Organizational culture</div>
+<div class="qblock"><div class="qnum">Question viii</div><div class="qtxt">__________ determines the behaviour of individuals and workgroups and affects the overall performance of the organisation.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Organizational Culture.</strong> It is the shared set of values, beliefs, norms, and practices that define how people think and behave inside an organization. A strong positive culture leads to high performance; a toxic culture leads to low morale and poor results.</div></div>
 
-<div class="qtext">(ix) In group development, a leader unites the team with motivation. This stage is called __________.</div>
-<div class="blank-ans"><b>Answer:</b> Norming (some texts call it Performing if motivation accompanies unity, but the standard Tuckman stage where the team unites is "Norming")</div>
+<div class="qblock"><div class="qnum">Question ix</div><div class="qtxt">In group development, a leader unites the team with motivation. This stage is called __________.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Norming</strong> (Tuckman's Model of Group Development). In the Norming stage, conflicts settle down, team members develop mutual respect, and the leader brings the group together — building unity, shared norms, and motivated collaboration.</div></div>
 
-<div class="qtext">(x) Organizational politics can lead to __________ among employees and can undermine trust and collaboration within teams.</div>
-<div class="blank-ans"><b>Answer:</b> conflict, stress, and distrust</div>
+<div class="qblock"><div class="qnum">Question x</div><div class="qtxt">Organizational politics can lead to __________ among employees and can undermine trust and collaboration.</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Conflict, stress, and distrust.</strong> When employees engage in political behavior — manipulating information, forming secret alliances, or undermining colleagues — it creates a toxic environment where teamwork and honest communication break down.</div></div>
 
-<div class="qtext">(xi) Why is cultural sensitivity important for effective cross-cultural communication in international business?</div>
-<div class="blank-ans"><b>Answer:</b> Cultural sensitivity helps people understand and respect different values, communication styles, and customs, reducing misunderstandings and building trust, which makes cross-cultural communication in international business more effective and avoids costly cultural mistakes.</div>
+<div class="qblock"><div class="qnum">Question xi</div><div class="qtxt">Why is cultural sensitivity important for effective cross-cultural communication in international business?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Cultural sensitivity</strong> means understanding and respecting the values, customs, and communication styles of other cultures. In international business, it prevents misunderstandings that can destroy business relationships, helps build trust with partners and clients from different backgrounds, and allows companies to adapt their products, marketing, and management style to local expectations — making them more successful globally.</div></div>
 
-<div class="qtext">(xii) As per which approach, factors like Technology, Environment and Organization size should be considered for designing more effective organizational structure?</div>
-<div class="blank-ans"><b>Answer:</b> Contingency Approach (to organizational design)</div>
-
-<h2 class="group page-break">Group-B: Short Answer Type (5 × 3 = 15)</h2>
-
-<h3 class="q">Q2. Describe Contingency Approach. <span class="marks">5 Marks</span></h3>
-<div class="qtext">Question: Describe Contingency Approach.</div>
-<p>The Contingency Approach states that there is no single "best" way to manage or organize a company — the right management style, structure, or strategy depends on the specific situation a manager faces. It is a reaction against the "one-size-fits-all" classical approach.</p>
-<p>Key situational factors (contingency variables) that influence the right approach include:</p>
-<ul>
-<li><b>Environment:</b> Whether the external environment is stable or rapidly changing.</li>
-<li><b>Technology:</b> Routine technology favors rigid structures; complex technology needs flexible ones.</li>
-<li><b>Organization size:</b> Large organizations need more formal rules than small ones.</li>
-<li><b>People involved:</b> Employees' skills, values, and expectations.</li>
-</ul>
-<p>For example, a mechanistic (rigid, rule-based) structure works well in a stable environment, while an organic (flexible, adaptive) structure suits a fast-changing environment. The contingency approach encourages managers to diagnose their unique situation before choosing leadership style, organizational design, or motivational technique.</p>
-
-<h3 class="q">Q3. Explain the difference between leaders and managers. <span class="marks">5 Marks</span></h3>
-<div class="qtext">Question: Explain the difference between leaders and managers.</div>
-<p>Although the terms are often used interchangeably, leadership and management are different concepts:</p>
-<table>
-<tr><th>Basis</th><th>Manager</th><th>Leader</th></tr>
-<tr><td>Focus</td><td>Planning, organizing, controlling resources</td><td>Inspiring and guiding people toward a vision</td></tr>
-<tr><td>Source of power</td><td>Formal authority/position</td><td>Personal influence and trust</td></tr>
-<tr><td>Approach</td><td>Maintains order and stability</td><td>Drives change and innovation</td></tr>
-<tr><td>Relationship with people</td><td>Directs subordinates</td><td>Motivates and empowers followers</td></tr>
-<tr><td>Goal orientation</td><td>Achieves organizational goals efficiently</td><td>Creates and communicates a vision for the future</td></tr>
-</table>
-<p>In short, managers do things right (efficiency), while leaders do the right things (effectiveness and direction). A good manager is not always a leader, and a good leader does not always hold managerial authority, though the most effective people in an organization combine both qualities.</p>
-
-<h3 class="q">Q4. State general differences between work groups and work teams. <span class="marks">5 Marks</span></h3>
-<div class="qtext">Question: State general differences between work groups and work teams.</div>
-<table>
-<tr><th>Basis</th><th>Work Group</th><th>Work Team</th></tr>
-<tr><td>Goal</td><td>Members share information and make decisions to help each do their own job better</td><td>Members work toward a common, collective goal</td></tr>
-<tr><td>Synergy</td><td>Neutral or even negative synergy</td><td>Positive synergy — output greater than sum of inputs</td></tr>
-<tr><td>Accountability</td><td>Individual accountability</td><td>Individual and mutual (joint) accountability</td></tr>
-<tr><td>Skills</td><td>Random and varied skills</td><td>Complementary skills</td></tr>
-<tr><td>Leadership</td><td>Strong, single leader</td><td>Shared/rotating leadership roles</td></tr>
-</table>
-<p>In short, a group is a collection of individuals working somewhat independently, while a team is a tightly coordinated unit working interdependently toward one shared objective.</p>
-
-<h3 class="q">Q5. Define authority and how is it different from power. <span class="marks">5 Marks</span></h3>
-<div class="qtext">Question: Define authority and how is it different from power.</div>
-<p><b>Authority</b> is the formal, legitimate right granted to a person by virtue of their position in the organizational hierarchy to give orders, make decisions, and direct subordinates to act in a certain way. It flows downward through the formal chain of command and is recognized officially by the organization.</p>
-<p><b>Power</b>, on the other hand, is the broader capacity or ability of a person to influence the behaviour of others so that they act according to one's wishes — regardless of formal position.</p>
-<p><b>Key differences:</b></p>
-<ul>
-<li>Authority is always formal/legitimate; power can be formal or informal.</li>
-<li>Authority comes with the position (e.g., a manager's title); power can come from expertise, charisma, control of resources, or information, even without holding a position.</li>
-<li>Authority is a subset of power — every person with authority has power, but a person can have power without having formal authority (e.g., an informal leader in a team).</li>
-</ul>
-
-<h3 class="q">Q6. Write in brief about McGregor's Theory X and Theory Y. <span class="marks">5 Marks</span></h3>
-<div class="qtext">Question: Write in brief about McGregor's Theory X and Theory Y.</div>
-<p>Douglas McGregor proposed two contrasting sets of assumptions managers hold about employee motivation:</p>
-<p><b>Theory X (negative view):</b> Assumes employees inherently dislike work, are lazy, avoid responsibility, and must be closely supervised, directed, and controlled — often through threats and strict rules — to achieve organizational goals.</p>
-<p><b>Theory Y (positive view):</b> Assumes employees can enjoy work, are self-motivated, capable of self-direction, willingly accept responsibility, and can exercise creativity if given the right environment and trust.</p>
-<p>Managers who believe in Theory X tend to adopt an authoritarian, controlling management style, whereas Theory Y managers adopt a participative, empowering style that focuses on building trust and offering autonomy. McGregor argued that Theory Y assumptions generally lead to higher motivation and better long-term performance.</p>
-
-<h2 class="group page-break">Group-C: Long Answer Type (15 × 3 = 45)</h2>
-
-<h3 class="q">Q7. Group cohesiveness — causes and consequences <span class="marks">15 Marks</span></h3>
-<div class="qtext">Question: What do you mean by group cohesiveness? Discuss in detail the causes and consequences of group cohesiveness in an organization.</div>
-<p><b>Meaning:</b> Group cohesiveness refers to the degree to which members of a group are attracted to one another, feel a sense of belonging, and are motivated to stay in and contribute to the group. A highly cohesive group acts and feels like a unified whole, with members supporting each other and sharing common goals.</p>
-
-<p><b>Causes (factors that increase cohesiveness):</b></p>
-<ul>
-<li><b>Similarity of members:</b> Shared attitudes, values, and backgrounds increase mutual liking.</li>
-<li><b>Small group size:</b> Smaller groups allow more interaction and stronger bonds than large ones.</li>
-<li><b>Proximity/frequent interaction:</b> Members who work close together or interact often build stronger relationships.</li>
-<li><b>Common goals and shared success:</b> Working toward and achieving a shared objective unites members.</li>
-<li><b>External threat or competition:</b> Facing a common rival or challenge from outside often pulls a group closer together.</li>
-<li><b>Group status and exclusivity:</b> Being part of a prestigious or selective group increases members' desire to belong.</li>
-<li><b>Time spent together:</b> Longer association allows trust to build.</li>
-</ul>
-
-<p><b>Consequences of group cohesiveness:</b></p>
-<p><i>Positive consequences:</i></p>
-<ul>
-<li>Higher member satisfaction and lower turnover/absenteeism.</li>
-<li>Better communication and cooperation among members.</li>
-<li>Increased productivity, <i>provided</i> the group's goals align with organizational goals.</li>
-<li>Greater willingness to support and help each other, raising morale.</li>
-</ul>
-<p><i>Negative consequences:</i></p>
-<ul>
-<li><b>Groupthink:</b> Excessive cohesiveness can suppress independent or critical thinking, leading to poor decisions.</li>
-<li>If group goals conflict with organizational goals, high cohesiveness can actually <i>reduce</i> overall productivity (e.g., a cohesive group restricting output together).</li>
-<li>Resistance to new members or outside ideas, leading to insularity.</li>
-</ul>
-<p><b>Conclusion:</b> Cohesiveness is generally beneficial, but managers must ensure that the group's goals are aligned with the organization's goals, otherwise a tightly-knit group can work efficiently in a direction that hurts the organization.</p>
-
-<h3 class="q">Q8. Techniques for managing stress, individually and at the workplace <span class="marks">15 Marks</span></h3>
-<div class="qtext">Question: Discuss the various techniques for managing strength both individually and at the workplace.</div>
-<p><i>(Note: this question is generally about managing "stress" — read as "strength/stress management techniques" individually and organizationally.)</i></p>
-<p>Stress arises when job demands exceed an individual's ability to cope. It can be managed at two levels:</p>
-
-<p><b>A. Individual-level techniques:</b></p>
-<ul>
-<li><b>Time management:</b> Prioritizing tasks, setting realistic deadlines, and avoiding procrastination reduces pressure.</li>
-<li><b>Physical exercise:</b> Regular exercise (walking, yoga, sports) releases tension and improves mood and energy.</li>
-<li><b>Relaxation techniques:</b> Meditation, deep breathing, and mindfulness lower physiological arousal caused by stress.</li>
-<li><b>Social support network:</b> Talking to friends, family, or colleagues helps release frustration and gain perspective.</li>
-<li><b>Maintaining work-life balance:</b> Setting boundaries between work and personal life prevents burnout.</li>
-<li><b>Cognitive restructuring:</b> Changing how one interprets stressful situations (viewing them as challenges rather than threats).</li>
-</ul>
-
-<p><b>B. Organizational-level techniques:</b></p>
-<ul>
-<li><b>Improved selection and placement:</b> Matching the right person to the right job to avoid role mismatch stress.</li>
-<li><b>Goal setting:</b> Setting clear, specific, and achievable goals reduces ambiguity-related stress.</li>
-<li><b>Redesigning jobs:</b> Giving employees more autonomy, variety, and meaningful tasks reduces monotony-related stress.</li>
-<li><b>Improved organizational communication:</b> Keeping employees informed reduces uncertainty and role ambiguity.</li>
-<li><b>Employee wellness/assistance programs:</b> Offering counseling, health screenings, and stress-management workshops.</li>
-<li><b>Flexible work arrangements:</b> Options like flexible hours or remote work help employees manage personal and professional demands.</li>
-</ul>
-<p><b>Conclusion:</b> Effective stress management requires a combination of personal coping strategies and supportive organizational policies, since stress originates from both individual and work-environment factors.</p>
-
-<h3 class="q">Q9. Hofstede's Cultural Dimensions Theory and its implications for international management <span class="marks">15 Marks</span></h3>
-<div class="qtext">Question: Explain Hofstede's cultural dimensions theory and discuss its implications for international management practices. Provide examples of how these dimensions impact organizational behavior.</div>
-<p>Geert Hofstede studied employees across many countries and identified dimensions along which national cultures differ. These help managers understand how culture shapes workplace behaviour. The key dimensions are:</p>
-<ol>
-<li><b>Power Distance:</b> The degree to which less powerful members of a society accept unequal power distribution. <i>High power distance</i> (e.g., India, Malaysia) — employees expect clear hierarchy and respect authority. <i>Low power distance</i> (e.g., Denmark, Sweden) — employees expect participative, egalitarian relationships with managers.</li>
-<li><b>Individualism vs. Collectivism:</b> Individualist cultures (e.g., USA, UK) value personal achievement and independence; collectivist cultures (e.g., China, Japan) value group loyalty and harmony.</li>
-<li><b>Masculinity vs. Femininity:</b> Masculine cultures (e.g., Japan) emphasize competitiveness, achievement, and material success; feminine cultures (e.g., Netherlands, Norway) emphasize cooperation, quality of life, and caring for others.</li>
-<li><b>Uncertainty Avoidance:</b> The degree to which people feel uncomfortable with ambiguity and unstructured situations. High uncertainty-avoidance cultures (e.g., Greece, Japan) prefer strict rules and structure; low ones (e.g., Singapore) are more comfortable with ambiguity and change.</li>
-<li><b>Long-term vs. Short-term Orientation:</b> Long-term oriented cultures (e.g., China) value persistence, thrift, and future rewards; short-term oriented cultures value quick results and tradition.</li>
-</ol>
-
-<p><b>Implications for international management:</b></p>
-<ul>
-<li><b>Leadership style:</b> In high power-distance cultures, directive leadership is more accepted; in low power-distance cultures, participative leadership works better.</li>
-<li><b>Team design:</b> In collectivist cultures, team-based rewards and group harmony work better than individual competition, which suits individualist cultures.</li>
-<li><b>HR policies:</b> Performance appraisal and reward systems need to be adapted — individual bonuses may motivate in the US but cause discomfort in collectivist Japan.</li>
-<li><b>Communication style:</b> In high uncertainty-avoidance cultures, detailed contracts and clear instructions are preferred over open-ended, flexible arrangements.</li>
-<li><b>Negotiation and decision making:</b> Long-term oriented cultures may favor patient, relationship-based negotiation, while short-term oriented cultures may seek quick deals.</li>
-</ul>
-<p><b>Conclusion:</b> Hofstede's framework helps international managers avoid a "one-size-fits-all" approach, tailoring leadership, motivation, and HR practices to the cultural context of each country in which they operate.</p>
-
-<h3 class="q">Q10. Need for knowledge of OB to a practicing manager <span class="marks">15 Marks</span></h3>
-<div class="qtext">Question: Highlight the need for knowledge of OB to practicing manager.</div>
-<p>Organizational Behaviour (OB) is the systematic study of how individuals and groups behave within organizations. Knowledge of OB is essential to a practicing manager for the following reasons:</p>
-<ul>
-<li><b>Understanding employee behaviour:</b> OB helps managers understand why employees act, think, and feel the way they do, enabling better prediction and management of their actions.</li>
-<li><b>Improving motivation:</b> Knowledge of motivation theories (Maslow, Herzberg, McGregor, etc.) helps managers design reward systems and job conditions that boost employee performance.</li>
-<li><b>Effective leadership:</b> OB equips managers with leadership styles and skills to influence and guide teams toward organizational goals.</li>
-<li><b>Better communication:</b> Understanding interpersonal and group dynamics improves communication, reducing misunderstandings and conflicts.</li>
-<li><b>Conflict management:</b> OB provides tools to identify the sources of conflict and resolve them constructively, maintaining a healthy work environment.</li>
-<li><b>Managing change:</b> OB knowledge helps managers anticipate resistance to change and implement change management strategies effectively.</li>
-<li><b>Improving group/team performance:</b> Insight into group dynamics, cohesiveness, and team-building helps managers create high-performing teams.</li>
-<li><b>Enhancing job satisfaction and reducing turnover:</b> Understanding employee attitudes helps design jobs and policies that increase satisfaction and retention.</li>
-<li><b>Handling diversity and culture:</b> In today's globalized workplace, OB helps managers manage cross-cultural and diverse teams effectively.</li>
-<li><b>Organizational effectiveness:</b> Ultimately, applying OB principles helps achieve higher productivity, employee well-being, and overall organizational success.</li>
-</ul>
-<p><b>Conclusion:</b> Since management is fundamentally about getting work done through people, a sound understanding of OB is not optional but essential for any manager who wants to lead effectively, build strong teams, and achieve sustainable organizational performance.</p>
-
-<h3 class="q">Q11. Interpersonal vs. structural resources of power; political behaviour and its causes <span class="marks">15 Marks</span></h3>
-<div class="qtext">Question: Compare and contrast interpersonal and structural resources of power in organisations. Define political behaviour. What are some of the factors that can contribute to organisational politics?</div>
-<p><b>Interpersonal sources of power</b> arise from a person's individual characteristics and relationships, regardless of their formal position. French and Raven identified five bases of power, most of which are interpersonal:</p>
-<ul>
-<li><b>Reward power:</b> Ability to give rewards (raises, promotions, praise).</li>
-<li><b>Coercive power:</b> Ability to punish or threaten negative consequences.</li>
-<li><b>Legitimate power:</b> Power derived from one's formal position/authority.</li>
-<li><b>Expert power:</b> Power based on special skills, knowledge, or expertise.</li>
-<li><b>Referent power:</b> Power based on personal charisma, likability, or admiration others have for the person.</li>
-</ul>
-
-<p><b>Structural sources of power</b> arise from a person's position within the organization's structure and their access to key resources, regardless of their personal traits:</p>
-<ul>
-<li><b>Resources:</b> Control over budgets, staff, equipment, or information gives power.</li>
-<li><b>Decision-making authority:</b> Being part of key decisions increases influence.</li>
-<li><b>Information:</b> Access to and control of important information makes a person indispensable.</li>
-<li><b>Network centrality:</b> Occupying a central position in communication or social networks increases influence.</li>
-</ul>
-<p><b>Comparison:</b> Interpersonal power is tied to the person (their traits, expertise, charisma) and travels with them even if they change jobs, whereas structural power is tied to the position/role and is lost once the person leaves that role.</p>
-
-<p><b>Political behaviour:</b> Political behaviour refers to activities that are not officially sanctioned by the organization, undertaken by individuals or groups to acquire, develop, or use power and other resources to obtain their preferred outcomes in situations of uncertainty or disagreement.</p>
-
-<p><b>Factors contributing to organizational politics:</b></p>
-<ul>
-<li><b>Scarcity of resources:</b> When resources (budget, promotions, recognition) are limited, competition leads to political behaviour.</li>
-<li><b>Ambiguous goals and rules:</b> Unclear policies or performance criteria create room for manipulation and self-interest.</li>
-<li><b>Complex/decentralized decision-making:</b> The more people involved in decisions, the more opportunity for coalition-building and politicking.</li>
-<li><b>High stakes/uncertainty:</b> Important decisions with unclear outcomes (e.g., restructuring, promotions) encourage political maneuvering.</li>
-<li><b>Performance evaluation systems:</b> Subjective or poorly defined appraisal systems can be more easily influenced through politics.</li>
-<li><b>Individual personality traits:</b> Employees high in need for power, Machiavellianism, or self-monitoring are more likely to engage in political behaviour.</li>
-<li><b>Organizational culture:</b> A culture that tolerates or rewards political tactics encourages further political behaviour.</li>
-</ul>
-<p><b>Conclusion:</b> While power can stem from both personal qualities and structural position, organizational politics emerges when resources are scarce and rules are ambiguous, making it important for managers to create transparent systems to minimize its negative effects.</p>
+<div class="qblock"><div class="qnum">Question xii</div><div class="qtxt">As per which approach, factors like Technology, Environment and Organisation size should be considered for designing a more effective organisational structure?</div></div>
+<div class="ans"><div class="intro"><div class="intro-label">Answer</div><strong>Contingency Approach</strong> (also called Situational Approach). It says there is no one best way to structure or manage an organization — the right design depends on situational factors like the technology used, the nature of the external environment (stable or dynamic), and the size of the organization.</div></div>
 
 <hr>
-<footer>Prepared as study material for MIM201A — Organization Behaviour | For educational/revision purposes</footer>
+
+<!-- ══ GROUP B ══ -->
+<div class="group-banner">GROUP-B &nbsp;|&nbsp; Short Answer Type &nbsp;|&nbsp; 5 × 3 = 15 Marks &nbsp;|&nbsp; Answer any THREE</div>
+
+<!-- Q2 -->
+<div class="qblock"><div class="qnum">Question 2</div><div class="qtxt">Describe Contingency Approach. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>The Contingency Approach is one of the most practical and widely accepted theories of management. It argues that there is <strong>no single best way</strong> to manage or organize a business. The right approach always depends on the specific situation — the environment, technology, people, and size of the organization. A good manager must first study the situation, then choose the most suitable management style.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li>No universal "one-size-fits-all" management style</li>
+      <li>Right structure depends on: environment, technology, size, and people</li>
+      <li>Stable environment → mechanistic (rigid) structure</li>
+      <li>Dynamic environment → organic (flexible) structure</li>
+      <li>Managers must diagnose the situation before deciding</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — Contingency Approach Logic</div>
+    <div class="flow-row"><div class="fbox blue">Identify the Situation</div><div class="fdetail">What is the environment like? Is technology simple or complex? How big is the organization?</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Analyse Key Variables</div><div class="fdetail">Environment (stable/dynamic) → Technology (routine/complex) → Size (small/large) → People (skilled/unskilled)</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Choose the Right Approach</div><div class="fdetail">Stable + large = Mechanistic structure (formal rules, clear hierarchy). Dynamic + small = Organic structure (flexible, decentralized).</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Implement &amp; Review</div><div class="fdetail">Apply the chosen management style, monitor results, and adapt again if the situation changes.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Explanation of Key Variables</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Environment</strong><p>A stable environment (like manufacturing standard products) favors rigid, rule-based structures. A fast-changing environment (like tech startups or fashion) requires flexible, adaptive structures where decisions can be made quickly at lower levels.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Technology</strong><p>Routine technology (assembly line) works best with a structured, formal organization. Complex or innovative technology needs a flexible organization where employees have freedom to experiment and problem-solve.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Organisation Size</strong><p>Large organizations need more formal rules, clear authority, and standardized processes to coordinate many people. Small organizations can be informal and rely on direct communication.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>People</strong><p>Highly skilled, experienced employees may prefer autonomy and participative management. Less experienced employees may need more direction and closer supervision.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>The Contingency Approach teaches managers to be flexible thinkers — not to follow a fixed formula, but to read their situation carefully and choose the management style that fits best. It is the most realistic approach to managing complex, changing organizations.</p></div>
+</div>
+
+<!-- Q3 -->
+<div class="qblock"><div class="qnum">Question 3</div><div class="qtxt">Explain the difference between leaders and managers. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>Although the words "leader" and "manager" are often used as if they mean the same thing, they are actually quite different. A <strong>manager</strong> focuses on organizing, planning, and controlling resources to achieve set goals. A <strong>leader</strong> focuses on inspiring, motivating, and guiding people toward a vision. The most effective people in any organization combine both — but understanding the difference is essential for organizational behaviour.</div>
+  <div class="points-box"><div class="pts-label">Key Differences at a Glance</div>
+    <ul>
+      <li>Manager = does things right | Leader = does the right things</li>
+      <li>Manager gets authority from their position | Leader gets it from personal influence</li>
+      <li>Manager maintains stability | Leader drives change</li>
+      <li>Manager has subordinates | Leader has followers</li>
+    </ul>
+  </div>
+  <div class="diff-label">Difference Table — Manager vs Leader</div>
+  <table class="diff-table">
+    <tr><th>Basis of Difference</th><th>Manager</th><th>Leader</th></tr>
+    <tr><td>Focus</td><td>Planning, organizing, and controlling day-to-day operations</td><td>Inspiring people and guiding them toward a long-term vision</td></tr>
+    <tr><td>Source of Power</td><td>Formal authority — comes from the job title/position</td><td>Personal influence — comes from trust, charisma, and expertise</td></tr>
+    <tr><td>Approach to Work</td><td>Maintains order, follows processes, reduces risk</td><td>Drives change, takes calculated risks, challenges the status quo</td></tr>
+    <tr><td>Relationship with People</td><td>Directs and supervises subordinates</td><td>Motivates and empowers followers</td></tr>
+    <tr><td>Key Question</td><td>"How do we do this correctly?"</td><td>"Why are we doing this, and is it the right thing?"</td></tr>
+    <tr><td>Time Horizon</td><td>Short-term — focused on current targets and deadlines</td><td>Long-term — focused on vision and future direction</td></tr>
+    <tr><td>Famous Quote</td><td>"Managers do things right" — Warren Bennis</td><td>"Leaders do the right things" — Warren Bennis</td></tr>
+  </table>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>A good organization needs both managers and leaders. Managers ensure smooth daily operations, while leaders provide direction and inspiration. The best professionals develop both sets of skills — they manage systems and processes, while leading and motivating the people around them.</p></div>
+</div>
+
+<!-- Q4 -->
+<div class="qblock"><div class="qnum">Question 4</div><div class="qtxt">State general differences between work groups and work teams. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>Many people use "group" and "team" interchangeably, but in Organizational Behaviour they are distinctly different. A <strong>work group</strong> is a collection of people who share information and work independently — each person does their own job. A <strong>work team</strong> is a tightly connected unit where members work together interdependently toward one shared collective goal, producing results that are greater than what any individual could achieve alone.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li>Group: individual effort + individual accountability</li>
+      <li>Team: collective effort + mutual accountability</li>
+      <li>Team produces positive synergy — output &gt; sum of individual inputs</li>
+      <li>Teams have complementary skills; groups may have random skills</li>
+    </ul>
+  </div>
+  <div class="diff-label">Difference Table — Work Group vs Work Team</div>
+  <table class="diff-table">
+    <tr><th>Basis of Difference</th><th>Work Group</th><th>Work Team</th></tr>
+    <tr><td>Goal</td><td>Members share information to help each person do their own job better</td><td>Members work together toward one common collective goal</td></tr>
+    <tr><td>Synergy</td><td>Neutral or negative — no extra output from working together</td><td>Positive synergy — combined output is greater than individual outputs added together</td></tr>
+    <tr><td>Accountability</td><td>Individual — each person is responsible only for their own work</td><td>Both individual and mutual — members are jointly responsible for the team's result</td></tr>
+    <tr><td>Skills</td><td>Random and varied — members may have unrelated skills</td><td>Complementary — each member's skills fill a gap needed by the team</td></tr>
+    <tr><td>Leadership</td><td>Single, strong formal leader who directs the group</td><td>Shared or rotating leadership — members lead in their area of expertise</td></tr>
+    <tr><td>Interdependence</td><td>Low — members work relatively independently</td><td>High — members rely on each other constantly</td></tr>
+    <tr><td>Example</td><td>A group of doctors in different departments who share patient data</td><td>A surgical team — surgeon, anesthesiologist, nurses — working together on one patient</td></tr>
+  </table>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>While both groups and teams involve multiple people, teams produce far better results when tasks require coordination, creativity, and interdependence. Organizations should build true teams — with shared goals, mutual accountability, and complementary skills — to achieve high performance.</p></div>
+</div>
+
+<!-- Q5 -->
+<div class="qblock"><div class="qnum">Question 5</div><div class="qtxt">Define authority and how is it different from power. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>In organizations, <strong>authority</strong> and <strong>power</strong> are two closely related but different concepts. Authority is the formal, official right to give orders and make decisions — it comes with your job title. Power is broader — it is the ability to influence others' behavior, whether or not you hold a formal position. Every person with authority has power, but a person can have significant power without any formal authority at all.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li>Authority = formal right granted by the organization through a position</li>
+      <li>Power = ability to influence others' behavior (formal or informal)</li>
+      <li>Authority is always a subset of power</li>
+      <li>Power can come from expertise, relationships, charisma, or control of resources</li>
+      <li>A person can have power without authority (e.g., an informal team leader)</li>
+    </ul>
+  </div>
+  <div class="diff-label">Difference Table — Authority vs Power</div>
+  <table class="diff-table">
+    <tr><th>Basis of Difference</th><th>Authority</th><th>Power</th></tr>
+    <tr><td>Definition</td><td>Formal, legitimate right to give orders and make decisions</td><td>Broader ability to influence others' behavior in any way</td></tr>
+    <tr><td>Source</td><td>Comes from the organizational position / job title</td><td>Can come from expertise, charisma, relationships, information, or resources</td></tr>
+    <tr><td>Nature</td><td>Always formal and officially recognized</td><td>Can be formal (through position) or informal (through personal traits)</td></tr>
+    <tr><td>Direction</td><td>Flows downward through the chain of command</td><td>Can flow in any direction — upward, downward, or sideways</td></tr>
+    <tr><td>Dependency</td><td>Lost when the person leaves the position</td><td>Personal power (expertise, charisma) travels with the person</td></tr>
+    <tr><td>Example</td><td>A manager ordering their team to complete a report by Friday</td><td>A senior technical expert influencing decisions even without a management title</td></tr>
+  </table>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Authority gives a manager the right to lead, but power gives them the real ability to influence. The most effective leaders combine both — using their formal authority wisely while also building personal power through expertise, trust, and strong relationships with their team.</p></div>
+</div>
+
+<!-- Q6 -->
+<div class="qblock"><div class="qnum">Question 6</div><div class="qtxt">Write in brief about McGregor's Theory X and Theory Y. <span class="marks-tag">5 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>Douglas McGregor, in his 1960 book <em>The Human Side of Enterprise</em>, proposed two contrasting sets of assumptions that managers hold about their employees. He called these <strong>Theory X</strong> (negative view) and <strong>Theory Y</strong> (positive view). These assumptions shape the way managers treat their employees, design jobs, and set up control systems. McGregor argued that most traditional management was based on Theory X, but that Theory Y assumptions lead to better motivation and performance.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li>Theory X: employees dislike work, need to be controlled, avoid responsibility</li>
+      <li>Theory Y: employees enjoy work, are self-motivated, seek responsibility</li>
+      <li>Theory X → authoritarian, controlling management style</li>
+      <li>Theory Y → participative, empowering management style</li>
+      <li>McGregor preferred Theory Y for long-term motivation and performance</li>
+    </ul>
+  </div>
+  <div class="diff-label">Difference Table — Theory X vs Theory Y</div>
+  <table class="diff-table">
+    <tr><th>Basis of Difference</th><th>Theory X</th><th>Theory Y</th></tr>
+    <tr><td>View of Employees</td><td>Employees are lazy, dislike work, and avoid it if they can</td><td>Employees find work natural — like rest or play — and enjoy it</td></tr>
+    <tr><td>Motivation</td><td>Must be forced, threatened, or bribed to work</td><td>Self-motivated — work for personal satisfaction and growth</td></tr>
+    <tr><td>Responsibility</td><td>Avoid responsibility; prefer to be told what to do</td><td>Willingly accept and seek responsibility</td></tr>
+    <tr><td>Creativity</td><td>Most employees have little creativity or imagination</td><td>Creativity and problem-solving ability are widely distributed among employees</td></tr>
+    <tr><td>Management Style</td><td>Authoritarian — close supervision, strict rules, punishment-based</td><td>Participative — trust employees, give autonomy, focus on development</td></tr>
+    <tr><td>Result</td><td>Compliance — employees do just enough to avoid punishment</td><td>Commitment — employees give their best because they care about their work</td></tr>
+  </table>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>McGregor's framework reminds managers that how they think about their employees directly shapes how they manage them — and in turn, how those employees perform. Modern management has moved heavily toward Theory Y thinking, recognizing that employees who are trusted, empowered, and given meaningful work consistently outperform those who are controlled and supervised.</p></div>
+</div>
+
+<hr>
+
+<!-- ══ GROUP C ══ -->
+<div class="group-banner">GROUP-C &nbsp;|&nbsp; Long Answer Type &nbsp;|&nbsp; 15 × 3 = 45 Marks &nbsp;|&nbsp; Answer any THREE</div>
+
+<!-- Q7 -->
+<div class="qblock"><div class="qnum">Question 7</div><div class="qtxt">What do you mean by group cohesiveness? Discuss in detail the causes and consequences of group cohesiveness in an organization. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div><strong>Group cohesiveness</strong> refers to the degree to which members of a group are attracted to one another, feel a sense of belonging, and are motivated to stay in and contribute to the group. Think of it as the "glue" that holds a group together. A highly cohesive group feels and acts like a unified whole — members support each other, communicate openly, and share a common identity and purpose. It is one of the most important factors that determines how effectively a group performs.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li><strong>Causes:</strong> Similarity, small size, frequent interaction, common goals, external threat, group status, time together</li>
+      <li><strong>Positive effects:</strong> Higher satisfaction, better communication, increased productivity (if goals align)</li>
+      <li><strong>Negative effects:</strong> Groupthink, resistance to outsiders, can reduce performance if group goals conflict with org goals</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — Causes → Cohesiveness → Consequences</div>
+    <div class="flow-row"><div class="fbox blue">Causes Build Up</div><div class="fdetail">Similarity of members + Small group size + Frequent interaction + Common goals + External threat + Group prestige</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">High Group Cohesiveness</div><div class="fdetail">Members are strongly attracted to each other, feel belonging, want to stay in the group, and work together willingly.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Are group goals aligned with org goals?</div><div class="fdetail">This is the critical question that determines whether cohesiveness helps or hurts the organization.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">YES → Positive Consequences</div><div class="fdetail">High productivity, better communication, low absenteeism, higher job satisfaction, strong morale.</div></div>
+    <div class="flow-row" style="margin-top:4px;"><div class="fbox red">NO → Negative Consequences</div><div class="fdetail">Groupthink, output restriction, resistance to change, conflict with management, insularity.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Causes of Group Cohesiveness — Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Similarity of Members</strong><p>When group members share similar values, attitudes, backgrounds, and interests, they naturally like each other more and form stronger bonds. People are more comfortable with those who think and feel like them.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Small Group Size</strong><p>In smaller groups, members interact more frequently and personally. They know each other well, trust each other more, and feel more responsible for the group's outcomes. Large groups tend to be more impersonal and less cohesive.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Frequent Interaction and Proximity</strong><p>People who work close together or interact often — whether physically or digitally — naturally build stronger relationships. Regular contact builds familiarity and trust over time.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Common Goals and Shared Success</strong><p>When members work toward the same goal and achieve it together, the shared experience of success strengthens their bond and sense of identity as a group.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>External Threat or Competition</strong><p>Facing a common rival or challenge from outside (competition from another company, a difficult project deadline) pulls group members closer. The classic example: a sports team bonds most strongly when facing a tough opponent.</p></div></div>
+    <div class="exp-item"><div class="exp-num">6</div><div class="exp-body"><strong>Group Status and Prestige</strong><p>Being part of a prestigious, exclusive, or high-status group increases members' desire to belong and stay. The more valuable the membership, the more cohesive the group tends to be.</p></div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Consequences of Group Cohesiveness — Explained</div>
+    <div class="exp-item"><div class="exp-num">✓</div><div class="exp-body"><strong>Higher Member Satisfaction</strong><p>Cohesive groups provide emotional support, friendship, and a sense of belonging — making members more satisfied with their jobs and less likely to leave (lower turnover, lower absenteeism).</p></div></div>
+    <div class="exp-item"><div class="exp-num">✓</div><div class="exp-body"><strong>Better Communication and Cooperation</strong><p>Members of cohesive groups communicate more openly and honestly, share information freely, and cooperate willingly — because they trust each other and have a common interest in the group's success.</p></div></div>
+    <div class="exp-item"><div class="exp-num">✓</div><div class="exp-body"><strong>Higher Productivity (when goals align)</strong><p>When the group's goals match the organization's goals, cohesive groups consistently outperform less cohesive ones — they work harder, coordinate better, and produce more.</p></div></div>
+    <div class="exp-item"><div class="exp-num">✗</div><div class="exp-body"><strong>Groupthink (Negative)</strong><p>When cohesiveness becomes too strong, members start valuing harmony over honest discussion. They avoid disagreeing with the group's views — even when those views are wrong. This leads to poor, unchallenged decisions. Famous example: NASA's Challenger disaster was partly linked to groupthink.</p></div></div>
+    <div class="exp-item"><div class="exp-num">✗</div><div class="exp-body"><strong>Output Restriction (Negative)</strong><p>If a cohesive group decides collectively to slow down production (to avoid being given higher targets), every member will follow — even against their individual interest. High cohesiveness makes the group's norms more powerful than individual motivation.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Group cohesiveness is a double-edged sword. When properly managed — with group goals aligned to organizational goals — it is one of the most powerful drivers of team performance, satisfaction, and morale. But if left unchecked, it can lead to groupthink and counter-productive norms. Managers must foster cohesiveness intentionally while ensuring the group's direction always serves the organization's larger objectives.</p></div>
+</div>
+
+<!-- Q8 -->
+<div class="qblock"><div class="qnum">Question 8</div><div class="qtxt">Discuss the various techniques for managing stress both individually and at the workplace. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div><strong>Stress</strong> in the workplace occurs when job demands exceed an individual's ability to cope. It is one of the most serious issues in modern organizations — leading to reduced productivity, poor health, absenteeism, and high employee turnover. Stress can be managed at two levels: at the <strong>individual level</strong> (what the employee does for themselves) and at the <strong>organizational level</strong> (what the company does to reduce workplace stress for its employees). Both levels must work together for stress management to be truly effective.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li><strong>Individual techniques:</strong> Time management, exercise, relaxation, social support, work-life balance, cognitive restructuring</li>
+      <li><strong>Organizational techniques:</strong> Better job design, clear goals, improved communication, wellness programs, flexible work, counselling</li>
+      <li>Best results come from combining both approaches</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — Stress Management Framework</div>
+    <div class="flow-row"><div class="fbox red">Workplace Stress Identified</div><div class="fdetail">Stress arises when demands (workload, deadlines, conflict) exceed coping ability of the employee.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox blue">Individual-Level Intervention</div><div class="fdetail">Employee takes personal action: exercise, time management, meditation, talking to friends, setting boundaries.</div></div>
+    <div class="flow-row" style="margin-top:4px;"><div class="fbox green">Organizational-Level Intervention</div><div class="fdetail">Organization takes action: redesign jobs, offer counselling, improve communication, provide flexible work options.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Stress Reduced</div><div class="fdetail">Employee feels in control, more productive, healthier, and more satisfied with their work.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Individual-Level Techniques — Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Time Management</strong><p>Prioritizing tasks, breaking big jobs into smaller steps, setting realistic deadlines, and avoiding procrastination reduces the feeling of being overwhelmed — the most common cause of daily workplace stress.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Physical Exercise</strong><p>Regular exercise — walking, yoga, gym, sports — releases endorphins (natural stress-relievers), reduces anxiety, improves sleep, and boosts energy levels. Even 30 minutes of walking daily makes a significant difference.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Relaxation Techniques</strong><p>Deep breathing, meditation, and mindfulness practices lower the body's physiological stress response — reducing heart rate, blood pressure, and mental tension. These can be practiced even during short breaks at work.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Social Support</strong><p>Talking to trusted friends, family members, or colleagues helps release emotional pressure and gain perspective on stressful situations. People with strong social networks handle stress far better than those who are isolated.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Work-Life Balance</strong><p>Setting clear limits between work time and personal time — not checking emails after 7pm, taking weekends off, using leave days — prevents the chronic stress that builds up when work invades every part of life.</p></div></div>
+    <div class="exp-item"><div class="exp-num">6</div><div class="exp-body"><strong>Cognitive Restructuring</strong><p>This means changing how you think about stressful situations. Instead of seeing a difficult deadline as a threat, viewing it as a challenge to grow — changes the emotional response and reduces unnecessary anxiety.</p></div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Organizational-Level Techniques — Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Better Job Design</strong><p>Jobs that have variety, clear purpose, autonomy, and meaningful outcomes produce less stress than monotonous, unclear, or powerless roles. Redesigning jobs to give employees more control over their work reduces role-related stress.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Clear Goal Setting</strong><p>When employees know exactly what is expected of them — with clear, achievable, and measurable goals — role ambiguity disappears. Unclear expectations are one of the biggest sources of workplace stress.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Improved Communication</strong><p>Keeping employees regularly informed about organizational decisions, changes, and expectations reduces the stress caused by uncertainty and rumour. Open, transparent communication builds trust and security.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Employee Wellness Programs</strong><p>Organizations can offer counselling services, mental health support, stress management workshops, gym memberships, and regular health check-ups to proactively support employees' physical and mental well-being.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Flexible Work Arrangements</strong><p>Options like flexible working hours, work-from-home days, compressed work weeks, or job sharing allow employees to manage their personal and professional commitments — significantly reducing the stress caused by rigid schedules.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Stress is an unavoidable part of working life, but it does not have to be destructive. When individuals take responsibility for managing their own stress AND organizations actively create healthier work environments, the result is a workforce that is more resilient, more productive, and more satisfied. Stress management is not a luxury — it is a business necessity.</p></div>
+</div>
+
+<!-- Q9 -->
+<div class="qblock"><div class="qnum">Question 9</div><div class="qtxt">Explain Hofstede's cultural dimensions theory and discuss its implications for international management practices. Provide examples of how these dimensions impact organizational behavior. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>Geert Hofstede conducted one of the largest studies ever done on how culture shapes workplace behavior — studying over 116,000 IBM employees across 50+ countries in the 1970s. He identified <strong>six key dimensions</strong> along which national cultures differ from each other. His framework has become the most widely used tool for understanding cultural differences in international management. For managers working across borders, these dimensions explain why employees in different countries respond differently to the same leadership style, reward system, or organizational structure.</div>
+  <div class="points-box"><div class="pts-label">Six Dimensions at a Glance</div>
+    <ul>
+      <li><strong>Power Distance</strong> — how much inequality in authority is accepted</li>
+      <li><strong>Individualism vs. Collectivism</strong> — personal goals vs. group loyalty</li>
+      <li><strong>Masculinity vs. Femininity</strong> — competition vs. cooperation</li>
+      <li><strong>Uncertainty Avoidance</strong> — comfort with ambiguity and change</li>
+      <li><strong>Long-term vs. Short-term Orientation</strong> — future planning vs. immediate results</li>
+      <li><strong>Indulgence vs. Restraint</strong> — freedom to enjoy life vs. strict social norms</li>
+    </ul>
+  </div>
+  <div class="explain"><div class="explain-label">Each Dimension Explained with Examples</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Power Distance</strong><p>This measures how much less-powerful people in a society accept that power is distributed unequally. <br><em>High Power Distance</em> (India, Malaysia, China): Employees expect and respect a clear hierarchy. They do not question the boss's decisions. Managers give orders; employees follow. <br><em>Low Power Distance</em> (Denmark, Sweden, Netherlands): Employees expect to be consulted and involved in decisions. A boss who demands blind obedience will be seen as autocratic and unprofessional.<br><em>Implication:</em> Use directive leadership in high-PD countries; use participative leadership in low-PD countries.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Individualism vs. Collectivism</strong><p><em>Individualist cultures</em> (USA, UK, Australia): People prioritize personal goals, individual achievement, and independence. Employees are motivated by personal recognition, individual bonuses, and career advancement. <br><em>Collectivist cultures</em> (China, Japan, India): People prioritize group harmony, family loyalty, and collective identity. Employees prefer team rewards, group recognition, and decisions that consider the whole group.<br><em>Implication:</em> Individual performance bonuses work in the US; group-based incentives work better in Japan.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Masculinity vs. Femininity</strong><p><em>Masculine cultures</em> (Japan, Germany, USA): Value competitiveness, ambition, high earnings, and material success. Employees are motivated by achievement, promotion, and winning. <br><em>Feminine cultures</em> (Netherlands, Norway, Sweden): Value cooperation, quality of life, work-life balance, and caring for others. Employees prefer a supportive environment over cutthroat competition.<br><em>Implication:</em> Aggressive sales targets motivate in masculine cultures; collaboration and work-life balance programs work better in feminine ones.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Uncertainty Avoidance</strong><p><em>High UA cultures</em> (Greece, Japan, France): People feel anxious about ambiguity and unknown situations. They prefer strict rules, detailed contracts, and structured procedures. <br><em>Low UA cultures</em> (Singapore, Jamaica, Denmark): People are comfortable with ambiguity, open to change, and flexible with rules.<br><em>Implication:</em> Provide detailed job descriptions and clear procedures in high-UA countries; allow more flexibility and improvisation in low-UA ones.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Long-term vs. Short-term Orientation</strong><p><em>Long-term oriented cultures</em> (China, Japan, South Korea): Value perseverance, thrift, planning for the future, and long-term relationship building.<br><em>Short-term oriented cultures</em> (USA, UK, many African countries): Value quick results, tradition, and fulfilling immediate social obligations.<br><em>Implication:</em> Negotiate patiently and build relationships first in China; focus on ROI and quick wins in the USA.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Hofstede's framework is a powerful tool that helps international managers avoid the costly mistake of assuming everyone around the world thinks and behaves the same way. By understanding how cultures differ on these dimensions, managers can adapt their leadership style, HR practices, communication approach, and organizational structure to suit each country — leading to more effective, respectful, and successful international management.</p></div>
+</div>
+
+<!-- Q10 -->
+<div class="qblock"><div class="qnum">Question 10</div><div class="qtxt">Highlight the need for knowledge of OB to a practicing manager. <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div><strong>Organizational Behaviour (OB)</strong> is the systematic study of how individuals, groups, and structures affect and are affected by behavior within organizations. For a practicing manager, OB is not just an academic subject — it is a daily toolkit. Everything a manager does — motivating employees, building teams, resolving conflicts, managing change, giving feedback — requires an understanding of human behavior at work. Without OB knowledge, a manager is essentially flying blind.</div>
+  <div class="points-box"><div class="pts-label">Key Reasons a Manager Needs OB Knowledge</div>
+    <ul>
+      <li>To understand why employees behave the way they do</li>
+      <li>To motivate employees effectively using the right theories</li>
+      <li>To lead teams and develop leadership skills</li>
+      <li>To improve communication and resolve conflicts</li>
+      <li>To manage change without resistance</li>
+      <li>To build high-performing teams</li>
+      <li>To manage diverse and cross-cultural workforces</li>
+      <li>To improve job satisfaction and reduce turnover</li>
+    </ul>
+  </div>
+  <div class="flow-wrap"><div class="flow-label">Diagram — OB Knowledge → Better Management Outcomes</div>
+    <div class="flow-row"><div class="fbox blue">Manager Studies OB</div><div class="fdetail">Learns theories of motivation, leadership, group dynamics, culture, communication, and change management.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox green">Applies OB Knowledge</div><div class="fdetail">Uses the right leadership style, designs motivating jobs, builds cohesive teams, resolves conflicts effectively.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox teal">Employees Respond Positively</div><div class="fdetail">Higher motivation, better communication, less conflict, stronger commitment to organizational goals.</div></div>
+    <div class="farrow">↓</div>
+    <div class="flow-row"><div class="fbox orange">Organizational Success</div><div class="fdetail">Higher productivity, lower absenteeism and turnover, better innovation, stronger competitive advantage.</div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Each Need Explained in Detail</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Understanding Employee Behaviour</strong><p>OB helps managers understand why employees act, think, and feel the way they do. This understanding allows managers to predict behaviour and take preventive action before problems escalate — rather than reacting after something has gone wrong.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Improving Employee Motivation</strong><p>Motivation theories — Maslow's Hierarchy of Needs, Herzberg's Two-Factor Theory, McGregor's Theory X &amp; Y, McClelland's nAch — give managers practical tools to design reward systems, job structures, and incentives that genuinely motivate different types of employees.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Effective Leadership</strong><p>OB introduces managers to various leadership styles — transformational, transactional, servant, situational — and helps them identify which style works best for which situation and which type of employee.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Better Communication and Conflict Resolution</strong><p>OB teaches interpersonal and group communication dynamics. Understanding barriers to communication, conflict styles, and negotiation strategies helps managers reduce misunderstandings and resolve disputes constructively before they damage team performance.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Managing Organizational Change</strong><p>Change is constant in modern organizations. OB explains why employees resist change (Lewin's Change Model, Kotter's 8-Step Model) and gives managers specific strategies to reduce resistance and lead their team through change smoothly.</p></div></div>
+    <div class="exp-item"><div class="exp-num">6</div><div class="exp-body"><strong>Building High-Performing Teams</strong><p>Knowledge of group dynamics, Tuckman's stages of team development (Forming, Storming, Norming, Performing), and team cohesiveness helps managers build teams that collaborate effectively and produce excellent results.</p></div></div>
+    <div class="exp-item"><div class="exp-num">7</div><div class="exp-body"><strong>Managing Diversity and Cross-Cultural Teams</strong><p>In today's global workplace, managers work with people from different cultures, backgrounds, and generations. Hofstede's cultural dimensions and OB concepts on diversity help managers create inclusive environments where every employee can contribute fully.</p></div></div>
+    <div class="exp-item"><div class="exp-num">8</div><div class="exp-body"><strong>Improving Job Satisfaction and Reducing Turnover</strong><p>Understanding what makes employees satisfied or dissatisfied — through OB theories and attitude surveys — helps managers design better jobs, create positive work cultures, and reduce costly employee turnover.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Since management is fundamentally the art of getting work done through people, OB is not optional — it is the foundation of every management skill. A manager without OB knowledge may know how to manage processes, systems, and budgets, but they will struggle to manage the most complex and valuable resource in any organization: <em>human beings</em>. OB knowledge transforms a good manager into a truly great leader.</p></div>
+</div>
+
+<!-- Q11 -->
+<div class="qblock"><div class="qnum">Question 11</div><div class="qtxt">Compare and contrast interpersonal and structural resources of power. Define political behaviour. What are some of the factors that contribute to organisational politics? <span class="marks-tag">15 Marks</span></div></div>
+<div class="ans">
+  <div class="intro"><div class="intro-label">Introduction</div>In any organization, <strong>power</strong> is the ability to influence others' behavior. Power can come from two very different sources: from the <strong>person themselves</strong> (their personality, expertise, relationships) — called interpersonal power — or from the <strong>position they hold</strong> in the organizational structure (their role, access to resources, information) — called structural power. When people use power in ways that are not officially approved by the organization, purely to advance their own interests, it is called <strong>organizational politics</strong>. Understanding both types of power and what drives political behavior is essential for any manager.</div>
+  <div class="points-box"><div class="pts-label">Key Points</div>
+    <ul>
+      <li><strong>Interpersonal power:</strong> Reward, Coercive, Legitimate, Expert, Referent (French &amp; Raven's 5 bases)</li>
+      <li><strong>Structural power:</strong> Control over resources, decision-making authority, information, network centrality</li>
+      <li>Interpersonal power stays with the person; structural power stays with the position</li>
+      <li><strong>Political behaviour:</strong> Unofficial actions taken to acquire power for personal gain</li>
+      <li><strong>Causes of politics:</strong> Scarce resources, ambiguous goals, subjective appraisals, high-stakes decisions, power-hungry personalities</li>
+    </ul>
+  </div>
+  <div class="diff-label">Difference Table — Interpersonal vs Structural Sources of Power</div>
+  <table class="diff-table">
+    <tr><th>Basis of Difference</th><th>Interpersonal Power</th><th>Structural Power</th></tr>
+    <tr><td>Source</td><td>Personal qualities of the individual — traits, skills, relationships</td><td>Position in the organizational structure — role, access, network</td></tr>
+    <tr><td>Types</td><td>Reward, Coercive, Legitimate, Expert, Referent power</td><td>Resource control, Decision authority, Information access, Network centrality</td></tr>
+    <tr><td>Tied to</td><td>The person — travels with them when they change jobs</td><td>The position — lost when the person leaves that role</td></tr>
+    <tr><td>Example</td><td>A highly respected senior doctor whose opinion influences decisions even without a management title</td><td>A department head who controls budget allocation and staff promotions</td></tr>
+    <tr><td>Durability</td><td>More durable — expertise and charisma are personal assets</td><td>Less durable — depends on holding the position</td></tr>
+    <tr><td>Visibility</td><td>Often informal and subtle</td><td>Formal and officially recognized</td></tr>
+  </table>
+  <div class="explain"><div class="explain-label">Interpersonal Power — 5 Types (French &amp; Raven) Explained</div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Reward Power</strong><p>The ability to give positive outcomes — salary increases, promotions, praise, recognition, or desirable assignments. Employees comply to receive the reward.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Coercive Power</strong><p>The ability to punish — demotion, dismissal, negative reviews, or public criticism. Employees comply to avoid punishment. Overuse of coercive power damages trust and morale.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>Legitimate Power</strong><p>Power that comes from holding a formal position in the hierarchy. Employees comply because they recognize the manager's right to give orders. This is the same as authority.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Expert Power</strong><p>Power based on specialized knowledge, skills, or experience. Employees follow because they genuinely believe this person knows best. Doctors, engineers, and IT specialists often have high expert power regardless of their title.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Referent Power</strong><p>Power based on personal likeability, charisma, and admiration. Employees follow because they respect, admire, or identify with this person. The most powerful and lasting form of interpersonal power.</p></div></div>
+  </div>
+  <div class="explain"><div class="explain-label">Political Behaviour and Its Causes — Explained</div>
+    <div class="exp-item"><div class="exp-num">★</div><div class="exp-body"><strong>Definition of Political Behaviour</strong><p>Political behaviour refers to activities that are <em>not officially sanctioned by the organization</em>, undertaken by individuals or groups to acquire, develop, or use power in order to achieve their own preferred outcomes — especially in situations where there is uncertainty, disagreement, or competition for limited resources.</p></div></div>
+    <div class="exp-item"><div class="exp-num">1</div><div class="exp-body"><strong>Scarcity of Resources</strong><p>When budgets, promotions, office space, or recognition are limited, employees compete for them — and those who play politics gain an unfair advantage. The more scarce the resource, the more intense the politics.</p></div></div>
+    <div class="exp-item"><div class="exp-num">2</div><div class="exp-body"><strong>Ambiguous Goals and Unclear Rules</strong><p>When policies, performance criteria, or decision-making processes are vague, employees have more room to manipulate situations in their favor. Clear, transparent rules reduce the space for political maneuvering.</p></div></div>
+    <div class="exp-item"><div class="exp-num">3</div><div class="exp-body"><strong>High-Stakes Decisions Under Uncertainty</strong><p>Major organizational decisions — restructuring, promotions, new project assignments — involve significant uncertainty. The higher the stakes and the more unclear the outcome, the more employees resort to political tactics to influence the decision.</p></div></div>
+    <div class="exp-item"><div class="exp-num">4</div><div class="exp-body"><strong>Subjective Performance Appraisal Systems</strong><p>When performance is evaluated subjectively rather than through measurable data, employees try to manage impressions and influence their evaluators politically — rather than simply performing well.</p></div></div>
+    <div class="exp-item"><div class="exp-num">5</div><div class="exp-body"><strong>Individual Personality (Machiavellianism, High nPow)</strong><p>Some individuals naturally have a high need for power (nPow) or high Machiavellianism — the belief that it is acceptable to manipulate others to achieve personal goals. These individuals are far more likely to engage in political behavior regardless of the organizational context.</p></div></div>
+  </div>
+  <div class="conclusion"><div class="con-label">Conclusion</div><p>Power — whether interpersonal or structural — is a natural and necessary part of organizational life. The key is how it is used. When power is used ethically and transparently, it drives performance and positive change. When it drives self-serving political behavior, it creates conflict, unfairness, and distrust. Managers must reduce the conditions that breed politics — by creating clear policies, fair appraisal systems, transparent decisions, and open communication channels.</p></div>
+</div>
+
 </body>
 </html>
