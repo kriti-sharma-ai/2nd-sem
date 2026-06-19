@@ -5,767 +5,1493 @@
 <title>Medical Record Science — PYQ Answers 2024-2025 Sem 2</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 900px; margin: 30px auto; padding: 24px; color: #1a1a1a; background: #fff; line-height: 1.75; font-size: 14px; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; max-width: 900px; margin: 30px auto; padding: 24px; color: #1a1a1a; background: #fff; line-height: 1.8; font-size: 14px; }
 
-  /* ── Header ── */
-  .header { text-align: center; border: 2px solid #1a5276; border-radius: 8px; padding: 16px; margin-bottom: 28px; background: #eaf4fb; }
+  /* HEADER */
+  .header { text-align: center; border: 2px solid #1a5276; border-radius: 8px; padding: 18px; margin-bottom: 30px; background: #eaf4fb; }
   .header h1 { font-size: 15px; color: #1a5276; margin-bottom: 4px; }
-  .header h2 { font-size: 13px; font-weight: normal; color: #333; }
-  .header .badge { display: inline-block; margin-top: 8px; background: #1a5276; color: #fff; padding: 4px 14px; border-radius: 20px; font-size: 12px; }
+  .header h2 { font-size: 13px; font-weight: normal; color: #333; margin-top: 4px; }
+  .badge { display: inline-block; margin-top: 10px; background: #1a5276; color: #fff; padding: 4px 18px; border-radius: 20px; font-size: 12px; }
 
-  /* ── Group Banners ── */
-  .group-banner { background: #1a5276; color: #fff; text-align: center; padding: 10px; border-radius: 6px; margin: 32px 0 18px; font-size: 15px; font-weight: bold; letter-spacing: 0.5px; }
+  /* GROUP BANNER */
+  .group-banner { background: #1a5276; color: #fff; text-align: center; padding: 11px; border-radius: 6px; margin: 36px 0 20px; font-size: 15px; font-weight: bold; letter-spacing: 0.5px; }
 
-  /* ── Question Block ── */
-  .qblock { border-left: 4px solid #1a5276; background: #f4f9fc; border-radius: 0 6px 6px 0; padding: 10px 14px; margin: 20px 0 6px; }
-  .qblock .qnum { font-size: 12px; color: #1a5276; font-weight: bold; }
-  .qblock .qtxt { font-weight: bold; color: #1a1a1a; margin-top: 2px; }
-  .marks-badge { float: right; background: #1a5276; color: #fff; font-size: 11px; padding: 2px 8px; border-radius: 12px; margin-top: 2px; }
+  /* QUESTION */
+  .qblock { border-left: 5px solid #1a5276; background: #f0f7fc; border-radius: 0 6px 6px 0; padding: 11px 16px; margin: 28px 0 4px; }
+  .qnum { font-size: 11px; color: #1a5276; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
+  .qtxt { font-weight: bold; color: #1a1a1a; margin-top: 3px; font-size: 14px; }
+  .marks-tag { float: right; background: #1a5276; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 12px; margin-top: 2px; }
 
-  /* ── Answer Block ── */
-  .ans { padding: 10px 14px 14px 14px; }
-  .ans p { margin-bottom: 8px; }
+  /* ANSWER SECTIONS */
+  .ans { padding: 12px 4px 4px 4px; }
 
-  /* ── Definition Box ── */
-  .defbox { background: #d6eaf8; border-left: 4px solid #2980b9; border-radius: 4px; padding: 10px 14px; margin: 8px 0; }
-  .defbox strong { color: #1a5276; }
+  /* INTRO BOX */
+  .intro { background: #d6eaf8; border-left: 5px solid #2980b9; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-bottom: 16px; font-size: 13.5px; }
+  .intro .intro-label { font-size: 10px; font-weight: bold; color: #1a5276; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
 
-  /* ── Key Points ── */
-  .keypoint { background: #eafaf1; border-left: 4px solid #27ae60; border-radius: 4px; padding: 10px 14px; margin: 8px 0; }
-  .keypoint strong { color: #1e8449; }
+  /* QUICK POINTS */
+  .points-box { background: #fef9e7; border: 1px solid #f9ca74; border-radius: 6px; padding: 12px 16px; margin: 14px 0; }
+  .points-box .pts-label { font-size: 10px; font-weight: bold; color: #b7770d; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+  .points-box ul { padding-left: 20px; }
+  .points-box ul li { margin-bottom: 5px; font-size: 13.5px; }
 
-  /* ── Note Box ── */
-  .notebox { background: #fef9e7; border-left: 4px solid #f39c12; border-radius: 4px; padding: 8px 14px; margin: 8px 0; font-size: 13px; }
+  /* FLOWCHART */
+  .flow-wrap { margin: 18px 0; }
+  .flow-label { font-size: 10px; font-weight: bold; color: #6c3483; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+  .flow-row { display: flex; align-items: stretch; margin-bottom: 4px; }
+  .fbox { border-radius: 8px; padding: 9px 16px; font-size: 12.5px; font-weight: bold; text-align: center; min-width: 190px; color: #fff; }
+  .fbox.blue   { background: #1a5276; }
+  .fbox.green  { background: #1e8449; }
+  .fbox.orange { background: #ca6f1e; }
+  .fbox.teal   { background: #148f77; }
+  .fbox.purple { background: #6c3483; }
+  .fbox.red    { background: #922b21; }
+  .fdetail { background: #f0f7fc; border: 1px solid #aed6f1; border-radius: 6px; padding: 8px 14px; font-size: 12.5px; color: #222; margin-left: 14px; flex: 1; display: flex; align-items: center; }
+  .farrow { text-align: left; padding-left: 22px; color: #1a5276; font-size: 20px; line-height: 1; margin: 2px 0; }
 
-  /* ── Table ── */
-  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
-  th { background: #1a5276; color: #fff; padding: 8px 10px; text-align: left; }
-  td { padding: 7px 10px; border-bottom: 1px solid #dce8f0; vertical-align: top; }
-  tr:nth-child(even) td { background: #f4f9fc; }
-  tr:hover td { background: #d6eaf8; }
+  /* EXPLANATION SECTION */
+  .explain { margin: 16px 0; }
+  .explain-label { font-size: 10px; font-weight: bold; color: #1e8449; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+  .exp-item { display: flex; gap: 12px; margin-bottom: 12px; }
+  .exp-num { background: #1a5276; color: #fff; border-radius: 50%; width: 28px; height: 28px; min-width: 28px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; margin-top: 2px; }
+  .exp-body { flex: 1; }
+  .exp-body strong { color: #1a5276; font-size: 13.5px; }
+  .exp-body p { font-size: 13px; color: #333; margin-top: 2px; }
 
-  /* ── Two-column layout ── */
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 10px 0; }
-  .col-box { border: 1px solid #aed6f1; border-radius: 6px; padding: 10px 12px; background: #eaf4fb; }
-  .col-box h4 { color: #1a5276; margin-bottom: 6px; font-size: 13px; border-bottom: 1px solid #aed6f1; padding-bottom: 4px; }
-  .col-box ul { padding-left: 16px; }
-  .col-box li { margin-bottom: 4px; font-size: 13px; }
+  /* CONCLUSION */
+  .conclusion { background: #eafaf1; border-left: 5px solid #27ae60; border-radius: 0 6px 6px 0; padding: 12px 16px; margin-top: 18px; }
+  .conclusion .con-label { font-size: 10px; font-weight: bold; color: #1e8449; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 5px; }
+  .conclusion p { font-size: 13.5px; }
 
-  /* ── Flowchart ── */
-  .flowchart { margin: 14px 0; }
-  .flow-step { display: flex; align-items: stretch; margin-bottom: 0; }
-  .flow-box { background: #1a5276; color: #fff; border-radius: 8px; padding: 9px 18px; font-size: 13px; font-weight: bold; min-width: 220px; text-align: center; }
-  .flow-box.green { background: #1e8449; }
-  .flow-box.orange { background: #d35400; }
-  .flow-box.teal { background: #148f77; }
-  .flow-box.purple { background: #6c3483; }
-  .flow-detail { background: #eaf4fb; border: 1px solid #aed6f1; border-radius: 6px; padding: 7px 14px; font-size: 12px; color: #333; margin-left: 12px; flex: 1; display: flex; align-items: center; }
-  .flow-arrow { text-align: left; padding-left: 30px; color: #1a5276; font-size: 18px; line-height: 1.2; margin: 0; }
+  /* DIFFERENCE TABLE */
+  .diff-label { font-size: 10px; font-weight: bold; color: #922b21; letter-spacing: 1.5px; text-transform: uppercase; margin: 16px 0 10px; }
+  .diff-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 14px; }
+  .diff-table th { padding: 9px 12px; text-align: left; font-size: 12px; }
+  .diff-table th:first-child { background: #2c3e50; color: #fff; width: 22%; }
+  .diff-table th:nth-child(2) { background: #1a5276; color: #fff; }
+  .diff-table th:nth-child(3) { background: #1e8449; color: #fff; }
+  .diff-table td { padding: 8px 12px; border-bottom: 1px solid #dce8f0; vertical-align: top; }
+  .diff-table td:first-child { background: #f4f6f7; font-weight: bold; color: #2c3e50; font-size: 12px; }
+  .diff-table tr:nth-child(even) td:nth-child(2) { background: #eaf4fb; }
+  .diff-table tr:nth-child(even) td:nth-child(3) { background: #eafaf1; }
 
-  /* ── Audit Cycle Diagram ── */
-  .audit-cycle { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 14px 0; }
-  .audit-step { background: #1a5276; color: #fff; border-radius: 50%; width: 80px; height: 80px; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 11px; font-weight: bold; padding: 6px; position: relative; }
-  .audit-step:not(:last-child)::after { content: '→'; color: #1a5276; font-size: 20px; position: absolute; right: -18px; top: 50%; transform: translateY(-50%); }
+  /* ORG CHART */
+  .org-chart { text-align: center; margin: 16px 0; }
+  .org-box { display: inline-block; padding: 8px 20px; border-radius: 6px; font-size: 12.5px; font-weight: bold; margin: 4px; }
+  .org-top-box { background: #1a5276; color: #fff; }
+  .org-mid-box { background: #2980b9; color: #fff; }
+  .org-sub-box { background: #eaf4fb; border: 1px solid #aed6f1; color: #1a5276; font-size: 11.5px; font-weight: normal; }
+  .org-line { width: 2px; height: 18px; background: #1a5276; margin: 0 auto; }
+  .org-row { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
 
-  /* ── Org Chart ── */
-  .org { text-align: center; margin: 14px 0; }
-  .org-top { display: inline-block; background: #1a5276; color: #fff; padding: 8px 24px; border-radius: 6px; font-weight: bold; font-size: 13px; }
-  .org-line { width: 2px; height: 20px; background: #1a5276; margin: 0 auto; }
-  .org-mid { display: flex; justify-content: center; gap: 10px; margin: 0; }
-  .org-mid-box { background: #2980b9; color: #fff; padding: 7px 12px; border-radius: 6px; font-size: 12px; text-align: center; font-weight: bold; min-width: 110px; }
-  .org-branches { display: flex; justify-content: center; gap: 8px; margin-top: 10px; flex-wrap: wrap; }
-  .org-branch { background: #eaf4fb; border: 1px solid #aed6f1; padding: 6px 10px; border-radius: 6px; font-size: 11px; text-align: center; min-width: 100px; }
+  /* DIVIDER */
+  hr { border: none; border-top: 2px dashed #aed6f1; margin: 32px 0; }
 
-  /* ── Divider ── */
-  .divider { border: none; border-top: 2px dashed #aed6f1; margin: 28px 0; }
-
-  ul { padding-left: 20px; }
-  li { margin-bottom: 5px; }
+  /* GENERIC */
   strong { color: #1a5276; }
-  em { color: #555; }
+  em { color: #666; font-style: italic; }
+  table.gen { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
+  table.gen th { background: #1a5276; color: #fff; padding: 8px 10px; text-align: left; }
+  table.gen td { padding: 7px 10px; border-bottom: 1px solid #dce8f0; vertical-align: top; }
+  table.gen tr:nth-child(even) td { background: #f4f9fc; }
 </style>
 </head>
 <body>
 
-<!-- ══════════════════════ HEADER ══════════════════════ -->
+<!-- ══ HEADER ══ -->
 <div class="header">
   <h1>MAULANA ABUL KALAM AZAD UNIVERSITY OF TECHNOLOGY, WEST BENGAL</h1>
   <h2>Paper Code: BBA(HM) 202 &nbsp;|&nbsp; Medical Record Science I &nbsp;|&nbsp; UPID: 2000082</h2>
-  <h2>Time: 3 Hours &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Sem 2 — 2024-2025</h2>
-  <span class="badge">Complete Answer Key</span>
+  <h2>Time: 3 Hours &nbsp;|&nbsp; Full Marks: 70 &nbsp;|&nbsp; Semester 2 — 2024–2025</h2>
+  <span class="badge">Complete Answer Key — Exam Ready</span>
 </div>
 
-<!-- ══════════════════════ GROUP A ══════════════════════ -->
-<div class="group-banner">GROUP-A &nbsp;|&nbsp; Very Short Answer Type &nbsp;|&nbsp; 1 × 10 = 10 Marks</div>
-<p style="color:#555; font-size:13px; margin-bottom:10px;">Answer any <strong>ten</strong> of the following in 1–2 lines each.</p>
+<!-- ══════════════════════════════════════
+     GROUP A
+══════════════════════════════════════ -->
+<div class="group-banner">GROUP-A &nbsp;|&nbsp; Very Short Answer Type &nbsp;|&nbsp; 1 × 10 = 10 Marks &nbsp;|&nbsp; Answer any TEN</div>
 
-<!-- Q i -->
-<div class="qblock">
-  <div class="qnum">Question (i)</div>
-  <div class="qtxt">What is the full form of MR in healthcare?</div>
-</div>
+<!-- Qi -->
+<div class="qblock"><div class="qnum">Question i</div><div class="qtxt">What is the full form of MR in healthcare?</div></div>
 <div class="ans">
-  <div class="defbox"><strong>MR = Medical Record</strong><br>
-  A Medical Record is the complete written account of a patient's health — their history, diagnosis, treatment, and outcome — kept safely in the hospital.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    <strong>MR = Medical Record.</strong> A Medical Record is a complete, written account of everything related to a patient's health — their past illnesses, current diagnosis, treatment given, and final outcome — all kept safely in the hospital for future reference.
+  </div>
 </div>
 
-<!-- Q ii -->
-<div class="qblock">
-  <div class="qnum">Question (ii)</div>
-  <div class="qtxt">Name any two types of medical records.</div>
-</div>
+<!-- Qii -->
+<div class="qblock"><div class="qnum">Question ii</div><div class="qtxt">Name any two types of medical records.</div></div>
 <div class="ans">
-  <table>
-    <tr><th>Type</th><th>Meaning</th></tr>
-    <tr><td><strong>Inpatient Record</strong></td><td>Record of a patient who is admitted and stays in the hospital (e.g., surgery case sheets).</td></tr>
-    <tr><td><strong>Outpatient Record</strong></td><td>Record of a patient who visits the hospital for treatment but goes home the same day (e.g., OPD card).</td></tr>
-  </table>
+  <div class="intro"><div class="intro-label">Answer</div>
+    Medical records are classified based on how and where the patient is receiving care in the hospital.
+  </div>
+  <div class="points-box">
+    <div class="pts-label">Two Types</div>
+    <ul>
+      <li><strong>Inpatient Record —</strong> For patients who are admitted and staying in the hospital (e.g., surgery case sheet, ward progress notes).</li>
+      <li><strong>Outpatient Record —</strong> For patients who visit the hospital for treatment but go back home the same day (e.g., OPD card, prescription).</li>
+    </ul>
+  </div>
 </div>
 
-<!-- Q iii -->
-<div class="qblock">
-  <div class="qnum">Question (iii)</div>
-  <div class="qtxt">Name one method used for preserving medical records.</div>
-</div>
+<!-- Qiii -->
+<div class="qblock"><div class="qnum">Question iii</div><div class="qtxt">Name one method used for preserving medical records.</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Microfilming</strong><br>
-  In this method, paper records are photographed and stored on a small film roll. This saves a lot of storage space and keeps records safe for 100+ years without damage.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    <strong>Microfilming</strong> is one of the most widely used methods for preserving medical records. In this process, paper documents are photographed at a very small (micro) size and stored on a film roll. This saves a huge amount of physical space and keeps records safe for over 100 years without fading or damage.
+  </div>
 </div>
 
-<!-- Q iv -->
-<div class="qblock">
-  <div class="qnum">Question (iv)</div>
-  <div class="qtxt">Mention one role of an MR technician.</div>
-</div>
+<!-- Qiv -->
+<div class="qblock"><div class="qnum">Question iv</div><div class="qtxt">Mention one role of an MR technician.</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Medical Coding (ICD Coding)</strong><br>
-  An MR technician converts the doctor's diagnosis and procedures into standard codes using the ICD (International Classification of Diseases) system. These codes are used for billing, insurance, and hospital statistics.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    One major role of an MR (Medical Record) Technician is <strong>Medical Coding using the ICD system</strong> (International Classification of Diseases). They read the doctor's diagnosis and convert it into a standard code number. These codes are used for hospital billing, insurance claims, and maintaining health statistics.
+  </div>
 </div>
 
-<!-- Q v -->
-<div class="qblock">
-  <div class="qnum">Question (v)</div>
-  <div class="qtxt">What is meant by preservation of medical records?</div>
-</div>
+<!-- Qv -->
+<div class="qblock"><div class="qnum">Question v</div><div class="qtxt">What is meant by preservation of medical records?</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Definition:</strong> Preservation of medical records means protecting and maintaining patient records from damage, decay, theft, or loss — so they remain available and readable for as long as legally required.<br><br>
-  Methods include: microfilming, digitization, fire-proof storage, and climate-controlled rooms.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    <strong>Preservation of medical records</strong> means taking steps to protect patient documents from damage, decay, theft, or loss — so they stay readable and available for as long as required by law or hospital policy. This is done through methods like microfilming, digitization, fire-proof storage, and climate-controlled rooms.
+  </div>
 </div>
 
-<!-- Q vi -->
-<div class="qblock">
-  <div class="qnum">Question (vi)</div>
-  <div class="qtxt">Who is responsible for managing the Medical Records Department?</div>
-</div>
+<!-- Qvi -->
+<div class="qblock"><div class="qnum">Question vi</div><div class="qtxt">Who is responsible for managing the Medical Records Department?</div></div>
 <div class="ans">
-  <div class="defbox">The <strong>Medical Record Officer (MRO)</strong> — also called the <strong>Health Information Manager (HIM)</strong> — is the head of the MRD. They are responsible for managing all staff, systems, policies, and legal compliance in the department.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    The <strong>Medical Record Officer (MRO)</strong> — also known as the <strong>Health Information Manager (HIM)</strong> — is the person in charge of the entire Medical Records Department. They manage all staff, ensure legal compliance, maintain systems, and oversee the proper storage and retrieval of all patient records.
+  </div>
 </div>
 
-<!-- Q vii -->
-<div class="qblock">
-  <div class="qnum">Question (vii)</div>
-  <div class="qtxt">Define medical audit.</div>
-</div>
+<!-- Qvii -->
+<div class="qblock"><div class="qnum">Question vii</div><div class="qtxt">Define medical audit.</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Medical Audit</strong> is a systematic review of patient care by checking medical records against set standards, to find out if the treatment given was correct and to improve quality of care.</div>
-  <div class="notebox">💡 Simple way to remember: "Check the care → Compare to standards → Improve where needed."</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    A <strong>Medical Audit</strong> is a systematic review of patient care quality. It involves checking medical records against set standards to find out if the treatment provided was correct and complete — and then making improvements wherever there are gaps.
+    <br><em>Simple way to remember: "Check → Compare → Improve."</em>
+  </div>
 </div>
 
-<!-- Q viii -->
-<div class="qblock">
-  <div class="qnum">Question (viii)</div>
-  <div class="qtxt">Name any one legal document maintained in medical records.</div>
-</div>
+<!-- Qviii -->
+<div class="qblock"><div class="qnum">Question viii</div><div class="qtxt">Name any one legal document maintained in medical records.</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Informed Consent Form</strong><br>
-  This is a document signed by the patient (or guardian) before any procedure or surgery. It shows the patient understood the risks and agreed to the treatment. It protects the hospital legally.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    <strong>Informed Consent Form —</strong> This is a document signed by the patient (or their guardian) before any surgery or medical procedure. It shows that the patient was told about the risks involved and they agreed to go ahead. It is a very important legal protection for the hospital and the doctor.
+  </div>
 </div>
 
-<!-- Q ix -->
-<div class="qblock">
-  <div class="qnum">Question (ix)</div>
-  <div class="qtxt">What is one characteristic of a good medical record?</div>
-</div>
+<!-- Qix -->
+<div class="qblock"><div class="qnum">Question ix</div><div class="qtxt">What is one characteristic of a good medical record?</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Accuracy</strong><br>
-  A good medical record must contain correct and truthful information — the right patient name, correct diagnosis, right dates, and accurate treatment details — with no errors or guesses.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    <strong>Accuracy</strong> is the most important characteristic of a good medical record. It means every detail written in the record — the patient's name, diagnosis, medicine dosage, treatment dates — must be correct and truthful. Even a small error can lead to wrong treatment or legal problems.
+  </div>
 </div>
 
-<!-- Q x -->
-<div class="qblock">
-  <div class="qnum">Question (x)</div>
-  <div class="qtxt">Define retention of medical records.</div>
-</div>
+<!-- Qx -->
+<div class="qblock"><div class="qnum">Question x</div><div class="qtxt">Define retention of medical records.</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Retention</strong> means keeping medical records stored safely for a fixed period of time as required by law or hospital policy — before they can be destroyed or archived.<br><br>
-  <em>Example: Adult records — 5 to 10 years; Minors — till they turn 18 + extra years; MLC records — 10+ years.</em></div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    <strong>Retention of medical records</strong> means keeping patient records stored safely for a fixed number of years as required by law or hospital policy — before they are destroyed or permanently archived.
+    <br><em>Example: Adult records — 5 to 10 years | Records of minors — until they turn 18, plus extra years | MLC records — 10 or more years.</em>
+  </div>
 </div>
 
-<!-- Q xi -->
-<div class="qblock">
-  <div class="qnum">Question (xi)</div>
-  <div class="qtxt">What is a medico-legal case?</div>
-</div>
+<!-- Qxi -->
+<div class="qblock"><div class="qnum">Question xi</div><div class="qtxt">What is a medico-legal case?</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Medico-Legal Case (MLC)</strong> is any case where a patient's injury or illness has legal importance — meaning the police, court, or law is involved.<br><br>
-  <strong>Examples:</strong> Road accidents, physical assault, poisoning, rape, suspicious death, burns.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    A <strong>Medico-Legal Case (MLC)</strong> is a case where the patient's injury or illness is connected to the law — meaning the police or court is involved. In such cases, the hospital must inform the police and maintain all records very carefully as they can be used as evidence in court.
+    <br><em>Examples: Road accidents, physical assault, poisoning, rape, burn cases, suspicious deaths.</em>
+  </div>
 </div>
 
-<!-- Q xii -->
-<div class="qblock">
-  <div class="qnum">Question (xii)</div>
-  <div class="qtxt">Name one type of record involved in medico-legal cases.</div>
-</div>
+<!-- Qxii -->
+<div class="qblock"><div class="qnum">Question xii</div><div class="qtxt">Name one type of record involved in medico-legal cases.</div></div>
 <div class="ans">
-  <div class="defbox"><strong>Post-Mortem Report (Autopsy Report)</strong><br>
-  This report is prepared by a forensic doctor after examining a dead body. It states the exact cause and manner of death and is used as important evidence in court.</div>
+  <div class="intro"><div class="intro-label">Answer</div>
+    <strong>Post-Mortem Report (Autopsy Report) —</strong> This report is written by a forensic doctor after examining a dead body. It clearly states the exact cause and manner of death. It is used as key evidence in criminal courts and during death investigations.
+  </div>
 </div>
 
-<hr class="divider">
+<hr>
 
-<!-- ══════════════════════ GROUP B ══════════════════════ -->
+<!-- ══════════════════════════════════════
+     GROUP B
+══════════════════════════════════════ -->
 <div class="group-banner">GROUP-B &nbsp;|&nbsp; Short Answer Type &nbsp;|&nbsp; 5 × 3 = 15 Marks &nbsp;|&nbsp; Answer any THREE</div>
 
 <!-- Q2 -->
 <div class="qblock">
   <div class="qnum">Question 2</div>
-  <div class="qtxt">Describe the different types of medical records with examples. <span class="marks-badge">5 Marks</span></div>
+  <div class="qtxt">Describe the different types of medical records with examples. <span class="marks-tag">5 Marks</span></div>
 </div>
 <div class="ans">
-  <p>Medical records are documents that contain all information about a patient's health. They are of different types based on the patient's situation:</p>
-  <table>
-    <tr>
-      <th>Type</th>
-      <th>Who it is for</th>
-      <th>What it contains</th>
-      <th>Example</th>
-    </tr>
-    <tr>
-      <td><strong>Inpatient Record</strong></td>
-      <td>Admitted patients</td>
-      <td>Admission notes, progress notes, operation notes, discharge summary</td>
-      <td>Surgery patient's case sheet</td>
-    </tr>
-    <tr>
-      <td><strong>Outpatient Record</strong></td>
-      <td>OPD (visiting) patients</td>
-      <td>Doctor's consultation notes, prescriptions, test reports</td>
-      <td>OPD card / folder</td>
-    </tr>
-    <tr>
-      <td><strong>Emergency Record</strong></td>
-      <td>Casualty/Emergency patients</td>
-      <td>Triage notes, emergency treatment given, MLC details</td>
-      <td>Accident & Emergency register</td>
-    </tr>
-    <tr>
-      <td><strong>Diagnostic Record</strong></td>
-      <td>All patients needing tests</td>
-      <td>Lab reports, X-rays, ECG, MRI, scan reports</td>
-      <td>Blood test report</td>
-    </tr>
-    <tr>
-      <td><strong>Medico-Legal Record</strong></td>
-      <td>MLC patients</td>
-      <td>Wound certificate, post-mortem report, MLC register entry</td>
-      <td>MLC register</td>
-    </tr>
-    <tr>
-      <td><strong>Administrative Record</strong></td>
-      <td>All patients</td>
-      <td>Birth/death certificates, transfer letters, consent forms</td>
-      <td>Death certificate</td>
-    </tr>
-  </table>
-  <div class="notebox">💡 <strong>Tip to remember:</strong> In-Out-Emergency-Diagnostic-Medico-Admin → <strong>I O E D M A</strong></div>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    Medical records are official documents that store all information about a patient's health and treatment. Different situations in a hospital produce different types of records. Each type serves a specific purpose — clinical, legal, administrative, or diagnostic.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Types at a Glance</div>
+    <ul>
+      <li><strong>Inpatient Record</strong> — for admitted patients</li>
+      <li><strong>Outpatient Record</strong> — for OPD / day-visit patients</li>
+      <li><strong>Emergency Record</strong> — for casualty patients</li>
+      <li><strong>Diagnostic Record</strong> — lab and investigation reports</li>
+      <li><strong>Medico-Legal Record</strong> — for cases involving the law</li>
+      <li><strong>Administrative Record</strong> — birth, death, transfer documents</li>
+    </ul>
+  </div>
+
+  <div class="explain">
+    <div class="explain-label">Explanation of Each Type</div>
+
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Inpatient Record</strong>
+        <p>Created when a patient is admitted to the hospital and stays in a ward. It contains admission notes, daily progress notes, doctor's orders, operation notes, and the discharge summary. <em>Example: Case sheet of a patient who had surgery.</em></p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Outpatient Record (OPD Record)</strong>
+        <p>Created for patients who visit the doctor for a check-up or treatment and leave on the same day without getting admitted. It includes the doctor's notes, prescriptions, and test reports. <em>Example: OPD card or folder.</em></p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Emergency / Casualty Record</strong>
+        <p>Maintained for patients who arrive at the hospital in an emergency — such as accident victims. It records the time of arrival, condition on arrival, immediate treatment given, and whether the case is medico-legal. <em>Example: Accident &amp; Emergency register.</em></p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Diagnostic Record</strong>
+        <p>Contains results of all investigations done on the patient — blood tests, urine tests, X-rays, ECG, MRI, scan reports, and biopsy results. These help the doctor in making the correct diagnosis. <em>Example: Blood test report, Radiology report.</em></p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Medico-Legal Record</strong>
+        <p>Maintained for cases that have legal importance — such as assaults, rapes, poisoning, or suspicious deaths. These records are kept with extra security as they may be needed in court. <em>Example: MLC register, wound certificate, post-mortem report.</em></p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">6</div>
+      <div class="exp-body">
+        <strong>Administrative Record</strong>
+        <p>These are official documents maintained for government and institutional purposes. They include birth certificates, death certificates, transfer letters, and statistical reports. <em>Example: Death certificate issued by the hospital.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Every type of medical record plays a unique role in patient care, hospital management, legal protection, and public health. Together, they form a complete picture of every patient's journey through the hospital.</p>
+  </div>
 </div>
 
 <!-- Q3 -->
 <div class="qblock">
   <div class="qnum">Question 3</div>
-  <div class="qtxt">Explain the importance of medical records in legal cases. <span class="marks-badge">5 Marks</span></div>
+  <div class="qtxt">Explain the importance of medical records in legal cases. <span class="marks-tag">5 Marks</span></div>
 </div>
 <div class="ans">
-  <p>Medical records play a very important role in legal situations. Here is how:</p>
-  <table>
-    <tr><th>#</th><th>Legal Importance</th><th>Explanation</th></tr>
-    <tr><td>1</td><td><strong>Evidence in Court</strong></td><td>Records show exactly what treatment was given. If a doctor is accused of negligence, the record is proof of correct care.</td></tr>
-    <tr><td>2</td><td><strong>Medico-Legal Cases</strong></td><td>In accidents, assaults, or poisoning cases, the MLC record becomes the official document used by police and court.</td></tr>
-    <tr><td>3</td><td><strong>Insurance Claims</strong></td><td>Insurance companies use medical records to verify the illness or injury and process claims correctly.</td></tr>
-    <tr><td>4</td><td><strong>Consent Documentation</strong></td><td>Signed consent forms protect the hospital and doctor from legal action if the patient later complains about a procedure.</td></tr>
-    <tr><td>5</td><td><strong>Death Investigation</strong></td><td>In suspicious deaths, hospital records and post-mortem reports help determine if it was natural or unnatural death.</td></tr>
-    <tr><td>6</td><td><strong>Patient's Right to Access</strong></td><td>By law, patients have the right to get copies of their own records for any legal or personal purpose.</td></tr>
-    <tr><td>7</td><td><strong>Doctor's Accountability</strong></td><td>Records prove what decision was taken, when, and why — making doctors accountable for their actions.</td></tr>
-  </table>
-  <div class="keypoint"><strong>Key Statement:</strong> "A medical record is the doctor's best friend in court and the hospital's protection against false claims."</div>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    Medical records are not just health documents — they are powerful legal tools. In situations where a patient's injury or death involves the law, medical records become the most important piece of evidence. Courts, police, insurance companies, and lawyers all depend on these records to understand what happened and when.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Legal Roles of Medical Records</div>
+    <ul>
+      <li>Evidence in court against or in favour of the doctor or hospital</li>
+      <li>Official documentation in Medico-Legal Cases (MLC)</li>
+      <li>Proof for insurance claim settlement</li>
+      <li>Protection through consent forms</li>
+      <li>Determination of cause of death</li>
+      <li>Supporting patient's right to access their own records</li>
+      <li>Establishing professional accountability of doctors</li>
+    </ul>
+  </div>
+
+  <div class="explain">
+    <div class="explain-label">Detailed Explanation</div>
+
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Evidence in Court</strong>
+        <p>If a patient or their family accuses a doctor of negligence or wrong treatment, the medical record is the strongest proof. A well-maintained record shows exactly what was done, when, and why — protecting the doctor from false accusations.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Medico-Legal Cases (MLC)</strong>
+        <p>In cases of accidents, assaults, poisoning, or rape, the MLC record is the official document used by police and courts. It records the injuries, time of admission, and treatment given — all of which are critical in criminal investigations.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Insurance Claim Settlement</strong>
+        <p>Insurance companies use medical records to verify whether the illness or injury actually happened, what treatment was given, and how long the patient was hospitalised — to process and settle the claim correctly.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Consent Form as Legal Protection</strong>
+        <p>A signed consent form proves the patient agreed to the surgery or procedure after being fully informed of the risks. If the patient later complains, this form protects the hospital legally.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Death Investigation</strong>
+        <p>In cases of suspicious or sudden death, the hospital records combined with the post-mortem report help the court determine whether the death was natural, accidental, or due to crime.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">6</div>
+      <div class="exp-body">
+        <strong>Patient's Legal Right to Records</strong>
+        <p>By law, every patient has the right to get a certified copy of their own medical records. This is their legal right and the hospital is obligated to provide it upon request.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">7</div>
+      <div class="exp-body">
+        <strong>Professional Accountability</strong>
+        <p>Records show who treated the patient, what decisions were made, and which medicines were given. This holds every doctor and nurse accountable for their clinical actions.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Medical records are a hospital's strongest legal shield. A well-written, accurate, and complete record protects doctors, helps patients get justice, supports insurance settlements, and ensures full legal accountability in the healthcare system.</p>
+  </div>
 </div>
 
 <!-- Q4 -->
 <div class="qblock">
   <div class="qnum">Question 4</div>
-  <div class="qtxt">Describe how MRD handles medico-legal documents. <span class="marks-badge">5 Marks</span></div>
+  <div class="qtxt">Describe how MRD handles medico-legal documents. <span class="marks-tag">5 Marks</span></div>
 </div>
 <div class="ans">
-  <p>When a Medico-Legal Case (MLC) comes to the hospital, the MRD follows a special step-by-step process:</p>
 
-  <div class="flowchart">
-    <div class="flow-step">
-      <div class="flow-box">① Identification</div>
-      <div class="flow-detail">Patient is identified as MLC at Emergency/OPD entry. A special MLC tag is attached to the case sheet.</div>
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    Medico-Legal Cases (MLC) are among the most sensitive cases that arrive in a hospital — they involve the law, police, and courts. The Medical Records Department (MRD) handles these documents with extra care, following a strict step-by-step process to ensure accuracy, security, and legal compliance.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Steps in Handling MLC Documents</div>
+    <ul>
+      <li>Identification and tagging of MLC at entry</li>
+      <li>Separate registration in the MLC Register</li>
+      <li>Mandatory police intimation</li>
+      <li>Secure and restricted storage</li>
+      <li>Maintaining chain of custody for all document releases</li>
+      <li>Long-term retention (10+ years)</li>
+    </ul>
+  </div>
+
+  <div class="flow-wrap">
+    <div class="flow-label">Flowchart — MLC Document Handling Process</div>
+
+    <div class="flow-row">
+      <div class="fbox blue">① Patient Identified as MLC</div>
+      <div class="fdetail">At Emergency / OPD entry, the doctor marks the case as MLC and attaches a special MLC tag to the file.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box green">② Separate Registration</div>
-      <div class="flow-detail">MLC is entered in a dedicated MLC Register with a unique MLC number, date, time, and nature of injury.</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">② MLC Registration</div>
+      <div class="fdetail">The case is entered in a dedicated MLC Register with a unique MLC number, date, time, and nature of injury.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box orange">③ Police Intimation</div>
-      <div class="flow-detail">Police are immediately informed (by phone and in writing) about the MLC as required by law.</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">③ Police Intimation</div>
+      <div class="fdetail">The police are informed immediately — by phone call and then in writing — as required by Indian law.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box teal">④ Secure Storage</div>
-      <div class="flow-detail">MLC files are kept in locked, restricted-access areas. Only authorized persons can access them.</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">④ Complete Documentation</div>
+      <div class="fdetail">Every detail is recorded — injury description, time of arrival, treatment given, and name of treating doctor.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box purple">⑤ Chain of Custody</div>
-      <div class="flow-detail">Any document given to police or court is recorded — who received it, when, and for what purpose.</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">⑤ Secure Storage</div>
+      <div class="fdetail">MLC files are locked in restricted-access cabinets. Only authorised persons (MRO, treating doctor, police with written request) can access them.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box">⑥ Long Retention</div>
-      <div class="flow-detail">MLC records are kept for 10+ years because legal cases may come up years later.</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox red">⑥ Chain of Custody</div>
+      <div class="fdetail">Every time a document is given to police or court, it is recorded — who received it, date, time, purpose, and signature obtained.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox blue">⑦ Long-Term Retention</div>
+      <div class="fdetail">MLC records are kept for 10+ years because legal cases can continue for many years after the incident.</div>
     </div>
   </div>
-  <div class="notebox">💡 MLC records are the most sensitive records in any hospital — accuracy and confidentiality are extremely important.</div>
+
+  <div class="explain">
+    <div class="explain-label">Important Points Explained</div>
+
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Why is police intimation mandatory?</strong>
+        <p>Indian law requires hospitals to inform the police about any MLC case — even if the patient or family objects. This is a legal duty of the hospital, not a choice.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Why is chain of custody important?</strong>
+        <p>If MLC documents are mishandled or lost, it can damage the court case. The chain of custody ensures that every movement of the document is tracked so no one can claim the record was tampered with.</p>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Original records stay in MRD</strong>
+        <p>Even if police or court request the record, only a certified copy is given. The original never leaves the MRD.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>The MRD plays a critical legal role in handling MLC documents. Proper identification, registration, secure storage, police intimation, and chain of custody ensure these records are legally sound and can be used reliably in court at any time.</p>
+  </div>
 </div>
 
 <!-- Q5 -->
 <div class="qblock">
   <div class="qnum">Question 5</div>
-  <div class="qtxt">Write a short note on assembling and deficiency checking of medical records. <span class="marks-badge">5 Marks</span></div>
+  <div class="qtxt">Write a short note on assembling and deficiency checking of medical records. <span class="marks-tag">5 Marks</span></div>
 </div>
 <div class="ans">
-  <div class="two-col">
-    <div class="col-box">
-      <h4>📋 ASSEMBLING</h4>
-      <p style="font-size:13px;"><strong>What:</strong> After a patient is discharged, all loose papers are collected and arranged in a fixed order.</p>
-      <p style="font-size:13px; margin-top:6px;"><strong>Standard Order:</strong></p>
-      <ul>
-        <li>Face Sheet (patient details)</li>
-        <li>History &amp; Physical Examination</li>
-        <li>Doctor's Orders</li>
-        <li>Progress Notes</li>
-        <li>Lab / Radiology Reports</li>
-        <li>Consent Forms</li>
-        <li>Discharge Summary</li>
-      </ul>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    After a patient is discharged from the hospital, their medical record is a collection of many loose papers from different departments — the ward, laboratory, radiology, pharmacy, and operation theatre. Two important MRD processes — <strong>Assembling</strong> and <strong>Deficiency Checking</strong> — bring all these papers together into one complete, correct, and usable medical record.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Points</div>
+    <ul>
+      <li>Assembling: collecting and arranging all loose documents in standard order</li>
+      <li>Deficiency Checking: checking the assembled record for missing or incomplete entries</li>
+      <li>Deficiency slip sent to the doctor for completion</li>
+      <li>Only complete records are permanently filed in MRD</li>
+    </ul>
+  </div>
+
+  <div class="flow-wrap">
+    <div class="flow-label">Flowchart — Assembling &amp; Deficiency Checking Process</div>
+    <div class="flow-row">
+      <div class="fbox blue">Patient Discharged</div>
+      <div class="fdetail">All loose papers are collected from the ward, lab, radiology, OT, pharmacy, and nursing station.</div>
     </div>
-    <div class="col-box">
-      <h4>🔍 DEFICIENCY CHECKING</h4>
-      <p style="font-size:13px;"><strong>What:</strong> Each assembled record is checked for missing or incomplete parts.</p>
-      <p style="font-size:13px; margin-top:6px;"><strong>Common Deficiencies Found:</strong></p>
-      <ul>
-        <li>Unsigned discharge summary</li>
-        <li>Missing diagnosis / ICD code</li>
-        <li>Incomplete history &amp; examination</li>
-        <li>Missing consent form</li>
-        <li>Illegible (unreadable) entries</li>
-      </ul>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">Assembling</div>
+      <div class="fdetail">Papers are arranged in a fixed standard order: Face sheet → History &amp; Examination → Doctor's Orders → Progress Notes → Lab Reports → Radiology → Consent Forms → Discharge Summary.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">Deficiency Checking</div>
+      <div class="fdetail">Each document is checked. Common problems found: unsigned discharge summary, missing diagnosis code, incomplete history, missing consent form, illegible (unreadable) writing.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">Deficiency Slip Issued</div>
+      <div class="fdetail">A deficiency slip is prepared and sent to the concerned doctor, nurse, or department to complete the missing part.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">Completion &amp; Filing</div>
+      <div class="fdetail">Once all deficiencies are corrected, the complete record is sent for ICD coding and then permanently filed in MRD.</div>
     </div>
   </div>
-  <div class="flowchart" style="margin-top:14px;">
-    <div class="flow-step">
-      <div class="flow-box" style="min-width:160px; font-size:12px;">Patient Discharged</div>
-      <div class="flow-detail">All loose papers collected from the ward</div>
+
+  <div class="explain">
+    <div class="explain-label">Explained in Detail</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Why is assembling necessary?</strong>
+        <p>Without assembling, papers from the ward are scattered and can be lost. Standard ordering makes it easy for any doctor or MRD staff to find any document instantly when needed later.</p>
+      </div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box green" style="min-width:160px; font-size:12px;">Assembling</div>
-      <div class="flow-detail">Papers arranged in standard hospital order</div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Why is deficiency checking necessary?</strong>
+        <p>An incomplete record is legally and medically dangerous. If a doctor's signature is missing on a discharge note, or a consent form is absent, the hospital has no protection if a legal problem arises later.</p>
+      </div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box orange" style="min-width:160px; font-size:12px;">Deficiency Check</div>
-      <div class="flow-detail">Record checked for missing signatures, reports, and entries</div>
-    </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box teal" style="min-width:160px; font-size:12px;">Deficiency Slip</div>
-      <div class="flow-detail">Slip sent to concerned doctor to complete missing entries</div>
-    </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box purple" style="min-width:160px; font-size:12px;">Filing</div>
-      <div class="flow-detail">Only complete records are filed permanently in MRD</div>
-    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Assembling and deficiency checking together ensure that every patient record leaving the ward is complete, correctly ordered, and legally sound before it is permanently stored in the MRD. These are among the most important quality-control steps in medical records management.</p>
   </div>
 </div>
 
 <!-- Q6 -->
 <div class="qblock">
   <div class="qnum">Question 6</div>
-  <div class="qtxt">Briefly describe the organizational structure of a Medical Records Department. <span class="marks-badge">5 Marks</span></div>
+  <div class="qtxt">Briefly describe the organizational structure of a Medical Records Department. <span class="marks-tag">5 Marks</span></div>
 </div>
 <div class="ans">
-  <p>The MRD has a clear hierarchy with different staff handling different responsibilities:</p>
-  <div class="org">
-    <div class="org-top">Hospital Administrator</div>
-    <div class="org-line"></div>
-    <div style="display:flex; justify-content:center;">
-      <div class="org-top" style="background:#2980b9;">Medical Record Officer (MRO) / HIM Manager<br><small style="font-weight:normal; font-size:11px;">Head of MRD — Overall management, policy, legal compliance</small></div>
-    </div>
-    <div class="org-line"></div>
-    <div class="org-mid">
-      <div class="org-mid-box">MR Technicians<br><small style="font-weight:normal; font-size:10px;">ICD Coding, Indexing, Retrieval</small></div>
-      <div class="org-mid-box">MR Assistants<br><small style="font-weight:normal; font-size:10px;">Filing, Assembling, Deficiency Check</small></div>
-      <div class="org-mid-box">Statistics Section<br><small style="font-weight:normal; font-size:10px;">Hospital statistics &amp; reports</small></div>
-    </div>
-    <div style="margin-top:10px; display:flex; justify-content:center; gap:8px; flex-wrap:wrap;">
-      <div class="org-branch">Birth &amp; Death<br>Registration</div>
-      <div class="org-branch">Medico-Legal<br>Section (MLC)</div>
-      <div class="org-branch">Coding<br>Section (ICD)</div>
-      <div class="org-branch">Record<br>Storage &amp; Retrieval</div>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    The Medical Records Department (MRD) is a well-organized unit in a hospital with different staff handling different responsibilities. It operates under the hospital administration and works alongside every clinical department. A clear hierarchy ensures that all functions — from coding to MLC to statistics — are handled by the right person.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Sections in an MRD</div>
+    <ul>
+      <li>Medical Record Officer (MRO) — overall head</li>
+      <li>Medical Record Technicians — coding, indexing, retrieval</li>
+      <li>Medical Record Assistants — filing, assembling, deficiency checking</li>
+      <li>Coding Section — ICD/CPT coding for billing</li>
+      <li>Statistics Section — hospital data and reports</li>
+      <li>Birth &amp; Death Registration — official government documents</li>
+      <li>Medico-Legal Section — MLC handling</li>
+    </ul>
+  </div>
+
+  <!-- ORG CHART -->
+  <div class="flow-wrap">
+    <div class="flow-label">Organizational Chart — MRD</div>
+    <div class="org-chart">
+      <div><span class="org-box org-top-box">Hospital Administrator</span></div>
+      <div class="org-line"></div>
+      <div><span class="org-box org-top-box">Medical Record Officer (MRO) / Health Information Manager</span></div>
+      <div class="org-line"></div>
+      <div class="org-row">
+        <span class="org-box org-mid-box">MR Technicians</span>
+        <span class="org-box org-mid-box">MR Assistants</span>
+        <span class="org-box org-mid-box">Statistics Section</span>
+      </div>
+      <div style="margin-top:10px;" class="org-row">
+        <span class="org-box org-sub-box">Coding Section<br>(ICD / CPT)</span>
+        <span class="org-box org-sub-box">Indexing &amp;<br>Filing</span>
+        <span class="org-box org-sub-box">Birth &amp; Death<br>Registration</span>
+        <span class="org-box org-sub-box">Medico-Legal<br>Section</span>
+        <span class="org-box org-sub-box">Record<br>Retrieval</span>
+      </div>
     </div>
   </div>
-  <div class="keypoint" style="margin-top:12px;"><strong>Remember:</strong> The MRD works alongside ALL departments in the hospital — it is the backbone of hospital information management.</div>
+
+  <div class="explain">
+    <div class="explain-label">Role of Each Section</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Medical Record Officer (MRO)</strong>
+        <p>Head of the entire department. Responsible for managing staff, ensuring legal compliance, maintaining systems, and liaising with hospital administration and clinical departments.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Medical Record Technicians</strong>
+        <p>Handle ICD coding of diagnoses and procedures, indexing of records, and retrieval of patient files when requested by doctors or the court.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Medical Record Assistants</strong>
+        <p>Handle the day-to-day physical work — collecting records from wards after discharge, assembling, deficiency checking, and filing in the storage room.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Statistics Section</strong>
+        <p>Compiles important hospital data — bed occupancy rate, average length of stay, death rates, OPD attendance — and submits reports to management and government authorities.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Medico-Legal Section</strong>
+        <p>Specially handles all MLC files — maintains the MLC register, communicates with police, and ensures strict confidentiality and long-term safe storage of these sensitive documents.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>A well-structured MRD with clearly defined roles ensures that every record is correctly created, stored, coded, and retrieved. It is the information hub of the hospital — connecting all departments and supporting clinical care, legal compliance, research, and administration.</p>
+  </div>
 </div>
 
-<hr class="divider">
+<hr>
 
-<!-- ══════════════════════ GROUP C ══════════════════════ -->
+<!-- ══════════════════════════════════════
+     GROUP C
+══════════════════════════════════════ -->
 <div class="group-banner">GROUP-C &nbsp;|&nbsp; Long Answer Type &nbsp;|&nbsp; 15 × 3 = 45 Marks &nbsp;|&nbsp; Answer any THREE</div>
 
 <!-- Q7 -->
 <div class="qblock">
   <div class="qnum">Question 7</div>
-  <div class="qtxt">Explain various methods used in the preservation of medical records, both manual and electronic. <span class="marks-badge">15 Marks</span></div>
+  <div class="qtxt">Explain various methods used in the preservation of medical records, both manual and electronic. <span class="marks-tag">15 Marks</span></div>
 </div>
 <div class="ans">
-  <div class="defbox"><strong>Preservation of Medical Records</strong> means protecting patient records from damage, decay, loss, or unauthorized access so they remain available for as long as needed — for patient care, legal purposes, and research.</div>
-  <br>
-  <div class="two-col">
-    <div class="col-box">
-      <h4>📁 MANUAL METHODS</h4>
-      <ul>
-        <li><strong>Microfilming:</strong> Records are photographed onto a small film roll. Very space-saving and can last 100+ years. Used in large hospitals.</li>
-        <li><strong>Microfiching:</strong> Similar to microfilming but stored on flat plastic cards (microfiche). Easy to view on a reader machine.</li>
-        <li><strong>Lamination:</strong> Important single papers are covered in plastic film to protect from moisture, tearing, and handling damage.</li>
-        <li><strong>Acid-free folders:</strong> Special folders that do not release chemicals that damage paper over time. Used for long-term storage.</li>
-        <li><strong>Fire-proof cabinets:</strong> Metal cabinets that protect records from fire accidents.</li>
-        <li><strong>Climate-controlled rooms:</strong> Records stored at controlled temperature and humidity to prevent yellowing, fungus, and decay.</li>
-        <li><strong>Pest control:</strong> Regular spraying to prevent insects (white ants, cockroaches) from destroying paper records.</li>
-      </ul>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    Medical records contain vital information about a patient's health — and they must be kept safe, readable, and available for years, sometimes even decades. <strong>Preservation</strong> refers to all the steps taken to protect medical records from physical damage (fire, water, insects, decay) and from loss or unauthorized access. Methods can be broadly divided into <strong>manual (physical)</strong> and <strong>electronic (digital)</strong> methods.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Methods at a Glance</div>
+    <ul>
+      <li><strong>Manual:</strong> Microfilming, Microfiching, Lamination, Acid-free folders, Fire-proof storage, Climate control, Pest control</li>
+      <li><strong>Electronic:</strong> EHR, Scanning &amp; Digitization, Cloud Storage, RAID, Optical Discs, Encrypted Backup, Disaster Recovery</li>
+    </ul>
+  </div>
+
+  <div class="flow-wrap">
+    <div class="flow-label">Flowchart — Choosing a Preservation Method</div>
+    <div class="flow-row">
+      <div class="fbox blue">Medical Record Created</div>
+      <div class="fdetail">Patient discharged; all documents assembled and checked for deficiencies.</div>
     </div>
-    <div class="col-box">
-      <h4>💻 ELECTRONIC METHODS</h4>
-      <ul>
-        <li><strong>EHR (Electronic Health Records):</strong> All patient information is entered directly into a computer system — no paper needed. Most modern and secure method.</li>
-        <li><strong>Scanning &amp; Digitization:</strong> Old paper records are scanned and saved as PDF/image files on computer servers.</li>
-        <li><strong>Cloud Storage:</strong> Digital records stored on secure internet servers. Can be accessed from anywhere anytime.</li>
-        <li><strong>RAID Systems:</strong> (Redundant Array of Independent Disks) — Multiple hard drives store the same data so if one fails, data is not lost.</li>
-        <li><strong>Optical Discs (CD/DVD/Blu-ray):</strong> Records saved on discs and stored in a library. Good for long-term archiving.</li>
-        <li><strong>Encrypted Backup:</strong> Automatic backup of data to a secondary location with encryption (password protection) to prevent hacking.</li>
-        <li><strong>Disaster Recovery Systems:</strong> System that restores all data automatically if the main server crashes or is destroyed.</li>
-      </ul>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">Is the hospital fully digital?</div>
+      <div class="fdetail">If YES → Use EHR / Cloud storage. If NO → Use Manual + Hybrid methods.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">Manual Method Selected</div>
+      <div class="fdetail">Microfilming, Acid-free folders, Fire-proof cabinets, Climate-controlled room.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">Electronic Method Selected</div>
+      <div class="fdetail">Scanning, EHR entry, Cloud upload, Encrypted backup, RAID storage.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">Preserved &amp; Indexed</div>
+      <div class="fdetail">Record stored with index number for fast retrieval when needed in future.</div>
     </div>
   </div>
 
-  <br>
-  <p><strong>Comparison Table:</strong></p>
-  <table>
-    <tr><th>Feature</th><th>Manual Methods</th><th>Electronic Methods</th></tr>
-    <tr><td>Storage space</td><td>Needs large physical space</td><td>Very compact (server/cloud)</td></tr>
-    <tr><td>Retrieval speed</td><td>Slow (manual search)</td><td>Instant (search by keyword)</td></tr>
-    <tr><td>Security</td><td>Lock &amp; key, fire-proof cabinets</td><td>Password, encryption, firewall</td></tr>
-    <tr><td>Cost</td><td>Low initial cost</td><td>Higher setup cost, lower running cost</td></tr>
-    <tr><td>Risk of damage</td><td>Fire, flood, pests, decay</td><td>Hacking, power failure (mitigated by backup)</td></tr>
-    <tr><td>Best use</td><td>Rural/older hospitals</td><td>Modern, large hospitals</td></tr>
+  <div class="explain">
+    <div class="explain-label">Manual Methods — Detailed Explanation</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Microfilming</strong>
+        <p>Paper records are photographed at a tiny (micro) scale and stored on a film roll. A single roll can store thousands of documents. Films can last 100+ years and are ideal for hospitals with huge volumes of old records.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Microfiching</strong>
+        <p>Similar to microfilming, but images are stored on flat plastic sheets called microfiche cards. These are easy to view on a microfiche reader machine and are good for storing index cards and summary documents.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Lamination</strong>
+        <p>Individual important documents (like consent forms or certificates) are sealed in a thin plastic cover to protect them from moisture, tears, and frequent handling. Used for documents that are often referred to.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Acid-free Folders</strong>
+        <p>Normal paper and folders contain acid that slowly destroys documents over years. Acid-free, archival-quality folders do not release any harmful chemicals, making them ideal for long-term storage of original records.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Fire-proof &amp; Climate-controlled Storage</strong>
+        <p>Records are stored in steel fire-proof cabinets in rooms where temperature and humidity are controlled. This prevents damage from fire, flood, excessive heat, or dampness. Pest control is also done regularly to prevent insects from eating paper records.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain">
+    <div class="explain-label">Electronic Methods — Detailed Explanation</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Electronic Health Records (EHR)</strong>
+        <p>All patient information is entered directly into a computer system — no paper needed. It is the most modern and efficient method. Records can be retrieved instantly by any authorised person from any location.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Scanning &amp; Digitization</strong>
+        <p>Existing paper records are scanned using a high-resolution scanner and saved as PDF or TIFF image files on a computer server. This creates a digital backup of physical records.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Cloud Storage</strong>
+        <p>Digital records are uploaded to secure internet-based servers. They can be accessed from anywhere with proper login credentials. Cloud systems automatically back up data so that nothing is lost even if the hospital's local server crashes.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>RAID Systems</strong>
+        <p>RAID stands for Redundant Array of Independent Disks. Multiple hard drives store the same data simultaneously. If one drive fails, the others keep the data safe. This is used in hospitals that manage large volumes of digital records.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Encrypted Backup &amp; Disaster Recovery</strong>
+        <p>All digital data is encrypted (locked with a code) to prevent hacking. Automated backup copies are created regularly and stored at a different physical location. In case of fire, flood, or cyberattack, the disaster recovery system restores everything quickly.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIFFERENCE TABLE -->
+  <div class="diff-label">Difference — Manual vs Electronic Methods</div>
+  <table class="diff-table">
+    <tr>
+      <th>Basis of Difference</th>
+      <th>Manual Methods</th>
+      <th>Electronic Methods</th>
+    </tr>
+    <tr>
+      <td>Storage Space</td>
+      <td>Requires large physical space (cabinets, rooms)</td>
+      <td>Very compact — thousands of records fit on one server</td>
+    </tr>
+    <tr>
+      <td>Retrieval Speed</td>
+      <td>Slow — staff must manually search through files</td>
+      <td>Instant — searchable by patient name, ID, or date</td>
+    </tr>
+    <tr>
+      <td>Security</td>
+      <td>Lock &amp; key, fire-proof cabinets</td>
+      <td>Password, encryption, firewall, audit trails</td>
+    </tr>
+    <tr>
+      <td>Risk of Damage</td>
+      <td>Fire, flood, pests, ageing, decay</td>
+      <td>Hacking, power failure (controlled by backup systems)</td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td>Low setup cost, but high space and maintenance cost</td>
+      <td>Higher setup cost, but very low running cost over time</td>
+    </tr>
+    <tr>
+      <td>Access</td>
+      <td>Only one person can access at a time (original file)</td>
+      <td>Multiple authorised users can access simultaneously</td>
+    </tr>
+    <tr>
+      <td>Best Suited For</td>
+      <td>Small or rural hospitals with limited technology</td>
+      <td>Large, modern hospitals and multi-branch healthcare systems</td>
+    </tr>
   </table>
-  <div class="keypoint"><strong>Conclusion:</strong> The best approach is a combination of both — keeping electronic copies of all records while maintaining secure physical copies of the most critical documents.</div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>No single method is perfect on its own. The best approach for any hospital is a <strong>combination</strong> of both — keeping physical records in proper conditions while also maintaining digital backups. This ensures records are always available, safe from every type of risk, and accessible when needed for patient care, legal purposes, or research.</p>
+  </div>
 </div>
 
-<!-- Q8 -->
+<!-- Q8a -->
 <div class="qblock">
   <div class="qnum">Question 8(a)</div>
-  <div class="qtxt">Elaborate on the types, process, and outcomes of medical audits. Why are they essential in hospitals? <span class="marks-badge">10 Marks</span></div>
+  <div class="qtxt">Elaborate on the types, process, and outcomes of medical audits. Why are they essential in hospitals? <span class="marks-tag">10 Marks</span></div>
 </div>
 <div class="ans">
-  <div class="defbox"><strong>Medical Audit</strong> is a quality improvement process where the care given to patients is checked against set standards — to find problems and fix them to improve patient safety and treatment quality.</div>
-  <br>
-  <p><strong>Types of Medical Audit:</strong></p>
-  <table>
-    <tr><th>Type</th><th>When done</th><th>Purpose</th></tr>
-    <tr><td><strong>Prospective Audit</strong></td><td>Before treatment starts</td><td>Plan the right care in advance</td></tr>
-    <tr><td><strong>Concurrent Audit</strong></td><td>While patient is being treated</td><td>Correct problems immediately</td></tr>
-    <tr><td><strong>Retrospective Audit</strong></td><td>After patient is discharged</td><td>Review patterns, most common type</td></tr>
-    <tr><td><strong>Internal Audit</strong></td><td>Anytime</td><td>Done by hospital's own team</td></tr>
-    <tr><td><strong>External Audit</strong></td><td>Scheduled by accreditation body</td><td>Done by NABH/JCI or outside experts</td></tr>
-  </table>
-  <br>
-  <p><strong>The Audit Cycle (Process) — 7 Steps:</strong></p>
-  <div style="display:flex; gap:6px; flex-wrap:wrap; margin:10px 0; justify-content:center;">
-    <div style="background:#1a5276; color:#fff; border-radius:6px; padding:8px 12px; font-size:12px; text-align:center; min-width:110px;"><strong>Step 1</strong><br>Choose Topic</div>
-    <div style="color:#1a5276; font-size:20px; display:flex; align-items:center;">→</div>
-    <div style="background:#2980b9; color:#fff; border-radius:6px; padding:8px 12px; font-size:12px; text-align:center; min-width:110px;"><strong>Step 2</strong><br>Set Standards</div>
-    <div style="color:#1a5276; font-size:20px; display:flex; align-items:center;">→</div>
-    <div style="background:#1e8449; color:#fff; border-radius:6px; padding:8px 12px; font-size:12px; text-align:center; min-width:110px;"><strong>Step 3</strong><br>Collect Data</div>
-    <div style="color:#1a5276; font-size:20px; display:flex; align-items:center;">→</div>
-    <div style="background:#d35400; color:#fff; border-radius:6px; padding:8px 12px; font-size:12px; text-align:center; min-width:110px;"><strong>Step 4</strong><br>Compare Results</div>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    A <strong>Medical Audit</strong> is a formal process of reviewing and evaluating the quality of patient care in a hospital. It involves examining medical records and comparing the care provided against established medical standards. The goal is simple — to find out <em>what went wrong, what went right, and how things can be improved</em> to make the hospital safer and better for every patient.
   </div>
-  <div style="display:flex; gap:6px; flex-wrap:wrap; margin:4px 0; justify-content:center;">
-    <div style="background:#6c3483; color:#fff; border-radius:6px; padding:8px 12px; font-size:12px; text-align:center; min-width:110px;"><strong>Step 5</strong><br>Find Gaps</div>
-    <div style="color:#1a5276; font-size:20px; display:flex; align-items:center;">→</div>
-    <div style="background:#148f77; color:#fff; border-radius:6px; padding:8px 12px; font-size:12px; text-align:center; min-width:110px;"><strong>Step 6</strong><br>Make Changes</div>
-    <div style="color:#1a5276; font-size:20px; display:flex; align-items:center;">→</div>
-    <div style="background:#1a5276; color:#fff; border-radius:6px; padding:8px 12px; font-size:12px; text-align:center; min-width:110px;"><strong>Step 7</strong><br>Re-Audit</div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Points</div>
+    <ul>
+      <li>Types: Prospective, Concurrent, Retrospective, Internal, External</li>
+      <li>Process: 7-step audit cycle — choose topic → set standards → collect data → compare → find gaps → make changes → re-audit</li>
+      <li>Outcomes: Improved care, fewer errors, better documentation, accountability, accreditation</li>
+      <li>Essential because: patient safety, legal compliance, quality certification (NABH/JCI)</li>
+    </ul>
   </div>
-  <div class="notebox" style="margin-top:8px;">💡 This is called the <strong>Audit Cycle</strong> — after Step 7, you go back to Step 1 again for continuous improvement.</div>
-  <br>
-  <p><strong>Outcomes of Medical Audit:</strong></p>
-  <table>
-    <tr><th>Outcome</th><th>Benefit</th></tr>
-    <tr><td>Improved quality of care</td><td>Patients receive better, standardized treatment</td></tr>
-    <tr><td>Fewer medical errors</td><td>Wrong treatments or missed diagnoses are identified and fixed</td></tr>
-    <tr><td>Better documentation</td><td>Doctors become more careful and complete in their record writing</td></tr>
-    <tr><td>Accountability</td><td>Clinicians are responsible for their decisions</td></tr>
-    <tr><td>Hospital accreditation</td><td>Meets NABH/JCI standards for quality certification</td></tr>
-  </table>
-  <div class="keypoint"><strong>Why Essential?</strong> Medical audits make hospitals safer places for patients. They find mistakes before they become big problems, encourage doctors to follow best practices, and help hospitals earn trust and accreditation.</div>
+
+  <div class="flow-wrap">
+    <div class="flow-label">The Audit Cycle — Step by Step Process</div>
+    <div class="flow-row">
+      <div class="fbox blue">Step 1 — Choose a Topic</div>
+      <div class="fdetail">Select a specific aspect of care to review. Example: "Are all patients with fever getting a blood test within 2 hours?"</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">Step 2 — Set Standards</div>
+      <div class="fdetail">Define what "good care" looks like. Example: "90% of fever patients should get blood test within 2 hours."</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">Step 3 — Collect Data</div>
+      <div class="fdetail">MRD staff review medical records of relevant patients and record the data systematically.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">Step 4 — Compare Results</div>
+      <div class="fdetail">Compare what was actually done against the standard set. Example: "Only 60% got the test in time — there is a gap."</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">Step 5 — Identify Gaps</div>
+      <div class="fdetail">Find out why the gap exists — was it a staffing problem, a communication failure, or a lack of equipment?</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox red">Step 6 — Implement Changes</div>
+      <div class="fdetail">Make the necessary improvements — new training, new protocols, or more staff at peak hours.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox blue">Step 7 — Re-Audit</div>
+      <div class="fdetail">After changes are made, repeat the audit to check if the improvement actually happened. Then the cycle begins again.</div>
+    </div>
+  </div>
+
+  <div class="explain">
+    <div class="explain-label">Types of Medical Audit — Explained</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Prospective Audit</strong>
+        <p>Done <em>before</em> treatment begins. The patient's condition is reviewed to plan the best possible care in advance. Useful in planned surgeries or for high-risk patients.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Concurrent Audit</strong>
+        <p>Done <em>while</em> the patient is still in the hospital receiving care. If a problem is found, it can be corrected immediately — before any harm is done. Very effective for ICU or long-stay patients.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Retrospective Audit</strong>
+        <p>Done <em>after</em> the patient is discharged. The most common type. It identifies patterns over many cases and helps the hospital improve its overall standard of care.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Internal Audit</strong>
+        <p>Conducted by the hospital's own doctors, nurses, or MRD team. It is done regularly as an in-house quality check without involving outside agencies.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>External Audit</strong>
+        <p>Conducted by outside experts or accreditation bodies like NABH (National Accreditation Board for Hospitals) or JCI (Joint Commission International). This is done as part of the hospital's quality certification process.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="explain">
+    <div class="explain-label">Outcomes &amp; Why Audits Are Essential</div>
+    <div class="exp-item">
+      <div class="exp-num">✓</div>
+      <div class="exp-body">
+        <strong>Improved Quality of Patient Care</strong>
+        <p>When doctors and nurses know their work will be reviewed, they follow correct procedures more carefully — leading to better outcomes for patients.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">✓</div>
+      <div class="exp-body">
+        <strong>Reduction in Medical Errors</strong>
+        <p>Audits identify recurring mistakes — wrong medicines, missed diagnoses, delayed treatments — and fix the root cause so they don't happen again.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">✓</div>
+      <div class="exp-body">
+        <strong>Better Record Keeping</strong>
+        <p>When auditors check records, doctors realize the importance of complete and accurate documentation — improving the overall quality of medical records in the hospital.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">✓</div>
+      <div class="exp-body">
+        <strong>Hospital Accreditation (NABH / JCI)</strong>
+        <p>Regular medical audits are a mandatory requirement for hospital accreditation. A hospital with strong audit systems gets certified as a quality healthcare provider — attracting more patients and better insurance empanelment.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Medical audits are not about finding fault — they are about finding opportunities to improve. A hospital that audits itself regularly becomes safer, more efficient, and more trustworthy. The audit cycle ensures that improvement is not a one-time event, but a continuous process that never stops.</p>
+  </div>
 </div>
 
+<!-- Q8b -->
 <div class="qblock">
   <div class="qnum">Question 8(b)</div>
-  <div class="qtxt">What are the guidelines for determining staffing levels and requirements in the MRD? <span class="marks-badge">5 Marks</span></div>
+  <div class="qtxt">What are the guidelines for determining staffing levels and requirements in the MRD? <span class="marks-tag">5 Marks</span></div>
 </div>
 <div class="ans">
-  <p>The number of staff needed in an MRD depends on several factors:</p>
-  <table>
-    <tr><th>#</th><th>Factor</th><th>How it affects staffing</th></tr>
-    <tr><td>1</td><td><strong>Number of Beds</strong></td><td>More beds = more patients = more records = more staff needed. General ratio: <strong>1 MR technician per 50–100 beds</strong></td></tr>
-    <tr><td>2</td><td><strong>Daily Patient Load</strong></td><td>High OPD and IPD volume means more record creation, assembly, and filing work.</td></tr>
-    <tr><td>3</td><td><strong>Type of Hospital</strong></td><td>Teaching hospitals need more staff for research, coding, and training activities.</td></tr>
-    <tr><td>4</td><td><strong>Services Available</strong></td><td>Hospitals with surgery, ICU, oncology generate more complex records needing expert coders.</td></tr>
-    <tr><td>5</td><td><strong>Turnaround Time</strong></td><td>If records must be ready in 24 hours, more staff is needed to meet the deadline.</td></tr>
-    <tr><td>6</td><td><strong>Level of Computerization</strong></td><td>Fully digital systems reduce manual work, so fewer staff are needed for routine tasks.</td></tr>
-  </table>
-  <div class="notebox">💡 <strong>Standard Ratio:</strong> 1 MR Technician per 50–100 beds | 1 MRO per department | Specialized coders for ICU, surgery, and MLC sections.</div>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    The MRD cannot function well without the right number of trained staff. Too few staff means delays, errors, and poor record management. Too many staff is a waste of resources. Hospital administrators use specific guidelines and factors to calculate exactly how many MRD staff are needed.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Factors for Staffing</div>
+    <ul>
+      <li>Number of hospital beds</li>
+      <li>Daily patient load (OPD + IPD)</li>
+      <li>Type of hospital (teaching / specialty / general)</li>
+      <li>Complexity of services offered</li>
+      <li>Required turnaround time for records</li>
+      <li>Degree of computerization in MRD</li>
+    </ul>
+  </div>
+
+  <div class="explain">
+    <div class="explain-label">Each Factor Explained</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Number of Hospital Beds</strong>
+        <p>More beds means more admitted patients, more records, more coding, more filing. The general standard is <strong>1 MR Technician per 50 to 100 beds</strong>.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Daily Patient Load (OPD + IPD)</strong>
+        <p>A hospital seeing 1,000 OPD patients daily needs more staff than one seeing 200. High patient volume means more records are created, assembled, coded, and retrieved every day.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Type of Hospital</strong>
+        <p>A <strong>teaching hospital</strong> needs more MRD staff because records are used not just for patient care, but also for student training, research, and publishing case studies. A <strong>specialty hospital</strong> needs expert coders for complex procedures.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Turnaround Time Required</strong>
+        <p>If hospital policy says all records must be coded and filed within 24 hours of discharge, more staff will be needed to meet this deadline compared to a hospital with a 72-hour policy.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Degree of Computerization</strong>
+        <p>In a fully digital hospital with EHR, many manual tasks are automated — so fewer staff are needed for physical filing and retrieval. But more skilled IT-trained staff are needed for data entry and system management.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Staffing in MRD is not a one-size-fits-all formula. It must be calculated based on the hospital's size, workload, type, and technology level. The right staffing ensures records are managed efficiently, legally, and without errors.</p>
+  </div>
 </div>
 
 <!-- Q9 -->
 <div class="qblock">
   <div class="qnum">Question 9</div>
-  <div class="qtxt">How do MRD personnel ensure legal compliance and protect patient rights in the handling of records? <span class="marks-badge">15 Marks</span></div>
+  <div class="qtxt">How do MRD personnel ensure legal compliance and protect patient rights in the handling of records? <span class="marks-tag">15 Marks</span></div>
 </div>
 <div class="ans">
-  <div class="defbox">MRD personnel have a dual responsibility: (1) following the <strong>law</strong> in how records are managed, and (2) protecting the <strong>rights of every patient</strong> whose information is stored.</div>
-  <br>
-  <div class="two-col">
-    <div class="col-box">
-      <h4>⚖️ LEGAL COMPLIANCE</h4>
-      <ul>
-        <li><strong>Retention Policy:</strong> Records kept for legally required duration (adults: 5–10 yrs; minors: till 18 + extra yrs; MLC: 10+ yrs).</li>
-        <li><strong>Authorized Access Only:</strong> Records given only to treating doctors, patient, court order, or insurance with valid proof.</li>
-        <li><strong>MLC Protocol:</strong> All medico-legal cases are registered, police are informed, and strict documentation is maintained.</li>
-        <li><strong>Accurate ICD Coding:</strong> Correct codes ensure proper billing and avoid insurance fraud — a legal requirement.</li>
-        <li><strong>Proper Consent Filing:</strong> All consent forms filed correctly as they serve as legal protection for the hospital.</li>
-        <li><strong>Birth &amp; Death Registration:</strong> Issuing official government documents as per law.</li>
-      </ul>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    The MRD holds the most sensitive information that exists in a hospital — every patient's personal health data. This comes with two major responsibilities. First, the MRD must follow all <strong>legal rules</strong> about how records are stored, released, and destroyed. Second, it must actively <strong>protect the rights of every patient</strong> — their right to privacy, their right to access their records, and their right to have accurate information maintained about them. Both responsibilities go hand in hand.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Points</div>
+    <ul>
+      <li><strong>Legal Compliance:</strong> Retention policy, authorised access only, MLC protocol, accurate ICD coding, proper consent filing, birth/death registration</li>
+      <li><strong>Patient Rights:</strong> Right to confidentiality, right to access own records, right to correction, data security, audit trails, staff training</li>
+    </ul>
+  </div>
+
+  <div class="flow-wrap">
+    <div class="flow-label">Flowchart — Legal Process for Releasing a Medical Record</div>
+    <div class="flow-row">
+      <div class="fbox blue">Request Received</div>
+      <div class="fdetail">Request comes from: patient, treating doctor, police (for MLC), court, or insurance company.</div>
     </div>
-    <div class="col-box">
-      <h4>🛡️ PROTECTING PATIENT RIGHTS</h4>
-      <ul>
-        <li><strong>Confidentiality:</strong> Patient information is never shared without consent. Staff are bound by an oath of secrecy.</li>
-        <li><strong>Right to Access:</strong> Patients can legally ask for a copy of their own records anytime.</li>
-        <li><strong>Right to Correction:</strong> If there is a wrong entry, the patient can request it to be corrected.</li>
-        <li><strong>Data Security:</strong> Digital records are password-protected, encrypted, and access-controlled.</li>
-        <li><strong>Audit Trails:</strong> Every time a record is accessed digitally, a log is saved — who accessed it, when, and why.</li>
-        <li><strong>Staff Training:</strong> Regular training on privacy laws, ethics, and data protection policies.</li>
-      </ul>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">Verify Identity &amp; Authority</div>
+      <div class="fdetail">Check: Is this person authorised to receive this record? (ID proof, court order, or valid consent from patient required.)</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">MRO Approval</div>
+      <div class="fdetail">The Medical Record Officer reviews and formally approves the release of the record.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">Certified Copy Prepared</div>
+      <div class="fdetail">A certified photocopy is made. The ORIGINAL record always stays in the MRD — it never leaves.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">Entry in Release Register</div>
+      <div class="fdetail">All details recorded: who received it, date, time, purpose, and their signature.</div>
     </div>
   </div>
-  <br>
-  <p><strong>Flow of Record Release (Legal Process):</strong></p>
-  <div class="flowchart">
-    <div class="flow-step">
-      <div class="flow-box" style="min-width:180px; font-size:12px;">Request Received</div>
-      <div class="flow-detail">From patient, police, court, insurance, or doctor</div>
+
+  <div class="explain">
+    <div class="explain-label">Legal Compliance — Explained</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Retention Policy</strong>
+        <p>Records are kept for the legally required period before disposal — Adult records: 5 to 10 years | Records of minors: until they reach 18 years + additional years | MLC records: 10+ years. Destroying a record too early is a legal offence.</p>
+      </div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box green" style="min-width:180px; font-size:12px;">Verify Authority</div>
-      <div class="flow-detail">Check if the person requesting has valid authorization</div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Authorised Access Only</strong>
+        <p>Records can only be given to the treating doctor, the patient themselves, a court of law with written order, or an insurance company with valid patient consent. Random visitors, family members (without consent), or press are never given access.</p>
+      </div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box orange" style="min-width:180px; font-size:12px;">MRO Approval</div>
-      <div class="flow-detail">Medical Record Officer approves the release</div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>MLC Protocol Compliance</strong>
+        <p>For all medico-legal cases, strict protocols are followed — police intimation within the correct time frame, separate MLC register, restricted access, and detailed documentation of all information related to the case.</p>
+      </div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box teal" style="min-width:180px; font-size:12px;">Record Provided</div>
-      <div class="flow-detail">Copy given — original stays in MRD always</div>
-    </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box purple" style="min-width:180px; font-size:12px;">Entry in Release Register</div>
-      <div class="flow-detail">Who received it, date, purpose — all documented</div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Accurate ICD Coding</strong>
+        <p>Incorrect codes can lead to wrong billing, insurance fraud, or legal disputes. MRD ensures every diagnosis and procedure is correctly coded using ICD-10/11 as per official guidelines.</p>
+      </div>
     </div>
   </div>
-  <div class="keypoint"><strong>Key Rule:</strong> The ORIGINAL record NEVER leaves the MRD. Only certified copies are given out.</div>
+
+  <div class="explain">
+    <div class="explain-label">Patient Rights — Explained</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Right to Confidentiality</strong>
+        <p>A patient's health information is private. MRD staff are ethically and legally bound to never share patient details with any unauthorised person — not even the patient's employer or relatives without the patient's consent.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Right to Access Own Records</strong>
+        <p>Every patient has the legal right to receive a certified copy of their own medical record at any time upon request. The hospital must provide this within a reasonable time — usually within 48 to 72 hours.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Right to Correction of Errors</strong>
+        <p>If a patient finds an error in their medical record — a wrong date, incorrect diagnosis, or wrong medication — they can formally request a correction. The MRD investigates and corrects it with proper documentation.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Data Security for Digital Records</strong>
+        <p>Electronic records are protected by passwords, role-based access (each staff member can only see what their role allows), end-to-end encryption, and firewall systems to prevent hacking or data leaks.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Audit Trails</strong>
+        <p>Every time a digital record is opened, edited, or downloaded, the system automatically records who did it and when. This makes it impossible to access records secretly without being caught.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIFFERENCE TABLE -->
+  <div class="diff-label">Difference — Legal Compliance vs Patient Rights Protection</div>
+  <table class="diff-table">
+    <tr>
+      <th>Basis</th>
+      <th>Legal Compliance</th>
+      <th>Patient Rights Protection</th>
+    </tr>
+    <tr>
+      <td>Focus</td>
+      <td>Follows rules set by the government and law</td>
+      <td>Protects the individual patient's personal interests</td>
+    </tr>
+    <tr>
+      <td>Who benefits</td>
+      <td>Hospital, government, court system</td>
+      <td>The patient directly</td>
+    </tr>
+    <tr>
+      <td>Key actions</td>
+      <td>Retention, MLC protocol, authorized access, coding</td>
+      <td>Confidentiality, right to access, data security, correction</td>
+    </tr>
+    <tr>
+      <td>Consequence of failure</td>
+      <td>Legal action against the hospital (fines, license issues)</td>
+      <td>Breach of patient trust, ethical violations, patient harm</td>
+    </tr>
+  </table>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Legal compliance and patient rights protection are two sides of the same coin in MRD. Following the law protects the hospital, while protecting patient rights builds trust and ensures ethical healthcare. Together, they ensure that every patient record is handled with the highest level of responsibility, security, and respect.</p>
+  </div>
 </div>
 
 <!-- Q10 -->
 <div class="qblock">
   <div class="qnum">Question 10</div>
-  <div class="qtxt">How can the Medical Records Department ensure the accuracy, confidentiality, and timely availability of patient records while adapting to digital transformation and increasing patient volumes? <span class="marks-badge">15 Marks</span></div>
+  <div class="qtxt">How can the Medical Records Department ensure the accuracy, confidentiality, and timely availability of patient records while adapting to digital transformation and increasing patient volumes? <span class="marks-tag">15 Marks</span></div>
 </div>
 <div class="ans">
-  <div class="defbox">As hospitals grow bigger and move to digital systems, the MRD must handle more records, faster, more securely — without any errors. This requires smart systems and trained staff.</div>
-  <br>
-  <table>
-    <tr><th>Challenge</th><th>Strategy / Solution</th><th>Tool Used</th></tr>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    Modern hospitals are growing rapidly — more patients, more records, and more digital systems. The MRD must rise to this challenge without ever compromising on three core pillars: <strong>Accuracy</strong> (records must be correct), <strong>Confidentiality</strong> (records must be private), and <strong>Timely Availability</strong> (records must be accessible when needed). As hospitals go digital, new tools and strategies make all three pillars stronger — but only if managed properly.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Points</div>
+    <ul>
+      <li><strong>Accuracy:</strong> EHR validation, deficiency checking, ICD coding standards, staff training, periodic audits</li>
+      <li><strong>Confidentiality:</strong> Role-based access, encryption, multi-factor login, cybersecurity audits, strict policies</li>
+      <li><strong>Timely Availability:</strong> Cloud access, barcode/RFID tagging, 24/7 digital systems, disaster recovery</li>
+      <li><strong>Managing Volume:</strong> Scalable cloud infrastructure, automation, workflow management, more trained staff</li>
+    </ul>
+  </div>
+
+  <div class="flow-wrap">
+    <div class="flow-label">Flowchart — Digital MRD in Action</div>
+    <div class="flow-row">
+      <div class="fbox blue">Patient Admitted</div>
+      <div class="fdetail">Patient registered in EHR system — no paper needed. Unique digital ID assigned.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">All Clinical Data Entered Digitally</div>
+      <div class="fdetail">Doctors, nurses, lab, radiology all enter data into the same EHR — real time, accurate, and accessible to all authorised staff.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">Validation &amp; Accuracy Checks</div>
+      <div class="fdetail">EHR system alerts if data is missing, incorrectly formatted, or contradicts earlier entries — preventing errors automatically.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">Discharge &amp; Coding</div>
+      <div class="fdetail">At discharge, MR Technician assigns ICD-10/11 codes. System checks coding accuracy before finalising the record.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">Encrypted Storage &amp; Cloud Backup</div>
+      <div class="fdetail">Completed record is stored with encryption in the hospital server and automatically backed up to a secure cloud location.</div>
+    </div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox red">Access on Demand — Securely</div>
+      <div class="fdetail">Authorised doctor, patient, or court can access the record instantly — with login, role-based access, and a full audit trail of who viewed it.</div>
+    </div>
+  </div>
+
+  <div class="explain">
+    <div class="explain-label">Three Pillars — Detailed Explanation</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Ensuring Accuracy</strong>
+        <p>EHR systems with built-in validation checks automatically flag missing fields or wrong formats. Regular deficiency checking ensures no discharge record is incomplete. ICD-10/11 coding standards are followed strictly. Periodic medical audits catch patterns of errors and correct them. All staff are trained regularly on documentation standards.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Ensuring Confidentiality</strong>
+        <p>Role-based access control ensures each staff member can only view the records relevant to their job — a receptionist cannot see clinical notes. All data is encrypted end-to-end. Multi-factor login (password + OTP) prevents unauthorised access. Regular cybersecurity audits detect and fix vulnerabilities before they are exploited.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Ensuring Timely Availability</strong>
+        <p>Cloud-based systems make records available from any department, or even from another hospital branch, instantly. Barcode and RFID tagging on physical files allow quick location and retrieval. Emergency teams get 24/7 digital access to critical patient history. Disaster recovery systems ensure the hospital can access all records even after a server failure or natural disaster.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Managing Increasing Patient Volumes</strong>
+        <p>Scalable cloud infrastructure automatically increases storage capacity as patient numbers grow — no physical expansion needed. Automation of routine tasks like appointment records, discharge summaries, and report generation reduces the manual workload on staff. Workflow management software distributes tasks evenly among MRD staff so no one is overloaded.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DIFFERENCE TABLE -->
+  <div class="diff-label">Difference — Traditional MRD vs Digital MRD</div>
+  <table class="diff-table">
     <tr>
-      <td><strong>Ensuring Accuracy</strong></td>
-      <td>
-        • EHR systems with auto-validation (no wrong formats accepted)<br>
-        • Regular deficiency checking after each discharge<br>
-        • Standardized ICD-10/11 coding<br>
-        • Periodic record audits<br>
-        • Staff training on data entry
-      </td>
-      <td>EHR Software, ICD Coder, Audit Committee</td>
+      <th>Basis</th>
+      <th>Traditional / Paper MRD</th>
+      <th>Digital / EHR-based MRD</th>
     </tr>
     <tr>
-      <td><strong>Ensuring Confidentiality</strong></td>
-      <td>
-        • Role-based access (nurse sees only nursing notes, not billing)<br>
-        • End-to-end data encryption<br>
-        • Multi-factor login authentication<br>
-        • Regular cybersecurity checks<br>
-        • Strict staff confidentiality policy
-      </td>
-      <td>Firewall, SSL encryption, Access Control Software</td>
+      <td>Record Creation</td>
+      <td>Written manually by doctors and nurses</td>
+      <td>Entered directly into computer / tablet in real time</td>
     </tr>
     <tr>
-      <td><strong>Timely Availability</strong></td>
-      <td>
-        • Cloud systems allow instant access from anywhere<br>
-        • Barcode/RFID tagging for fast physical retrieval<br>
-        • 24/7 digital access for emergency teams<br>
-        • Disaster recovery ensures no downtime<br>
-        • Automated report generation
-      </td>
-      <td>Cloud Server, Barcode System, Disaster Recovery</td>
+      <td>Storage</td>
+      <td>Physical files in large storage rooms</td>
+      <td>Servers and cloud — no physical space needed</td>
     </tr>
     <tr>
-      <td><strong>Managing More Patients</strong></td>
-      <td>
-        • Scalable cloud infrastructure (capacity grows automatically)<br>
-        • Automation of routine tasks (appointment records, discharge summaries)<br>
-        • Workflow management to divide workload among staff<br>
-        • Hiring and training more MRD staff as volume grows
-      </td>
-      <td>HIS (Hospital Information System), Workflow Software</td>
+      <td>Retrieval</td>
+      <td>Manual search — can take hours</td>
+      <td>Instant — search by name, ID, or date</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td>Prone to human errors, illegible writing</td>
+      <td>Validation checks prevent most errors automatically</td>
+    </tr>
+    <tr>
+      <td>Confidentiality</td>
+      <td>Lock and key, limited to physical location</td>
+      <td>Encryption, passwords, audit trails, firewalls</td>
+    </tr>
+    <tr>
+      <td>Handling Volume</td>
+      <td>More patients = more physical staff needed</td>
+      <td>Scalable — system handles more records automatically</td>
+    </tr>
+    <tr>
+      <td>Disaster Risk</td>
+      <td>Fire or flood can destroy everything</td>
+      <td>Cloud backup keeps data safe even in disasters</td>
     </tr>
   </table>
-  <br>
-  <p><strong>Digital Transformation Journey of MRD:</strong></p>
-  <div style="display:flex; gap:6px; flex-wrap:wrap; justify-content:center; margin:10px 0; align-items:center;">
-    <div style="background:#aed6f1; border-radius:6px; padding:8px 14px; text-align:center; font-size:12px;"><strong>Paper Records</strong><br>(Manual)</div>
-    <div style="font-size:20px; color:#1a5276;">→</div>
-    <div style="background:#7fb3d3; color:#fff; border-radius:6px; padding:8px 14px; text-align:center; font-size:12px;"><strong>Microfilming</strong><br>(Semi-manual)</div>
-    <div style="font-size:20px; color:#1a5276;">→</div>
-    <div style="background:#2980b9; color:#fff; border-radius:6px; padding:8px 14px; text-align:center; font-size:12px;"><strong>Scanned Digital</strong><br>(Hybrid)</div>
-    <div style="font-size:20px; color:#1a5276;">→</div>
-    <div style="background:#1a5276; color:#fff; border-radius:6px; padding:8px 14px; text-align:center; font-size:12px;"><strong>Full EHR</strong><br>(Fully Digital)</div>
-    <div style="font-size:20px; color:#1a5276;">→</div>
-    <div style="background:#1e8449; color:#fff; border-radius:6px; padding:8px 14px; text-align:center; font-size:12px;"><strong>Cloud + AI</strong><br>(Future)</div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Digital transformation is not optional anymore for modern MRDs — it is a necessity. By adopting EHR systems, cloud storage, encryption, and smart workflow tools, the MRD can simultaneously be more accurate, more private, and faster — even as hospitals grow bigger and busier. The goal is a paperless, people-friendly, and legally sound record management system.</p>
   </div>
-  <div class="keypoint"><strong>Conclusion:</strong> The MRD of the future must be fast, secure, accurate, and paperless — using technology to handle growing patient volumes without compromising privacy or quality.</div>
 </div>
 
 <!-- Q11 -->
 <div class="qblock">
   <div class="qnum">Question 11</div>
-  <div class="qtxt">Discuss the role of medical records in healthcare delivery. Include a flow chart of their function. <span class="marks-badge">15 Marks</span></div>
+  <div class="qtxt">Discuss the role of medical records in healthcare delivery. Include a flow chart of their function. <span class="marks-tag">15 Marks</span></div>
 </div>
 <div class="ans">
-  <div class="defbox">Medical records are the backbone of healthcare. Every decision a doctor makes, every treatment given, every medicine prescribed — all of it is recorded. Without medical records, healthcare delivery would be incomplete, unsafe, and unaccountable.</div>
-  <br>
-  <p><strong>Roles of Medical Records in Healthcare:</strong></p>
-  <table>
-    <tr><th>#</th><th>Role</th><th>How it helps</th></tr>
-    <tr><td>1</td><td><strong>Clinical Care</strong></td><td>Doctors use past records to know the patient's history, allergies, and previous treatments — so they give the right treatment.</td></tr>
-    <tr><td>2</td><td><strong>Continuity of Care</strong></td><td>When a patient sees different doctors or hospitals, the record ensures consistent, safe treatment without repeating tests.</td></tr>
-    <tr><td>3</td><td><strong>Communication</strong></td><td>Doctors, nurses, lab staff, and pharmacists all refer to the same record — ensuring everyone is on the same page.</td></tr>
-    <tr><td>4</td><td><strong>Legal Protection</strong></td><td>Acts as evidence in court cases, insurance disputes, and medico-legal cases.</td></tr>
-    <tr><td>5</td><td><strong>Research &amp; Education</strong></td><td>Medical students and researchers use anonymized records to study diseases, treatments, and outcomes.</td></tr>
-    <tr><td>6</td><td><strong>Billing &amp; Insurance</strong></td><td>ICD codes from records are used to generate accurate bills and process insurance claims.</td></tr>
-    <tr><td>7</td><td><strong>Quality Assurance</strong></td><td>Medical audits use records to check if care meets standards and identify areas for improvement.</td></tr>
-    <tr><td>8</td><td><strong>Public Health &amp; Statistics</strong></td><td>Disease outbreaks, death rates, birth rates — all tracked through medical records for government planning.</td></tr>
-  </table>
-  <br>
-  <p><strong>Flow Chart — Journey of a Medical Record:</strong></p>
-  <div class="flowchart">
-    <div class="flow-step">
-      <div class="flow-box" style="min-width:200px;">🏥 Patient Arrives at Hospital</div>
-      <div class="flow-detail">Patient comes to OPD, Emergency, or for Admission</div>
+
+  <div class="intro">
+    <div class="intro-label">Introduction</div>
+    Medical records are the foundation of healthcare delivery. Every single decision made in a hospital — from the medicine a doctor prescribes to the bill a patient pays — is based on what is written in the medical record. Without accurate and complete medical records, safe and effective healthcare is simply not possible. A medical record follows the patient from the moment they arrive at the hospital to long after they leave — connecting every doctor, nurse, lab, and department involved in their care.
+  </div>
+
+  <div class="points-box">
+    <div class="pts-label">Key Roles of Medical Records in Healthcare</div>
+    <ul>
+      <li>Supports clinical decision-making and diagnosis</li>
+      <li>Ensures continuity of care across multiple doctors and visits</li>
+      <li>Acts as a communication tool between all healthcare teams</li>
+      <li>Provides legal protection for patients and hospitals</li>
+      <li>Supports medical research and education</li>
+      <li>Enables accurate billing and insurance processing</li>
+      <li>Forms the basis of medical audits and quality assurance</li>
+      <li>Helps in public health monitoring and disease surveillance</li>
+    </ul>
+  </div>
+
+  <div class="flow-wrap">
+    <div class="flow-label">Flowchart — Complete Journey of a Medical Record</div>
+    <div class="flow-row">
+      <div class="fbox blue">🏥 Patient Arrives at Hospital</div>
+      <div class="fdetail">Patient visits OPD, Emergency, or comes for admission. Journey of the record begins here.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box green" style="min-width:200px;">📝 Registration</div>
-      <div class="flow-detail">New patient → OPD/IP record created with unique ID number</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">📝 Registration</div>
+      <div class="fdetail">New patient → Unique ID assigned → OPD card or IP record created → Basic details entered.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box orange" style="min-width:200px;">🩺 Clinical Consultation</div>
-      <div class="flow-detail">Doctor records: History, Examination findings, Diagnosis, Treatment plan</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">🩺 Clinical Consultation</div>
+      <div class="fdetail">Doctor records: Chief complaint, medical history, physical examination findings, provisional diagnosis, and treatment plan.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box teal" style="min-width:200px;">🔬 Investigations</div>
-      <div class="flow-detail">Lab tests, X-rays, ECG reports added to the record</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">🔬 Investigations</div>
+      <div class="fdetail">Lab tests, X-rays, ECG, MRI, scan reports are done and results added to the patient's record.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box purple" style="min-width:200px;">💊 Treatment / Surgery</div>
-      <div class="flow-detail">Progress notes, drug charts, operation notes, nursing notes recorded daily</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">💊 Treatment / Surgery</div>
+      <div class="fdetail">Daily progress notes, doctor's orders, drug charts, nursing notes, and operation notes are recorded throughout the stay.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box" style="min-width:200px; background:#d35400;">🏠 Discharge</div>
-      <div class="flow-detail">Discharge summary prepared — diagnosis, treatment given, follow-up advice</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox red">🏠 Discharge</div>
+      <div class="fdetail">Discharge summary prepared — final diagnosis, treatment given, condition at discharge, follow-up instructions, and medicines prescribed.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box green" style="min-width:200px;">📂 MRD — Assembling</div>
-      <div class="flow-detail">All loose documents collected and arranged in standard order</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox green">📂 MRD — Assembling</div>
+      <div class="fdetail">All loose documents collected from ward and arranged in standard order in MRD.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box orange" style="min-width:200px;">🔍 Deficiency Checking</div>
-      <div class="flow-detail">Missing entries identified and sent back to doctors for completion</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox orange">🔍 Deficiency Checking</div>
+      <div class="fdetail">Missing signatures, reports, or entries identified → Deficiency slip sent to doctor for completion.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box teal" style="min-width:200px;">🏷️ Coding (ICD)</div>
-      <div class="flow-detail">Diagnoses and procedures coded for billing, statistics, and insurance</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox teal">🏷️ ICD Coding</div>
+      <div class="fdetail">MR Technician assigns standard ICD-10/11 codes to the diagnosis and all procedures performed.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box purple" style="min-width:200px;">🗄️ Indexing &amp; Filing</div>
-      <div class="flow-detail">Record permanently stored in MRD using serial/terminal digit filing system</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox purple">🗄️ Indexing &amp; Filing</div>
+      <div class="fdetail">Record added to disease index, physician index, patient index → Permanently filed using terminal digit or serial filing system.</div>
     </div>
-    <div class="flow-arrow">↓</div>
-    <div class="flow-step">
-      <div class="flow-box" style="min-width:200px; background:#1e8449;">🔄 Retrieval &amp; Use</div>
-      <div class="flow-detail">Record retrieved when needed for: Follow-up care | Legal purpose | Research | Audit | Insurance</div>
+    <div class="farrow">↓</div>
+    <div class="flow-row">
+      <div class="fbox blue">🔄 Retrieval &amp; Multiple Uses</div>
+      <div class="fdetail">Record retrieved as needed for: follow-up care | legal purpose | insurance | research | medical audit | public health statistics.</div>
     </div>
   </div>
-  <div class="keypoint" style="margin-top:14px;"><strong>Conclusion:</strong> A medical record travels with the patient through every step of healthcare — from the moment they enter the hospital to long after they leave. It is the single most important document in healthcare delivery, connecting all departments and ensuring safe, accountable, and continuous care.</div>
+
+  <div class="explain">
+    <div class="explain-label">Each Role Explained in Detail</div>
+    <div class="exp-item">
+      <div class="exp-num">1</div>
+      <div class="exp-body">
+        <strong>Clinical Care and Diagnosis</strong>
+        <p>A doctor uses the patient's past records to know what illnesses they have had, what medicines they are allergic to, and what treatments have been tried before. This prevents dangerous mistakes like prescribing a drug the patient is allergic to — and ensures the right treatment is given from day one.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">2</div>
+      <div class="exp-body">
+        <strong>Continuity of Care</strong>
+        <p>When a patient visits multiple doctors — a general physician, a specialist, a surgeon — each doctor can refer to the same record and give consistent care. Without this, every doctor would start from scratch, wasting time and risking contradictory treatments.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">3</div>
+      <div class="exp-body">
+        <strong>Communication Between Teams</strong>
+        <p>Doctors, nurses, lab technicians, pharmacists, and physiotherapists all refer to the same medical record. It is the single shared source of truth that keeps everyone on the same page and prevents miscommunication.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">4</div>
+      <div class="exp-body">
+        <strong>Legal Protection</strong>
+        <p>Records are evidence in court for medico-legal cases, medical negligence claims, and insurance disputes. A well-maintained record protects both the patient and the hospital.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">5</div>
+      <div class="exp-body">
+        <strong>Research and Medical Education</strong>
+        <p>Researchers use anonymised medical records to study disease patterns, treatment success rates, and drug reactions. Medical students and interns learn from real case records — making records an essential part of training the next generation of doctors.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">6</div>
+      <div class="exp-body">
+        <strong>Billing, Insurance, and Administration</strong>
+        <p>The ICD codes assigned from the medical record are used to generate accurate hospital bills and process insurance claims. Without correct records, billing errors and insurance rejections are inevitable.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">7</div>
+      <div class="exp-body">
+        <strong>Quality Assurance and Medical Audits</strong>
+        <p>Medical audits use records to check if the right care was given. Records reveal patterns — if one ward has more post-surgery infections than others, the audit helps identify why and fix it.</p>
+      </div>
+    </div>
+    <div class="exp-item">
+      <div class="exp-num">8</div>
+      <div class="exp-body">
+        <strong>Public Health and Disease Surveillance</strong>
+        <p>Government health departments use hospital records to track outbreaks of diseases (like dengue or COVID-19), monitor birth and death rates, plan vaccination drives, and allocate healthcare resources to the right areas.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="conclusion">
+    <div class="con-label">Conclusion</div>
+    <p>Medical records are far more than just paperwork — they are the living memory of every patient's healthcare journey. They connect every department, every doctor, and every decision in a hospital into one coherent, accountable, and safe system. A hospital that maintains excellent medical records delivers excellent healthcare. The medical record is truly the backbone of every healthcare system in the world.</p>
+  </div>
 </div>
 
 </body>
