@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Georgia', serif; font-size: 12.5px; color: #1a1a2e; background: #fff; }
+  .page { width: 210mm; padding: 15mm 18mm 15mm 18mm; margin: 0 auto; }
+  h1.doc-title { font-size: 22px; text-align: center; color: #fff; background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); padding: 18px 24px; border-radius: 10px; margin-bottom: 6px; letter-spacing: 1px; }
+  .cover-sub { text-align: center; font-size: 12.5px; color: #555; margin-bottom: 6px; font-style: italic; }
+  .cover-info { text-align: center; font-size: 12px; background: #f0f4ff; padding: 10px; border-radius: 6px; margin-bottom: 20px; line-height: 2; }
+  .toc { background: #f7f8ff; border: 1px solid #c5cae9; border-radius: 8px; padding: 14px 20px; margin: 14px 0 24px 0; }
+  .toc h3 { color: #0f3460; margin-bottom: 10px; font-size: 14px; }
+  .toc ol { margin-left: 18px; line-height: 2; }
+  .module-divider { page-break-before: always; }
+  .module-badge { display: inline-block; color: #fff; font-size: 11px; padding: 4px 14px; border-radius: 20px; margin-bottom: 10px; }
+  .mod1 { background: #0f3460; }
+  .mod2 { background: #e94560; }
+  .mod3 { background: #1a7a3c; }
+  .mod4 { background: #7b1fa2; }
+  .mod5 { background: #e65100; }
+  .system-header { font-size: 14px; color: #fff; background: linear-gradient(90deg, #0f3460, #16213e); padding: 7px 14px; border-radius: 6px; margin: 18px 0 9px 0; }
+  .dept-header { font-size: 14px; color: #fff; background: linear-gradient(90deg, #0f3460, #16213e); padding: 7px 14px; border-radius: 6px; margin: 18px 0 9px 0; }
+  h2 { font-size: 14.5px; color: #0f3460; border-left: 5px solid #e94560; padding-left: 10px; margin: 16px 0 8px 0; }
+  h3 { font-size: 13px; color: #16213e; margin: 11px 0 4px 0; font-weight: bold; }
+  p { margin: 4px 0 7px 0; line-height: 1.65; }
+  ul { margin: 3px 0 9px 16px; }
+  ul li { margin-bottom: 3px; line-height: 1.6; }
+  .highlight-box { background: #f0f4ff; border-left: 4px solid #0f3460; padding: 8px 12px; margin: 8px 0; border-radius: 4px; font-size: 12px; }
+  .term { font-weight: bold; color: #e94560; }
+  table { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 11.5px; }
+  th { background: #0f3460; color: #fff; padding: 6px 9px; text-align: left; }
+  td { padding: 5px 9px; border-bottom: 1px solid #dde; }
+  tr:nth-child(even) td { background: #f7f8ff; }
+  .divider { border: none; border-top: 2px solid #e94560; margin: 14px 0; }
+  .note-box { background: #fff8e1; border: 1px solid #ffd54f; padding: 7px 11px; border-radius: 5px; margin: 8px 0; font-size: 11.5px; }
+  .proc-box { background: #e8f5e9; border-left: 4px solid #388e3c; padding: 8px 12px; margin: 8px 0; border-radius: 4px; font-size: 12px; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 8px 0; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin: 8px 0; }
+  .card { background: #f7f8ff; border: 1px solid #dde; border-radius: 6px; padding: 8px 11px; }
+  .card h4 { color: #0f3460; font-size: 12px; margin-bottom: 4px; }
+  .rx-sample { background: #f9f9f9; border: 1px solid #bbb; border-radius: 6px; padding: 12px 16px; font-family: monospace; font-size: 12px; margin: 10px 0; line-height: 2; }
+  .flowchart { background: #f7f8ff; border: 1px solid #c5cae9; border-radius: 8px; padding: 10px 14px; margin: 8px 0; font-size: 12px; text-align: center; }
+  .flow-step { display: inline-block; background: #0f3460; color: #fff; padding: 4px 12px; border-radius: 20px; margin: 3px; }
+  .flow-arrow { color: #e94560; font-size: 15px; margin: 0 3px; }
+  .example { font-style: italic; color: #666; font-size: 11.5px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ===== COVER PAGE ===== -->
+  <h1 class="doc-title">Medical Terminology — BBAHM 201</h1>
+  <p class="cover-sub">Complete Summary Notes | All 5 Modules Covered</p>
+  <div class="cover-info">
+    <strong>Subject:</strong> Medical Terminology &nbsp;|&nbsp; <strong>Code:</strong> BBAHM 201 (Major) &nbsp;|&nbsp; <strong>Credits:</strong> 5 (4T+1P)<br>
+    <strong>University:</strong> Maulana Abul Kalam Azad University of Technology, West Bengal (MAKAUT)<br>
+    <strong>Program:</strong> BBA in Hospital Management &nbsp;|&nbsp; <strong>Effective From:</strong> 2023-24 Academic Sessions<br>
+    <strong>Semester:</strong> 2nd Semester &nbsp;|&nbsp; <strong>Full Marks:</strong> 70
+  </div>
+
+  <div class="toc">
+    <h3>📋 Table of Contents</h3>
+    <ol>
+      <li><strong>Module 1</strong> — Basics of Human Body, Body Cavities, Body Planes & Basic Examination; Cell & Cell Division</li>
+      <li><strong>Module 2</strong> — Introduction to Medical Terminology; Word Formation; Prefixes, Suffixes, Root Words; Body Part Terms</li>
+      <li><strong>Module 3</strong> — Human System Diseases & Procedures: Cardiovascular, Digestive, Nervous, Urinary, Endocrine, Reproductive, Respiratory</li>
+      <li><strong>Module 4</strong> — Prescription Reading; Latin Terms & Abbreviations; Dosage Forms; Measurement Units</li>
+      <li><strong>Module 5</strong> — Diagnostic Procedures: Fundamentals + Cardiology, Gastroenterology, Reproductive, Pulmonology, Orthopaedic Departments</li>
+    </ol>
+  </div>
+
+  <hr class="divider">
+
+  <!-- =================== MODULE 1 =================== -->
+  <div class="module-divider"></div>
+  <span class="module-badge mod1">MODULE 1</span>
+  <h2>Basics of Human Body, Body Cavities, Body Planes & Basic Examination</h2>
+
+  <h3>1.1 Levels of Organization of the Human Body</h3>
+  <p>The human body is organized from simplest to most complex in a hierarchical manner:</p>
+  <table>
+    <tr><th>Level</th><th>Description</th><th>Example</th></tr>
+    <tr><td>Chemical</td><td>Atoms and molecules</td><td>Water (H₂O), DNA, proteins</td></tr>
+    <tr><td>Cellular</td><td>Basic structural unit of life</td><td>Neuron, Red Blood Cell</td></tr>
+    <tr><td>Tissue</td><td>Group of similar cells performing same function</td><td>Muscle tissue, Nervous tissue</td></tr>
+    <tr><td>Organ</td><td>Two or more tissue types working together</td><td>Heart, Liver, Kidney</td></tr>
+    <tr><td>Organ System</td><td>Group of organs with related functions</td><td>Cardiovascular, Digestive</td></tr>
+    <tr><td>Organism</td><td>All systems together forming a living being</td><td>Human being</td></tr>
+  </table>
+
+  <h3>1.2 Body Cavities</h3>
+  <p>Body cavities are spaces within the body that contain and protect internal organs.</p>
+  <div class="grid2">
+    <div class="card"><h4>Dorsal Cavity</h4>
+      <ul>
+        <li><span class="term">Cranial cavity</span> — encloses the brain</li>
+        <li><span class="term">Spinal (vertebral) cavity</span> — encloses the spinal cord</li>
+      </ul>
+    </div>
+    <div class="card"><h4>Ventral Cavity</h4>
+      <ul>
+        <li><span class="term">Thoracic cavity</span> — heart, lungs, trachea</li>
+        <li><span class="term">Abdominopelvic cavity</span> — digestive organs, kidneys, bladder, reproductive organs</li>
+      </ul>
+    </div>
+  </div>
+  <p><strong>Abdominopelvic 9 regions:</strong> Right Hypochondriac | Epigastric | Left Hypochondriac | Right Lumbar | Umbilical | Left Lumbar | Right Iliac | Hypogastric | Left Iliac</p>
+  <p><strong>4 Quadrants:</strong> RUQ (liver, gallbladder) | LUQ (stomach, spleen) | RLQ (appendix, cecum) | LLQ (sigmoid colon)</p>
+
+  <h3>1.3 Body Planes (Anatomical Planes)</h3>
+  <table>
+    <tr><th>Plane</th><th>Also Called</th><th>Division</th></tr>
+    <tr><td>Sagittal</td><td>Lateral plane</td><td>Left and right halves; Midsagittal = equal halves</td></tr>
+    <tr><td>Frontal</td><td>Coronal plane</td><td>Anterior (front) and posterior (back)</td></tr>
+    <tr><td>Transverse</td><td>Horizontal / Axial plane</td><td>Superior (upper) and inferior (lower)</td></tr>
+  </table>
+
+  <h3>1.4 Directional Terms</h3>
+  <table>
+    <tr><th>Term</th><th>Meaning</th><th>Term</th><th>Meaning</th></tr>
+    <tr><td>Superior / Cranial</td><td>Toward the head</td><td>Inferior / Caudal</td><td>Toward the feet</td></tr>
+    <tr><td>Anterior / Ventral</td><td>Front of body</td><td>Posterior / Dorsal</td><td>Back of body</td></tr>
+    <tr><td>Medial</td><td>Toward midline</td><td>Lateral</td><td>Away from midline</td></tr>
+    <tr><td>Proximal</td><td>Closer to trunk</td><td>Distal</td><td>Farther from trunk</td></tr>
+    <tr><td>Superficial</td><td>Near body surface</td><td>Deep</td><td>Away from surface</td></tr>
+  </table>
+
+  <h3>1.5 Basic Physical Examination</h3>
+  <div class="grid2">
+    <div class="card"><h4>1. Inspection</h4><p>Visual assessment — skin, posture, breathing</p></div>
+    <div class="card"><h4>2. Palpation</h4><p>Feeling with hands — texture, tenderness, mass</p></div>
+    <div class="card"><h4>3. Percussion</h4><p>Tapping — dull (solid/fluid), resonant (air)</p></div>
+    <div class="card"><h4>4. Auscultation</h4><p>Listening via stethoscope — heart, lungs, bowel</p></div>
+  </div>
+  <div class="note-box"><strong>Normal Vital Signs:</strong> Temperature 98.6°F / 37°C | Pulse 60–100 bpm | RR 12–20/min | BP 120/80 mmHg | SpO₂ 95–100%</div>
+
+  <hr class="divider">
+  <h2>Cell & Cell Division</h2>
+
+  <h3>2.1 Cell Structure — Key Organelles</h3>
+  <table>
+    <tr><th>Organelle</th><th>Function</th></tr>
+    <tr><td>Cell membrane</td><td>Selective barrier; controls entry/exit</td></tr>
+    <tr><td>Nucleus</td><td>Control centre; contains DNA</td></tr>
+    <tr><td>Mitochondria</td><td>ATP production — powerhouse of the cell</td></tr>
+    <tr><td>Ribosome</td><td>Protein synthesis</td></tr>
+    <tr><td>Rough ER</td><td>Protein processing</td></tr>
+    <tr><td>Smooth ER</td><td>Lipid synthesis, detoxification</td></tr>
+    <tr><td>Golgi apparatus</td><td>Packages and ships proteins — post office of cell</td></tr>
+    <tr><td>Lysosome</td><td>Digests waste — suicide bag</td></tr>
+    <tr><td>Centrioles</td><td>Spindle formation during cell division</td></tr>
+  </table>
+
+  <h3>2.2 Cell Division</h3>
+  <div class="grid2">
+    <div class="card"><h4>Mitosis</h4><ul><li>2 identical daughter cells (diploid, 2n=46)</li><li>Purpose: Growth, repair</li><li>Phases: PMAT</li></ul></div>
+    <div class="card"><h4>Meiosis</h4><ul><li>4 genetically unique cells (haploid, n=23)</li><li>Purpose: Gamete production</li><li>Two rounds: Meiosis I and II</li></ul></div>
+  </div>
+  <table>
+    <tr><th>Mitosis Phase</th><th>Key Events</th></tr>
+    <tr><td>Prophase</td><td>Chromosomes condense; nuclear envelope breaks; spindle forms</td></tr>
+    <tr><td>Metaphase</td><td>Chromosomes align at equator (metaphase plate)</td></tr>
+    <tr><td>Anaphase</td><td>Sister chromatids separate to opposite poles</td></tr>
+    <tr><td>Telophase + Cytokinesis</td><td>Nuclear envelopes reform; cytoplasm divides into 2 cells</td></tr>
+  </table>
+  <div class="note-box"><strong>Clinical relevance:</strong> Uncontrolled mitosis → Cancer. Meiotic non-disjunction → Down syndrome (Trisomy 21), Turner (45,X), Klinefelter (47,XXY).</div>
+
+  <!-- =================== MODULE 2 =================== -->
+  <div class="module-divider"></div>
+  <span class="module-badge mod2">MODULE 2</span>
+  <h2>Introduction to Medical Terminology & Word Formation</h2>
+
+  <h3>2.1 What is Medical Terminology?</h3>
+  <p><span class="term">Medical terminology</span> is a standardized language used by healthcare professionals, primarily derived from <strong>Greek and Latin</strong>, to accurately communicate about the human body, diseases, procedures, and treatments with universal precision.</p>
+
+  <h3>2.2 Word Formation — Components</h3>
+  <table>
+    <tr><th>Component</th><th>Definition</th><th>Position</th><th>Example</th></tr>
+    <tr><td>Root Word</td><td>Core meaning</td><td>Middle</td><td>cardi (heart), hepat (liver)</td></tr>
+    <tr><td>Prefix</td><td>Modifies root; adds detail</td><td>Beginning</td><td>tachy- (fast), brady- (slow)</td></tr>
+    <tr><td>Suffix</td><td>Indicates condition/procedure</td><td>End</td><td>-itis (inflammation), -ectomy (removal)</td></tr>
+    <tr><td>Combining vowel</td><td>Links parts (usually 'o')</td><td>Between parts</td><td>cardiology (cardi-o-logy)</td></tr>
+  </table>
+  <div class="note-box"><strong>Rule:</strong> Combining vowel used between root words or before consonant-beginning suffixes. Dropped before vowel-beginning suffixes. Example: gastr/o + itis = gastritis (dropped).</div>
+
+  <h3>2.3 Greek & Latin Prepositional Prefixes</h3>
+  <table>
+    <tr><th>Prefix</th><th>Meaning</th><th>Example</th><th>Prefix</th><th>Meaning</th><th>Example</th></tr>
+    <tr><td>anti-</td><td>Against</td><td>Antibiotic</td><td>hypo-</td><td>Below normal</td><td>Hypoglycemia</td></tr>
+    <tr><td>peri-</td><td>Around</td><td>Pericardium</td><td>hyper-</td><td>Above normal</td><td>Hypertension</td></tr>
+    <tr><td>epi-</td><td>Upon, over</td><td>Epidermis</td><td>endo-</td><td>Within</td><td>Endoscopy</td></tr>
+    <tr><td>intra-</td><td>Within</td><td>Intravenous</td><td>sub-</td><td>Under</td><td>Subcutaneous</td></tr>
+    <tr><td>supra-</td><td>Above</td><td>Suprarenal</td><td>trans-</td><td>Across</td><td>Transdermal</td></tr>
+    <tr><td>pre-</td><td>Before</td><td>Prenatal</td><td>post-</td><td>After</td><td>Postoperative</td></tr>
+    <tr><td>inter-</td><td>Between</td><td>Intercostal</td><td>exo-</td><td>Outside</td><td>Exocrine</td></tr>
+  </table>
+
+  <h3>2.4 Key Prefixes — Number, Color, State</h3>
+  <div class="grid2">
+    <table>
+      <tr><th>Prefix</th><th>Meaning</th><th>Example</th></tr>
+      <tr><td>mono-/uni-</td><td>One</td><td>Mononuclear</td></tr>
+      <tr><td>bi-/di-</td><td>Two</td><td>Bilateral</td></tr>
+      <tr><td>poly-/multi-</td><td>Many</td><td>Polyneuropathy</td></tr>
+      <tr><td>micro-</td><td>Small</td><td>Microcephaly</td></tr>
+      <tr><td>macro-/mega-</td><td>Large</td><td>Megacolon</td></tr>
+      <tr><td>a-/an-</td><td>Without</td><td>Apnea, Anemia</td></tr>
+      <tr><td>dys-</td><td>Difficult/painful</td><td>Dyspnea</td></tr>
+      <tr><td>brady-</td><td>Slow</td><td>Bradycardia</td></tr>
+      <tr><td>tachy-</td><td>Fast</td><td>Tachycardia</td></tr>
+      <tr><td>hemi-</td><td>Half</td><td>Hemiplegia</td></tr>
+    </table>
+    <table>
+      <tr><th>Color Prefix</th><th>Color</th><th>Example</th></tr>
+      <tr><td>erythr/o-</td><td>Red</td><td>Erythrocyte (RBC)</td></tr>
+      <tr><td>leuk/o-</td><td>White</td><td>Leukocyte (WBC)</td></tr>
+      <tr><td>cyan/o-</td><td>Blue</td><td>Cyanosis</td></tr>
+      <tr><td>melan/o-</td><td>Black/dark</td><td>Melanoma</td></tr>
+      <tr><td>xanth/o-</td><td>Yellow</td><td>Xanthoma</td></tr>
+      <tr><td>alb/o-</td><td>White</td><td>Albinism</td></tr>
+    </table>
+  </div>
+
+  <h3>2.5 Key Suffixes</h3>
+  <div class="grid2">
+    <table>
+      <tr><th>Suffix</th><th>Meaning</th><th>Example</th></tr>
+      <tr><td>-algia/-dynia</td><td>Pain</td><td>Neuralgia</td></tr>
+      <tr><td>-itis</td><td>Inflammation</td><td>Hepatitis</td></tr>
+      <tr><td>-osis</td><td>Abnormal condition</td><td>Fibrosis</td></tr>
+      <tr><td>-emia</td><td>Blood condition</td><td>Anaemia</td></tr>
+      <tr><td>-pathy</td><td>Disease</td><td>Neuropathy</td></tr>
+      <tr><td>-rrhea</td><td>Flow/discharge</td><td>Diarrhoea</td></tr>
+      <tr><td>-plegia</td><td>Paralysis</td><td>Hemiplegia</td></tr>
+      <tr><td>-megaly</td><td>Enlargement</td><td>Hepatomegaly</td></tr>
+      <tr><td>-stenosis</td><td>Narrowing</td><td>Aortic stenosis</td></tr>
+    </table>
+    <table>
+      <tr><th>Suffix</th><th>Meaning</th><th>Example</th></tr>
+      <tr><td>-ectomy</td><td>Surgical removal</td><td>Appendectomy</td></tr>
+      <tr><td>-otomy</td><td>Surgical incision</td><td>Laparotomy</td></tr>
+      <tr><td>-ostomy</td><td>Surgical opening</td><td>Colostomy</td></tr>
+      <tr><td>-plasty</td><td>Surgical repair</td><td>Angioplasty</td></tr>
+      <tr><td>-scopy</td><td>Visual exam</td><td>Colonoscopy</td></tr>
+      <tr><td>-graphy</td><td>Recording process</td><td>Radiography</td></tr>
+      <tr><td>-gram</td><td>Record/image</td><td>ECG</td></tr>
+      <tr><td>-logy</td><td>Study of</td><td>Cardiology</td></tr>
+      <tr><td>-centesis</td><td>Surgical puncture</td><td>Amniocentesis</td></tr>
+    </table>
+  </div>
+
+  <h3>2.6 Common Root Words — Body Systems</h3>
+  <div class="grid2">
+    <table>
+      <tr><th>Root</th><th>Meaning</th></tr>
+      <tr><td>cardi/o</td><td>Heart</td></tr>
+      <tr><td>angi/o</td><td>Blood vessel</td></tr>
+      <tr><td>hem/o</td><td>Blood</td></tr>
+      <tr><td>hepat/o</td><td>Liver</td></tr>
+      <tr><td>gastr/o</td><td>Stomach</td></tr>
+      <tr><td>nephr/o</td><td>Kidney</td></tr>
+      <tr><td>pulmon/o</td><td>Lung</td></tr>
+      <tr><td>neur/o</td><td>Nerve</td></tr>
+      <tr><td>encephal/o</td><td>Brain</td></tr>
+      <tr><td>dermat/o</td><td>Skin</td></tr>
+    </table>
+    <table>
+      <tr><th>Root</th><th>Meaning</th></tr>
+      <tr><td>oste/o</td><td>Bone</td></tr>
+      <tr><td>arthr/o</td><td>Joint</td></tr>
+      <tr><td>my/o</td><td>Muscle</td></tr>
+      <tr><td>hyster/o</td><td>Uterus</td></tr>
+      <tr><td>rhin/o</td><td>Nose</td></tr>
+      <tr><td>ophthalm/o</td><td>Eye</td></tr>
+      <tr><td>ot/o</td><td>Ear</td></tr>
+      <tr><td>adren/o</td><td>Adrenal gland</td></tr>
+      <tr><td>cyst/o</td><td>Bladder</td></tr>
+      <tr><td>col/o</td><td>Colon</td></tr>
+    </table>
+  </div>
+
+  <!-- =================== MODULE 3 =================== -->
+  <div class="module-divider"></div>
+  <span class="module-badge mod3">MODULE 3</span>
+  <h2>Human System Diseases & Procedures</h2>
+
+  <div class="system-header">♥ Cardiovascular System</div>
+  <table>
+    <tr><th>Disease</th><th>Definition & Key Features</th></tr>
+    <tr><td><strong>IHD</strong></td><td>Ischaemic Heart Disease — reduced coronary blood flow; umbrella term (includes angina, MI)</td></tr>
+    <tr><td><strong>Angina Pectoris</strong></td><td>Chest pain due to insufficient myocardial O₂; stable (exertion) vs. unstable (rest)</td></tr>
+    <tr><td><strong>Heart Valve Disease</strong></td><td>Valvular stenosis (narrowing) or regurgitation (leaking) — mitral, aortic, tricuspid, pulmonary</td></tr>
+    <tr><td><strong>CHD</strong></td><td>Congenital Heart Disease — structural defect at birth (VSD, ASD, PDA, Tetralogy of Fallot)</td></tr>
+    <tr><td><strong>Anaemia</strong></td><td>Reduced Hb/RBC → low O₂ carrying capacity; Iron deficiency (most common), pernicious, aplastic</td></tr>
+    <tr><td><strong>Thalassaemia</strong></td><td>Inherited defect in globin chain synthesis → chronic haemolytic anaemia; alpha & beta types</td></tr>
+    <tr><td><strong>Haemophilia</strong></td><td>Inherited clotting factor deficiency; Type A (Factor VIII), Type B (Factor IX); X-linked recessive</td></tr>
+  </table>
+  <div class="proc-box"><strong>Cardiovascular Procedures:</strong>
+    <ul>
+      <li><span class="term">Angioplasty (PTCA)</span> — balloon catheter inflates in blocked coronary artery; stent placed</li>
+      <li><span class="term">CABG</span> — bypass blocked coronary arteries using saphenous vein or IMA graft; open-heart surgery</li>
+      <li><span class="term">CPR</span> — 30 chest compressions : 2 breaths; 100–120/min; restores circulation in cardiac arrest</li>
+      <li><span class="term">Defibrillation</span> — electric shock to restore rhythm in VF/VT; AED available for public use</li>
+      <li><span class="term">Pacemaker</span> — electrical device implanted for bradycardia; regulates slow heart rate</li>
+      <li><span class="term">Heart Transplantation</span> — donor heart replacement for end-stage heart failure; lifelong immunosuppression</li>
+    </ul>
+  </div>
+
+  <div class="system-header">🍽 Digestive System</div>
+  <table>
+    <tr><th>Disease</th><th>Definition & Key Features</th></tr>
+    <tr><td><strong>Peptic Ulcer</strong></td><td>Open sore in stomach/duodenum lining; H. pylori or NSAIDs; burning epigastric pain</td></tr>
+    <tr><td><strong>GERD</strong></td><td>Gastro-Oesophageal Reflux Disease; backflow of acid; heartburn, regurgitation; weak LES</td></tr>
+    <tr><td><strong>Dyspepsia</strong></td><td>Indigestion; epigastric pain/bloating/nausea; functional or organic cause</td></tr>
+    <tr><td><strong>Jaundice</strong></td><td>Excess bilirubin → yellow skin/eyes; pre-hepatic / hepatic / post-hepatic classification</td></tr>
+    <tr><td><strong>Gallstone (Cholelithiasis)</strong></td><td>Hardened deposits in gallbladder; RUQ biliary colic; can cause cholecystitis</td></tr>
+    <tr><td><strong>Hepatitis</strong></td><td>Liver inflammation; viral (A/B/C/D/E), alcoholic, autoimmune; jaundice, elevated liver enzymes</td></tr>
+  </table>
+  <div class="proc-box"><strong>Digestive Procedures:</strong>
+    <ul>
+      <li><span class="term">Appendectomy</span> — removal of appendix; acute appendicitis; open or laparoscopic</li>
+      <li><span class="term">Whipple Procedure</span> — pancreaticoduodenectomy; head of pancreas + duodenum + gallbladder; pancreatic cancer</li>
+      <li><span class="term">Cholecystectomy</span> — gallbladder removal; mostly laparoscopic; for symptomatic gallstones</li>
+      <li><span class="term">Hiatal Hernia Repair</span> — correction of stomach herniation through diaphragm</li>
+      <li><span class="term">Nephrectomy</span> — kidney removal; cancer, trauma, donor transplant</li>
+      <li><span class="term">Nissen Fundoplication</span> — wraps stomach fundus around lower oesophagus; strengthens LES; treats severe GERD</li>
+    </ul>
+  </div>
+
+  <div class="system-header">🧠 Nervous System</div>
+  <table>
+    <tr><th>Disease</th><th>Definition & Key Features</th></tr>
+    <tr><td><strong>Stroke (CVA)</strong></td><td>Sudden brain infarction; ischaemic (clot, 80%) or haemorrhagic; FAST = Face, Arm, Speech, Time</td></tr>
+    <tr><td><strong>Quadriplegia</strong></td><td>Paralysis of all 4 limbs; cervical spinal cord injury (C1–C7)</td></tr>
+    <tr><td><strong>Bell's Palsy</strong></td><td>Unilateral facial nerve (CN VII) paralysis; drooping of one side of face; usually reversible</td></tr>
+    <tr><td><strong>Parkinson's Disease</strong></td><td>Dopamine depletion; TRAP = Tremor, Rigidity, Akinesia, Postural instability</td></tr>
+    <tr><td><strong>Alzheimer's Disease</strong></td><td>Most common dementia; amyloid plaques + tau tangles; progressive memory loss; no cure</td></tr>
+  </table>
+  <div class="proc-box"><strong>Nervous System Procedures:</strong>
+    <ul>
+      <li><span class="term">Awake Brain Surgery (Awake Craniotomy)</span> — patient conscious; real-time monitoring near speech/motor cortex</li>
+      <li><span class="term">Brain Aneurysm Surgery</span> — Clipping (surgical) or Coiling (endovascular); prevents subarachnoid haemorrhage</li>
+      <li><span class="term">Epilepsy Surgery</span> — temporal lobectomy or corpus callosotomy; drug-resistant epilepsy</li>
+      <li><span class="term">Locomotor Training</span> — treadmill + body-weight support; promotes neuroplasticity in SCI</li>
+      <li><span class="term">Trigeminal Neuralgia Surgery</span> — Microvascular decompression (MVD); relieves pressure on CN V</li>
+      <li><span class="term">Deep Brain Stimulation (DBS)</span> — electrode implant in subthalamic nucleus; treats Parkinson's, tremor</li>
+    </ul>
+  </div>
+
+  <div class="system-header">💧 Urinary System</div>
+  <table>
+    <tr><th>Disease</th><th>Key Features</th></tr>
+    <tr><td><strong>Dialysis</strong></td><td>Artificial waste removal; haemodialysis (machine) vs. peritoneal (abdomen); used in CKD/ESRD</td></tr>
+    <tr><td><strong>Nephritis</strong></td><td>Kidney inflammation; glomerulonephritis; haematuria, proteinuria, oedema, hypertension</td></tr>
+    <tr><td><strong>BPH</strong></td><td>Benign Prostatic Hyperplasia; men >50; obstructs urethra; frequency, urgency, nocturia</td></tr>
+    <tr><td><strong>Hydronephrosis</strong></td><td>Kidney swelling from obstructed urine flow; stones, stricture, BPH; risk of renal damage</td></tr>
+  </table>
+
+  <div class="system-header">⚗ Endocrine System</div>
+  <table>
+    <tr><th>Disease</th><th>Key Features</th></tr>
+    <tr><td><strong>Diabetes Mellitus</strong></td><td>Type 1 (insulin deficiency) / Type 2 (insulin resistance); polydipsia, polyuria, polyphagia</td></tr>
+    <tr><td><strong>Diabetic Foot</strong></td><td>Neuropathy + poor circulation → ulcers, infection; high amputation risk</td></tr>
+    <tr><td><strong>Gangrene</strong></td><td>Tissue death; dry (vascular), wet (infected), gas (Clostridium); major diabetic complication</td></tr>
+    <tr><td><strong>Hyposecretion diseases</strong></td><td>Hypothyroidism, Addison's disease, Hypopituitarism, Hypoparathyroidism</td></tr>
+    <tr><td><strong>Hypersecretion diseases</strong></td><td>Hyperthyroidism/Graves', Cushing's (excess cortisol), Acromegaly (excess GH adult), Gigantism (excess GH child)</td></tr>
+  </table>
+
+  <div class="system-header">🔬 Reproductive System</div>
+  <table>
+    <tr><th>Disease</th><th>Key Features</th></tr>
+    <tr><td><strong>Infertility</strong></td><td>Failure to conceive after 12 months; female (ovulatory, tubal) or male (sperm) factors</td></tr>
+    <tr><td><strong>Endometriosis</strong></td><td>Endometrial tissue outside uterus; pelvic pain, dysmenorrhoea, infertility</td></tr>
+    <tr><td><strong>PCOS</strong></td><td>Polycystic Ovary Syndrome; hormonal; irregular periods, excess androgens, insulin resistance</td></tr>
+    <tr><td><strong>PCOD</strong></td><td>Polycystic Ovarian Disease; structural (multiple cysts); milder than PCOS</td></tr>
+    <tr><td><strong>Uterine Fibroids</strong></td><td>Benign smooth muscle tumours (leiomyomas); heavy periods, pelvic pressure; rarely cancerous</td></tr>
+    <tr><td><strong>Syphilis</strong></td><td>Treponema pallidum STI; stages: primary chancre → secondary rash → latent → tertiary; treated with penicillin</td></tr>
+    <tr><td><strong>Prostatitis</strong></td><td>Prostate inflammation; bacterial or non-bacterial; pelvic pain, dysuria</td></tr>
+    <tr><td><strong>Erectile Dysfunction</strong></td><td>Inability to maintain erection; vascular/neurological/hormonal/psychological; PDE5 inhibitors</td></tr>
+    <tr><td><strong>Epididymitis</strong></td><td>Epididymis inflammation; bacterial STI or UTI; scrotal pain/swelling; antibiotics</td></tr>
+  </table>
+  <div class="proc-box"><strong>Reproductive Procedures:</strong>
+    <ul>
+      <li><span class="term">Hysterectomy</span> — uterus removal; total/partial/radical; for fibroids, endometriosis, cancer, prolapse</li>
+      <li><span class="term">Laparotomy</span> — abdominal cavity incision; exploratory surgery, ovarian cysts, obstetric emergencies</li>
+    </ul>
+  </div>
+
+  <div class="system-header">🫁 Respiratory System</div>
+  <table>
+    <tr><th>Disease</th><th>Key Features</th></tr>
+    <tr><td><strong>Asthma</strong></td><td>Reversible bronchospasm; allergens/exercise triggers; wheeze, cough, dyspnoea; salbutamol + ICS</td></tr>
+    <tr><td><strong>Pneumonia</strong></td><td>Alveolar infection; S. pneumoniae (most common); fever, cough, pleuritic pain; CXR consolidation</td></tr>
+    <tr><td><strong>Tuberculosis (TB)</strong></td><td>Mycobacterium tuberculosis; cough, haemoptysis, night sweats; RIPE therapy × 6 months</td></tr>
+    <tr><td><strong>COPD</strong></td><td>Progressive airflow obstruction; smoking main cause; chronic bronchitis + emphysema; FEV₁/FVC < 0.70</td></tr>
+    <tr><td><strong>Emphysema</strong></td><td>Alveolar destruction; loss of elastic recoil; barrel chest; component of COPD; smoking</td></tr>
+  </table>
+  <div class="note-box">
+    <strong>Key Distinctions:</strong> PCOS (hormonal syndrome) vs. PCOD (structural, milder) | Quadriplegia (cervical) vs. Paraplegia (thoracic+) | Haemodialysis (3×/week machine) vs. Peritoneal (daily, home) | Dry gangrene (vascular, no infection) vs. Wet (infected, spreads rapidly)
+  </div>
+
+  <!-- =================== MODULE 4 =================== -->
+  <div class="module-divider"></div>
+  <span class="module-badge mod4">MODULE 4</span>
+  <h2>Prescription Reading & Latin Abbreviations</h2>
+
+  <h3>4.1 Parts of a Prescription</h3>
+  <table>
+    <tr><th>Part</th><th>Description</th></tr>
+    <tr><td><strong>Superscription</strong></td><td>Rx symbol + patient details (name, age, date)</td></tr>
+    <tr><td><strong>Inscription</strong></td><td>Drug name and strength</td></tr>
+    <tr><td><strong>Subscription</strong></td><td>Dispensing instructions to pharmacist (quantity)</td></tr>
+    <tr><td><strong>Signa (Sig)</strong></td><td>Patient directions — dose, route, frequency, duration</td></tr>
+    <tr><td><strong>Refill</strong></td><td>Number of refills allowed</td></tr>
+    <tr><td><strong>Prescriber</strong></td><td>Signature, reg. number, stamp</td></tr>
+  </table>
+
+  <h3>4.2 Frequency Abbreviations</h3>
+  <table>
+    <tr><th>Abbreviation</th><th>Latin</th><th>Meaning</th><th>Abbreviation</th><th>Latin</th><th>Meaning</th></tr>
+    <tr><td>OD / QD</td><td>Omni die</td><td>Once daily</td><td>HS</td><td>Hora somni</td><td>At bedtime</td></tr>
+    <tr><td>BD / BID</td><td>Bis in die</td><td>Twice a day</td><td>SOS / PRN</td><td>Si opus sit</td><td>If needed</td></tr>
+    <tr><td>TDS / TID</td><td>Ter in die</td><td>Three times a day</td><td>STAT</td><td>Statim</td><td>Immediately</td></tr>
+    <tr><td>QID / QDS</td><td>Quater in die</td><td>Four times a day</td><td>NPO / NBM</td><td>Nil per os</td><td>Nothing by mouth</td></tr>
+    <tr><td>AC</td><td>Ante cibum</td><td>Before meals</td><td>PC</td><td>Post cibum</td><td>After meals</td></tr>
+    <tr><td>CC</td><td>Cum cibum</td><td>With meals</td><td>WNL</td><td>—</td><td>Within Normal Limits</td></tr>
+  </table>
+
+  <h3>4.3 Route of Administration</h3>
+  <table>
+    <tr><th>Abbrev.</th><th>Meaning</th><th>Abbrev.</th><th>Meaning</th></tr>
+    <tr><td>PO</td><td>By mouth (per os)</td><td>IV</td><td>Intravenous</td></tr>
+    <tr><td>IM</td><td>Intramuscular</td><td>SC / SQ</td><td>Subcutaneous</td></tr>
+    <tr><td>SL</td><td>Sublingual</td><td>INH</td><td>Inhaled</td></tr>
+    <tr><td>PR</td><td>Per rectum</td><td>TOP</td><td>Topical</td></tr>
+    <tr><td>OD (eye)</td><td>Right eye</td><td>OS (eye)</td><td>Left eye</td></tr>
+    <tr><td>OU</td><td>Both eyes</td><td>ID</td><td>Intradermal</td></tr>
+  </table>
+
+  <h3>4.4 Dosage Forms</h3>
+  <table>
+    <tr><th>Abbreviation</th><th>Latin</th><th>Form</th><th>Abbreviation</th><th>Latin</th><th>Form</th></tr>
+    <tr><td>Tab</td><td>Tabella</td><td>Tablet</td><td>Inj</td><td>Injectio</td><td>Injection</td></tr>
+    <tr><td>Cap</td><td>Capsula</td><td>Capsule</td><td>Oint/Ung</td><td>Unguentum</td><td>Ointment</td></tr>
+    <tr><td>Syr</td><td>Syrupus</td><td>Syrup</td><td>Gtt</td><td>Guttae</td><td>Drops</td></tr>
+    <tr><td>Supp</td><td>Suppositorium</td><td>Suppository</td><td>Susp</td><td>Suspensio</td><td>Suspension</td></tr>
+  </table>
+
+  <h3>4.5 Clinical Abbreviations (Commonly Used)</h3>
+  <div class="grid2">
+    <table>
+      <tr><th>Abbrev.</th><th>Full Form</th></tr>
+      <tr><td>Dx</td><td>Diagnosis</td></tr>
+      <tr><td>Hx</td><td>History</td></tr>
+      <tr><td>Sx</td><td>Symptoms</td></tr>
+      <tr><td>Tx</td><td>Treatment</td></tr>
+      <tr><td>k/c/o</td><td>Known case of</td></tr>
+      <tr><td>h/o</td><td>History of</td></tr>
+      <tr><td>c/o</td><td>Complaining of</td></tr>
+      <tr><td>R/O</td><td>Rule Out</td></tr>
+      <tr><td>NAD</td><td>No Abnormality Detected</td></tr>
+      <tr><td>NKDA</td><td>No Known Drug Allergies</td></tr>
+    </table>
+    <table>
+      <tr><th>Abbrev.</th><th>Full Form</th></tr>
+      <tr><td>CBC</td><td>Complete Blood Count</td></tr>
+      <tr><td>LFT</td><td>Liver Function Test</td></tr>
+      <tr><td>KFT/RFT</td><td>Kidney/Renal Function Test</td></tr>
+      <tr><td>FBS</td><td>Fasting Blood Sugar</td></tr>
+      <tr><td>ECG</td><td>Electrocardiogram</td></tr>
+      <tr><td>USG</td><td>Ultrasonography</td></tr>
+      <tr><td>CXR</td><td>Chest X-Ray</td></tr>
+      <tr><td>OPD</td><td>Outpatient Department</td></tr>
+      <tr><td>ICU</td><td>Intensive Care Unit</td></tr>
+      <tr><td>MLC</td><td>Medico-Legal Case</td></tr>
+    </table>
+  </div>
+
+  <!-- =================== MODULE 5 =================== -->
+  <div class="module-divider"></div>
+  <span class="module-badge mod5">MODULE 5</span>
+  <h2>Diagnostic Procedures</h2>
+
+  <h3>5.1 Fundamental Imaging Modalities</h3>
+  <table>
+    <tr><th>Modality</th><th>Principle</th><th>Radiation</th><th>Clinical Use</th></tr>
+    <tr><td><strong>X-Ray</strong></td><td>X-rays absorbed by dense tissue (bone), pass through soft tissue; 2D shadow image</td><td>Yes (low)</td><td>Fractures, CXR (pneumonia, TB), joints</td></tr>
+    <tr><td><strong>USG</strong></td><td>High-frequency sound waves reflect off tissues; echoes → image</td><td>None</td><td>Abdomen, obstetrics, thyroid, soft tissue; safe in pregnancy</td></tr>
+    <tr><td><strong>CT Scan</strong></td><td>Multiple X-ray beams rotate; computer reconstructs cross-sectional images</td><td>Yes (moderate-high)</td><td>Head trauma, stroke, tumours, internal injuries</td></tr>
+    <tr><td><strong>MRI</strong></td><td>Magnetic field + radiofrequency pulses; hydrogen proton realignment signals → image; no radiation</td><td>None</td><td>Brain, spine, joints, soft tissue; superior to CT for soft tissue</td></tr>
+    <tr><td><strong>PET Scan</strong></td><td>FDG radiotracer → cancer cells absorb more glucose → positron emission → gamma rays detected</td><td>Yes (radiotracer)</td><td>Cancer staging, Alzheimer's, cardiac viability; combined with CT = PET-CT</td></tr>
+    <tr><td><strong>Biopsy</strong></td><td>Tissue sample removal for pathological examination</td><td>None</td><td>Definitive cancer diagnosis; types: excisional, incisional, core needle, FNAC</td></tr>
+    <tr><td><strong>FNAC</strong></td><td>Fine needle (22–25G) aspirates cells for cytology</td><td>None</td><td>Thyroid nodules, breast lumps, lymph nodes; minimally invasive, outpatient</td></tr>
+  </table>
+
+  <div class="dept-header">❤ Cardiology Department</div>
+  <table>
+    <tr><th>Procedure</th><th>Description & Clinical Use</th></tr>
+    <tr><td><strong>ECG</strong></td><td>Electrocardiogram — records heart electrical activity; 12-lead standard; detects MI (STEMI = ST elevation), arrhythmias, heart blocks, hypertrophy; first-line cardiac test</td></tr>
+    <tr><td><strong>Echocardiography</strong></td><td>Cardiac ultrasound; assesses chambers, valves, ejection fraction, wall motion; types: 2D, 3D, Doppler, TOE; for heart failure, valve disease, CHD</td></tr>
+    <tr><td><strong>Coronary Angiography</strong></td><td>Contrast dye via catheter (femoral/radial) into coronary arteries; X-ray imaging; gold standard for CAD diagnosis; done in Cath Lab</td></tr>
+    <tr><td><strong>Doppler USG</strong></td><td>Measures blood flow direction and speed; colour Doppler maps flow; detects DVT, carotid stenosis, peripheral arterial disease</td></tr>
+    <tr><td><strong>64-Slice CT</strong></td><td>Non-invasive coronary CT angiography; detects hard and soft plaques; alternative to invasive angiography for low-moderate risk patients</td></tr>
+    <tr><td><strong>Cardiac Catheterization</strong></td><td>Catheter into heart chambers; measures pressures + O₂ levels; combined with angiography; for hemodynamic assessment + PCI interventions</td></tr>
+    <tr><td><strong>Holter Monitor</strong></td><td>Portable ECG worn 24–48 hours; detects intermittent arrhythmias (paroxysmal AF, SVT) missed on standard ECG</td></tr>
+  </table>
+
+  <div class="dept-header">🏥 Gastroenterology Department</div>
+  <table>
+    <tr><th>Procedure</th><th>Description & Clinical Use</th></tr>
+    <tr><td><strong>Colonoscopy</strong></td><td>Camera through rectum; visualizes entire colon + terminal ileum; CRC screening, IBD, polyps, biopsy + polypectomy</td></tr>
+    <tr><td><strong>ERCP</strong></td><td>Endoscopic Retrograde Cholangiopancreatography — endoscope to duodenum; contrast into bile/pancreatic ducts; treats bile duct stones (sphincterotomy), stenting; diagnostic + therapeutic</td></tr>
+    <tr><td><strong>EGD (Upper GI Endoscopy)</strong></td><td>Esophagogastroduodenoscopy — scope through mouth; visualizes oesophagus, stomach, duodenum; peptic ulcers, GERD, gastric cancer, H. pylori biopsy</td></tr>
+    <tr><td><strong>Sigmoidoscopy</strong></td><td>Short scope examining sigmoid colon + rectum; rectal bleeding, IBD; faster than colonoscopy; less preparation required</td></tr>
+    <tr><td><strong>Esophageal Manometry</strong></td><td>Pressure catheter in oesophagus; measures LES pressure + contractions; diagnoses achalasia, GERD, oesophageal spasm</td></tr>
+    <tr><td><strong>Capsule Endoscopy</strong></td><td>Swallowed pill-camera; images entire GI tract including small intestine; for obscure GI bleeding, Crohn's, small bowel tumours</td></tr>
+    <tr><td><strong>MRCP</strong></td><td>Magnetic Resonance Cholangiopancreatography — non-invasive MRI of biliary + pancreatic ducts; detects stones, strictures; preferred over diagnostic ERCP</td></tr>
+  </table>
+
+  <div class="dept-header">🔬 Reproductive Department</div>
+  <table>
+    <tr><th>Procedure</th><th>Description & Clinical Use</th></tr>
+    <tr><td><strong>Colposcopy</strong></td><td>Magnified examination of cervix after abnormal Pap smear; identifies dysplastic lesions; directed biopsy; cervical cancer screening</td></tr>
+    <tr><td><strong>HSG</strong></td><td>Hysterosalpingography — X-ray of uterus + fallopian tubes with contrast; assesses tubal patency; infertility workup</td></tr>
+    <tr><td><strong>Scrotal USG</strong></td><td>Ultrasound of testes, epididymis; detects testicular torsion, epididymitis, varicocele, testicular cancer; first-line for acute scrotal pain</td></tr>
+  </table>
+
+  <div class="dept-header">🫁 Pulmonology Department</div>
+  <table>
+    <tr><th>Procedure</th><th>Description & Clinical Use</th></tr>
+    <tr><td><strong>Nuclear Lung Scanning (V/Q Scan)</strong></td><td>Inhaled + IV radiotracer; gamma camera images; V/Q mismatch = pulmonary embolism; used when CTPA contraindicated (contrast allergy, pregnancy)</td></tr>
+    <tr><td><strong>Pulmonary Artery Angiography</strong></td><td>Catheter into pulmonary artery; contrast injection; X-ray imaging of pulmonary vasculature; gold standard for PE (now replaced by CTPA); essential pre-op for CTEPH surgery</td></tr>
+  </table>
+
+  <div class="dept-header">🦴 Orthopaedic Department</div>
+  <table>
+    <tr><th>Procedure</th><th>Description & Clinical Use</th></tr>
+    <tr><td><strong>Bone Densitometry (DEXA)</strong></td><td>Dual-energy X-ray measures Bone Mineral Density (BMD); T-score: Normal ≥ -1.0 | Osteopenia: -1.0 to -2.5 | Osteoporosis ≤ -2.5; post-menopausal women screening</td></tr>
+    <tr><td><strong>Arthroscopy</strong></td><td>Arthroscope inserted into joint through small incision; visualizes cartilage, ligaments, menisci; diagnostic + therapeutic (ACL repair, meniscectomy); most common: knee</td></tr>
+  </table>
+
+  <div class="note-box">
+    <strong>Quick Reference — Modality Comparison:</strong>
+    <table style="margin:6px 0;">
+      <tr><th>Modality</th><th>Radiation</th><th>Invasive</th><th>Best For</th></tr>
+      <tr><td>X-Ray</td><td>Low</td><td>No</td><td>Bones, chest</td></tr>
+      <tr><td>USG</td><td>None</td><td>No</td><td>Abdomen, obstetrics</td></tr>
+      <tr><td>CT Scan</td><td>Moderate-high</td><td>No</td><td>Trauma, tumours, head</td></tr>
+      <tr><td>MRI</td><td>None</td><td>No</td><td>Brain, spine, soft tissue</td></tr>
+      <tr><td>PET Scan</td><td>Radiotracer</td><td>Injection only</td><td>Cancer, metabolism</td></tr>
+      <tr><td>Biopsy/FNAC</td><td>None</td><td>Yes (needle)</td><td>Tissue/cancer diagnosis</td></tr>
+      <tr><td>Angiography</td><td>Yes</td><td>Yes (catheter)</td><td>Coronary/pulmonary vessels</td></tr>
+    </table>
+  </div>
+
+</div>
+</body>
+</html>
