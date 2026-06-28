@@ -17,7 +17,7 @@
   .group-banner { background: #1a5276; color: #fff; text-align: center; padding: 11px; border-radius: 6px; margin: 36px 0 20px; font-size: 15px; font-weight: bold; letter-spacing: 0.5px; }
 
   /* QUESTION */
-  .qblock { border-left: 5px solid #1a5276; background: #f0f7fc; border-radius: 0 6px 6px 0; padding: 11px 16px; margin: 28px 0 4px; }
+  .qblock { border-left: 5px solid #1a5276; background: #f0f7fc; border-radius: 0 6px 6px 0; padding: 11px 16px; margin: 28px 0 4px; page-break-inside: avoid; break-inside: avoid; page-break-after: avoid; break-after: avoid; }
   .qnum { font-size: 11px; color: #1a5276; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; }
   .qtxt { font-weight: bold; color: #1a1a1a; margin-top: 3px; font-size: 14px; }
   .marks-tag { float: right; background: #1a5276; color: #fff; font-size: 11px; padding: 2px 10px; border-radius: 12px; margin-top: 2px; }
@@ -38,7 +38,7 @@
   /* FLOWCHART */
   .flow-wrap { margin: 18px 0; }
   .flow-label { font-size: 10px; font-weight: bold; color: #6c3483; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
-  .flow-row { display: flex; align-items: stretch; margin-bottom: 4px; }
+  .flow-row { display: flex; align-items: stretch; margin-bottom: 4px; page-break-inside: avoid; break-inside: avoid; }
   .fbox { border-radius: 8px; padding: 9px 16px; font-size: 12.5px; font-weight: bold; text-align: center; min-width: 190px; color: #fff; }
   .fbox.blue   { background: #1a5276; }
   .fbox.green  { background: #1e8449; }
@@ -52,7 +52,7 @@
   /* EXPLANATION SECTION */
   .explain { margin: 16px 0; }
   .explain-label { font-size: 10px; font-weight: bold; color: #1e8449; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
-  .exp-item { display: flex; gap: 12px; margin-bottom: 12px; }
+  .exp-item { display: flex; gap: 12px; margin-bottom: 12px; page-break-inside: avoid; break-inside: avoid; }
   .exp-num { background: #1a5276; color: #fff; border-radius: 50%; width: 28px; height: 28px; min-width: 28px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 12px; margin-top: 2px; }
   .exp-body { flex: 1; }
   .exp-body strong { color: #1a5276; font-size: 13.5px; }
@@ -71,6 +71,7 @@
   .diff-table th:nth-child(2) { background: #1a5276; color: #fff; }
   .diff-table th:nth-child(3) { background: #1e8449; color: #fff; }
   .diff-table td { padding: 8px 12px; border-bottom: 1px solid #dce8f0; vertical-align: top; }
+  .diff-table tr { page-break-inside: avoid; break-inside: avoid; }
   .diff-table td:first-child { background: #f4f6f7; font-weight: bold; color: #2c3e50; font-size: 12px; }
   .diff-table tr:nth-child(even) td:nth-child(2) { background: #eaf4fb; }
   .diff-table tr:nth-child(even) td:nth-child(3) { background: #eafaf1; }

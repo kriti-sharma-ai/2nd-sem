@@ -17,194 +17,399 @@
   th, td { padding: 5px 8px; text-align: left; font-size: 13px; }
   th { background: #f0f4fa; }
   .keypoint { background: #f7f9fc; border: 1px solid #dde5f0; padding: 6px 10px; border-radius: 4px; margin: 4px 0; }
+  .source-note { font-size: 11px; color: #888; font-style: italic; margin: 2px 0 8px; }
   hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
   .page-break { page-break-before: always; }
   footer { text-align: center; font-size: 11px; color: #999; margin-top: 20px; }
   @page { margin: 10mm; }
+
+  /* Flowchart / diagram styling */
+  .flow-wrap { margin: 12px 0; page-break-inside: avoid; }
+  .flow-row { display: flex; align-items: stretch; margin-bottom: 4px; page-break-inside: avoid; break-inside: avoid; }
+  .fbox { border-radius: 6px; padding: 7px 12px; font-size: 12px; font-weight: bold; text-align: center; min-width: 150px; color: #fff; display: flex; align-items: center; justify-content: center; }
+  .fbox.blue   { background: #1a3c6e; }
+  .fbox.green  { background: #1e8449; }
+  .fbox.orange { background: #ca6f1e; }
+  .fbox.teal   { background: #148f77; }
+  .fbox.purple { background: #6c3483; }
+  .fbox.red    { background: #922b21; }
+  .fdetail { background: #f0f4fb; border: 1px solid #b0c4de; border-radius: 6px; padding: 6px 10px; font-size: 12px; color: #222; margin-left: 10px; flex: 1; display: flex; align-items: center; }
+  .farrow { text-align: left; padding-left: 18px; color: #1a3c6e; font-size: 16px; line-height: 1; margin: 1px 0; }
+  .tree { border: 1px solid #b0c4de; border-radius: 6px; padding: 10px; margin: 8px 0; text-align: center; page-break-inside: avoid; }
+  .tree .root { background: #1a3c6e; color: #fff; display: inline-block; padding: 6px 16px; border-radius: 6px; font-size: 12px; font-weight: bold; margin-bottom: 8px; }
+  .tree .leaves { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+  .tree .leaf { background: #eef3fb; border: 1px solid #b0c4de; color: #1a3c6e; padding: 5px 9px; border-radius: 5px; font-size: 11.5px; font-weight: bold; }
 </style>
 </head>
 <body>
 
 <h1>Organization Behaviour — Easy Summary Notes</h1>
-<p class="subtitle">Modules 1 to 5 explained in simple language for quick revision</p>
+<p class="subtitle">Modules 1 to 5 — every topic from the course slides, with the author/originator of each theory and simple diagrams, for quick revision</p>
 
+<!-- ════════════════════════════════════════ MODULE 1 ════════════════════════════════════════ -->
 <h2 class="module">MODULE 1: Introduction to Organizational Behaviour</h2>
 
-<h3 class="topic">What is OB?</h3>
-<p>Organizational Behaviour (OB) is simply the study of how people act and interact inside a workplace — what motivates them, how they behave in teams, and how all this affects how well the company does. Understanding this helps managers improve teamwork, communication and overall efficiency.</p>
+<h3 class="topic">What is Organizational Behaviour (OB)?</h3>
+<p>Organizational Behaviour (OB) is the study of how individuals, groups, and structures influence behaviour within organizations. It focuses on understanding and managing human interactions to improve organizational effectiveness. In simple words, OB looks at how employees behave, what motivates them, and how their actions affect the company's success — understanding these patterns helps managers improve teamwork, communication and overall efficiency.</p>
 
-<h3 class="topic">Where OB Borrows Ideas From</h3>
-<p>OB is not a single subject — it mixes ideas from several fields:</p>
+<h3 class="topic">Contribution of Various Fields to OB</h3>
+<p>OB is an inter-disciplinary subject — it borrows from several behavioural and social sciences:</p>
 <ul>
-<li><b>Psychology</b> — studies individual behaviour (personality, motivation, learning).</li>
-<li><b>Sociology</b> — studies group behaviour and how people relate to each other.</li>
-<li><b>Social Psychology</b> — mix of psychology + sociology; how people influence each other.</li>
-<li><b>Anthropology</b> — studies culture and its effect on behaviour.</li>
-<li><b>Political Science</b> — studies power, conflict and politics in groups.</li>
-<li><b>Engineering</b> — studies work measurement and productivity.</li>
+<li><b>Psychology</b> — the study of behaviour of animals and humans; seeks to measure, explain and change behaviour. Contributes ideas on personality, perception, attitude, learning, motivation, job satisfaction, training, leadership effectiveness, performance appraisal, employee selection, work design and work stress.</li>
+<li><b>Sociology</b> — studies group behaviour and the behaviour of people in relation to other humans. Contributes ideas on group dynamics, communication, leadership, power and politics, conflict, organisational structures, formal/informal organisations, organisational culture and organisational change.</li>
+<li><b>Social Psychology</b> — borrows concepts from both psychology and sociology; focuses on the influence of people on one another. Contributes ideas on behavioural change, attitude change, communication, group processes and group decision making.</li>
+<li><b>Anthropology</b> — the study of the human race, particularly its culture, which has a significant influence on human behaviour. Contributes ideas on individual culture, organisational culture and organisational environment.</li>
+<li><b>Engineering</b> — particularly industrial engineering, concerned with work measurement, productivity measurement, workflow analysis and design, and labour relations.</li>
+<li><b>Political Science</b> — studies the behaviour of individuals and groups within a political environment, including conflict resolution, group coalition, allocation of power and manipulation of power for self-interest.</li>
 </ul>
 
-<h3 class="topic">What OB Covers (Scope)</h3>
-<p>OB looks at four main areas:</p>
+<div class="flow-wrap">
+  <div class="flow-row"><div class="fbox blue">Psychology</div><div class="fdetail">Personality, Perception, Attitude, Learning, Motivation, Job Satisfaction, Training → Individual</div></div>
+  <div class="flow-row"><div class="fbox green">Sociology</div><div class="fdetail">Group Dynamics, Communication, Leadership, Power &amp; Politics, Conflict, Org. Structure → Group / Organisation</div></div>
+  <div class="flow-row"><div class="fbox purple">Social Psychology</div><div class="fdetail">Behavioural/Attitude Change, Communication, Group Processes, Group Decision Making → Group</div></div>
+  <div class="flow-row"><div class="fbox orange">Anthropology</div><div class="fdetail">Individual Culture, Organisational Culture, Organisational Environment → Group / Organisation</div></div>
+  <div class="flow-row"><div class="fbox red">Political Science</div><div class="fdetail">Organisational Power and Politics, Conflicts → Organisation</div></div>
+  <div class="farrow">↓ all feed into →</div>
+  <div class="flow-row"><div class="fbox teal">STUDY OF OB</div><div class="fdetail">Individual + Group + Organisation behaviour combined</div></div>
+</div>
+
+<h3 class="topic">Scope of Organizational Behaviour</h3>
+<p>OB mainly covers four aspects:</p>
 <ul>
-<li><b>Individual Behaviour</b> — personality, attitudes, motivation, learning.</li>
-<li><b>Group Dynamics</b> — communication, leadership, teamwork, conflict.</li>
-<li><b>External Environment</b> — economy, technology, society, laws, global competition.</li>
-<li><b>Organizational Structure</b> — hierarchy, roles, how work is coordinated.</li>
+<li><b>Individual Behaviour</b> — personality &amp; traits, attitudes &amp; job satisfaction, perceptions &amp; cognitive biases, motivation &amp; incentives, learning &amp; development.</li>
+<li><b>Group Dynamics</b> — communication patterns, leadership roles, team cohesiveness, conflict resolution, group decision-making.</li>
+<li><b>External Environment</b> — economic conditions, technological advancements, social trends &amp; demographics, regulatory changes, globalization &amp; competition.</li>
+<li><b>Organizational Structure</b> — hierarchy &amp; authority, role clarity &amp; responsibilities, types of organizational structures (flat, hierarchical, matrix), workflow &amp; coordination, adaptability &amp; change management.</li>
 </ul>
 
-<h3 class="topic">Why OB Matters</h3>
-<p>Studying OB helps build better relationships at work, brings coordination, improves motivation and efficiency, and helps the organization use its people and resources well.</p>
+<h3 class="topic">Nature of Organizational Behaviour</h3>
+<ul>
+<li>OB is a part of general management, not the whole of management — it represents the behavioural approach to management.</li>
+<li>OB contains a body of research and application associated with a growing concern for people.</li>
+<li>OB is a human tool for human benefit — it helps predict behaviour of people.</li>
+<li>OB is an inter-disciplinary field of study, synthesizing knowledge from Psychology, Sociology, Anthropology, Political Science, Economics, etc.</li>
+<li>OB involves three levels of analysis: individual behaviour, group behaviour, and behaviour of the organization itself.</li>
+<li>OB is action-oriented and goal-directed — it provides rational thinking about people and their behaviour.</li>
+<li>OB is both a science and an art.</li>
+<li>OB seeks to fulfil both employees' needs and organizational objectives.</li>
+</ul>
 
-<h3 class="topic">History of OB (How It Developed)</h3>
+<h3 class="topic">Importance of Studying OB</h3>
+<ul>
+<li>Builds better relationships by achieving people, organizational, and social objectives.</li>
+<li>Covers a wide array of human resource areas — behaviour, training and development, change management, leadership, teams.</li>
+<li>Brings coordination, the essence of management.</li>
+<li>Improves goodwill of the organization and helps achieve objectives quickly.</li>
+<li>Makes optimum utilization of resources and facilitates motivation.</li>
+<li>Leads to higher efficiency and improves relations in the organization.</li>
+<li>Is multidisciplinary — applies different techniques, methods and theories to evaluate performance.</li>
+</ul>
+
+<h3 class="topic">Historical Development of OB</h3>
 <table>
-<tr><th>Era / Thinker</th><th>Main Idea in Simple Words</th></tr>
-<tr><td>Before 1750</td><td>Mostly farming and small craft work — no formal management ideas.</td></tr>
-<tr><td>Industrial Revolution (1750–1900)</td><td>Big factories appeared, creating new problems of how to manage large groups of workers.</td></tr>
-<tr><td>Taylor — Scientific Management</td><td>Find the most efficient way to do a task using time/motion studies. Criticized for treating workers like machines.</td></tr>
-<tr><td>Weber — Bureaucracy</td><td>Clear hierarchy, rules and impersonal decision-making for efficiency, but it can be rigid.</td></tr>
-<tr><td>Fayol — Administrative Management</td><td>Gave the POLC framework: Plan, Organize, Lead, Control.</td></tr>
-<tr><td>Mayo — Hawthorne Studies</td><td>Discovered that social/psychological factors (feeling cared for) affect productivity more than just pay or lighting.</td></tr>
-<tr><td>Maslow — Hierarchy of Needs</td><td>People are motivated by needs in order: basic survival → safety → social → esteem → self-actualization.</td></tr>
-<tr><td>McGregor — Theory X & Y</td><td>Theory X: workers are lazy and need control. Theory Y: workers are self-motivated and enjoy responsibility.</td></tr>
-<tr><td>Contingency & Systems Theory</td><td>There is no single "best" way to manage — it depends on the situation; organizations are open systems interacting with their environment.</td></tr>
-<tr><td>Today (2000s–present)</td><td>Focus on diversity, mental health, remote work, emotional intelligence.</td></tr>
+<tr><th>Era / Thinker</th><th>Main Idea</th></tr>
+<tr><td>Pre-Industrial Revolution (before 1750)</td><td>Work was agrarian and informal; no structured management or study of workplace behaviour.</td></tr>
+<tr><td>Industrial Revolution (1750–1900)</td><td>Rise of large factories, mass production and wage labour created new challenges in efficiency, motivation and management.</td></tr>
+<tr><td><b>Frederick Winslow Taylor</b> (1856–1915) — Scientific Management</td><td>Time and motion studies, standardization of work, differential piece-rate pay, training for maximum efficiency. Criticized for treating workers like machines.</td></tr>
+<tr><td><b>Max Weber</b> (1864–1920) — Bureaucratic Management</td><td>Hierarchical structure, clear authority, formal rules, impersonal decision-making, merit-based progression. Criticized for rigidity.</td></tr>
+<tr><td><b>Henri Fayol</b> (1841–1925) — Administrative Management</td><td>POLC framework: Planning, Organizing, Leading, Controlling; division of labour, unity of command, centralization.</td></tr>
+<tr><td><b>Elton Mayo</b> and team — Hawthorne Studies (1920s–30s)</td><td>Social and psychological factors (feeling cared for) affect productivity more than physical conditions or pay; introduced "informal groups" and employee satisfaction.</td></tr>
+<tr><td><b>Abraham Maslow</b> (1943) — Hierarchy of Needs</td><td>People are motivated by needs in order: Physiological → Safety → Social → Esteem → Self-actualization.</td></tr>
+<tr><td><b>Douglas McGregor</b> (1960) — Theory X &amp; Theory Y</td><td>Theory X: employees are lazy, need supervision, avoid responsibility. Theory Y: employees are self-motivated, enjoy work, seek responsibility.</td></tr>
+<tr><td>Behavioral Science Approach (1950s–70s)</td><td><b>Herzberg's</b> Two-Factor Theory (Motivators/Hygiene Factors); <b>McClelland's</b> Theory of Needs (Achievement, Power, Affiliation); <b>Vroom's</b> Expectancy Theory.</td></tr>
+<tr><td>Contingency Theory (1970s–80s)</td><td><b>Fiedler's</b> Contingency Model (leadership depends on task structure and leader-member relations); <b>Burns &amp; Stalker's</b> Mechanistic vs. Organic Structures.</td></tr>
+<tr><td><b>Ludwig von Bertalanffy</b> — Systems Theory (1970s)</td><td>Organizations viewed as open systems interacting with their environment; interdependence and feedback loops.</td></tr>
+<tr><td><b>Edgar Schein</b> — Organizational Culture (1980s–90s)</td><td>Explored corporate culture and its role in shaping employee behaviour.</td></tr>
+<tr><td><b>Burns &amp; Bass</b> — Transformational Leadership</td><td>Focus on visionary leadership and employee inspiration.</td></tr>
+<tr><td><b>Daniel Goleman</b> / <b>Martin Seligman</b> — Contemporary OB (2000s–present)</td><td>Rise of emotional intelligence (Goleman) and positive organizational behaviour (Seligman); focus on diversity, inclusion, engagement, psychological safety, work-life balance, remote work.</td></tr>
 </table>
 
+<!-- ════════════════════════════════════════ MODULE 2 ════════════════════════════════════════ -->
 <h2 class="module page-break">MODULE 2: Personality, Perception and Attitude</h2>
 
-<h3 class="topic">Personality</h3>
-<p>Personality is the stable set of traits and tendencies that make a person behave consistently over time. Four main theories explain it:</p>
+<h3 class="topic">What Are Organizations?</h3>
+<p>Organizations are groups of people who work interdependently towards some purpose. They are not physical structures; rather, they are people who work together to achieve shared goals through structured patterns of interaction. They are usually created by an individual or group who believe they possess the skills and knowledge needed to produce goods and services.</p>
+
+<h3 class="topic">Definition of Personality</h3>
+<div class="keypoint">Personality has been defined by <b>Salvatore Maddi</b> as: "Personality is a stable set of characteristics and tendencies that determine those commonalities and differences in the psychological behaviour (thoughts, feelings and actions) of people that have continuity in time."</div>
+
+<h3 class="topic">Theories of Personality</h3>
+
+<p><b>1. Psychoanalytical Theory — Sigmund Freud (Father of Psychoanalysis)</b></p>
+<p>Based on the Freudian concept of the unconscious nature of personality. Freud held that human behaviour and motivation are the outcome of conflicts between the <b>Id</b>, the <b>Ego</b> and the <b>Super-ego</b>.</p>
 <ul>
-<li><b>Psychoanalytical Theory (Freud)</b> — personality is shaped by the conflict between Id (desires), Ego (reality check) and Super-ego (conscience).</li>
-<li><b>Trait Theory</b> — personality is a collection of traits like aggressive, friendly, or impulsive that describe behaviour patterns.</li>
-<li><b>Self-Concept Theory (Carl Rogers)</b> — people behave according to how they see themselves (their self-image).</li>
-<li><b>Social Learning Theory</b> — personality is built from what we learn from our environment, through rewards and punishments.</li>
+<li><b>Id (Pleasure Principle)</b> — the foundation of the unconscious; base of libido drives; strives for immediate pleasure, with animalistic instincts of aggression, power and domination. <i>Example: You see a cake and want to eat it immediately.</i></li>
+<li><b>Ego (Reality Principle)</b> — conscious in nature; relates our urges to the real world and keeps the Id in check so pleasures are granted at an appropriate time. <i>Example: You wait until lunch time to eat the cake.</i></li>
+<li><b>Super-ego (Moral Principle)</b> — the higher-level restraining force, the conscience of the person, formed by absorbing cultural and ethical values. <i>Example: You decide not to eat the cake because it belongs to someone else.</i></li>
+</ul>
+<p><b>Easy Example:</b> You find ₹100 on the floor — <b>Id</b> says "Keep the money!", <b>Ego</b> says "Let's see whose money it is", and <b>Super-ego</b> says "Return it to the owner, it's the right thing to do." A balance among all three forces is needed to create a "normal" personality.</p>
+<div class="keypoint"><b>Exam Answer (2 Marks):</b> Sigmund Freud's Psychoanalytical Theory states that personality consists of three elements: Id, Ego, and Superego. Id seeks pleasure, Ego deals with reality, and Superego represents morality and conscience.</div>
+
+<p><b>2. Trait Theory</b></p>
+<p>Visualizes personality as a reflection of certain traits of the individual — some traits are common to most people, others are unique. People can be described as aggressive, loyal, pleasant, flexible, humorous, sentimental, impulsive, cool, and so on. Traits are the basic elements of personality and summarize behaviour patterns (e.g., a person behaving in an extrovert, forceful manner in most situations is labelled "aggressive"; someone who lets others take the initiative is labelled "submissive").</p>
+
+<p><b>3. Self-Concept Theory — Carl Rogers</b></p>
+<p>Organized around the idea that personality and behaviour are largely determined by the individual himself — we act in ways consistent with our own self-image. According to Rogers, behaviour is best understood through the internal frame of reference an individual has for his own self; the individual is the centre of experience, and his self-image is integral to how he views himself and perceives others' views of him.</p>
+
+<p><b>4. Social Learning Theory of Personality</b></p>
+<p>Personality is the cumulative total of all the learning of a person. It differs from psychoanalytical theory in two ways: personality development is a result of social variables (not biological drives), and motives are traced to known/conscious needs (not unconscious desires). It uses the "reinforcement and punishment" approach — e.g., frustration from the environment can bring out aggression, while good behaviour rewarded with appreciation reinforces further good behaviour.</p>
+
+<h3 class="topic">Introduction to Perception</h3>
+<p>Perception is the psychological process that allows an individual to adjust his behaviour. It may be defined as "a cognitive process by which people attend to incoming stimuli, organise and interpret such stimuli into behaviour," or "a process by which individuals organise and interpret their sensory impressions to give meaning to their environment."</p>
+
+<h3 class="topic">Components of Perception</h3>
+<p>Perception is a process of the sensory organs (eyes, ears, nose, tongue, skin). It has 7 components:</p>
+<div class="flow-wrap">
+  <div class="flow-row"><div class="fbox blue">Stimuli</div><div class="fdetail">Receipt of information from senses — results in sensation</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox green">Attention</div><div class="fdetail">Stimuli are selectively attended to; others are ignored</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox orange">Recognition</div><div class="fdetail">Deciding whether stimuli are worth realizing</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox teal">Translation</div><div class="fdetail">Evaluation of stimuli before converting to action (overt/covert response)</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox purple">Behaviour</div><div class="fdetail">Outcome of the cognitive process; response to the stimuli</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox red">Performance</div><div class="fdetail">Proper behaviour → higher performance; performance-reward relationship established</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox blue">Satisfaction</div><div class="fdetail">Performance vs expectation: more → delight, equal → satisfaction, less → frustration</div></div>
+</div>
+
+<h3 class="topic">Determinants of Perception</h3>
+<div class="tree">
+  <div class="root">DETERMINANTS OF PERCEPTION</div>
+  <div class="leaves">
+    <div class="leaf">Perceiver's Characteristics</div>
+    <div class="leaf">External Factors</div>
+    <div class="leaf">Internal Factors</div>
+    <div class="leaf">Organizational Structure</div>
+    <div class="leaf">Social Factors</div>
+  </div>
+</div>
+<ul>
+<li><b>Perceiver's Characteristics</b> — attitude, motives, interest, habits, experience, expectation, learning, personality.</li>
+<li><b>External Factors</b> — size, intensity, contrast, repetition of the stimulus.</li>
+<li><b>Internal Factors</b> — psychological setup, economic &amp; social background, learning, personality, motivation.</li>
+<li><b>Organizational Structure</b> — perceptual structure (decentralisation vs centralisation), perceptual grouping, perceptual workplace, perceptual constancy, perceptual context, perceptual defence.</li>
+<li><b>Social Factors</b> — stereotyping effect, halo effect, contrast effect, projection.</li>
 </ul>
 
-<h3 class="topic">Perception</h3>
-<p>Perception is how we notice, organise, and make sense of the world around us using our senses. It has 7 steps: <b>Stimuli → Attention → Recognition → Translation → Behaviour → Performance → Satisfaction.</b></p>
-<p>Perception is shaped by many things:</p>
+<h3 class="topic">Meaning, Nature and Characteristics of Attitude</h3>
+<p>Attitude reflects one's feelings towards a particular object, event or person and shows a persistent tendency to act in a particular manner towards that object. Attitude consists of beliefs, feelings and action tendencies, and is often multidimensional and complex.</p>
+<p>Attitudes have four basic characteristics: <b>direction</b> (favourable/unfavourable/neutral), <b>intensity</b> (strength of the feeling), <b>salience</b> (perceived importance), and <b>differentiation</b> (how strong the supporting beliefs/values are).</p>
+
+<h3 class="topic">Components of Attitude</h3>
 <ul>
-<li><b>Perceiver's traits</b> — attitude, motives, interest, habits, experience, expectations, personality.</li>
-<li><b>External factors</b> — size, intensity, contrast and repetition of the stimulus.</li>
-<li><b>Internal factors</b> — psychological state, social/economic background, learning, motivation.</li>
-<li><b>Organization structure</b> — how decentralised or centralised the company is.</li>
-<li><b>Social factors</b> — stereotyping, halo effect, contrast effect, projection.</li>
+<li><b>Evaluative Component</b> — how we feel about something; our liking or disliking.</li>
+<li><b>Cognitive Component</b> — our beliefs and knowledge about the object/person/situation.</li>
+<li><b>Behavioural Component</b> — our predisposition to act in a certain way, based on the beliefs and feelings above.</li>
 </ul>
 
-<h3 class="topic">Attitude</h3>
-<p>Attitude is how we feel about a person, object, or situation — it shows up as a tendency to act in a certain way. Attitudes have 3 parts:</p>
-<ul>
-<li><b>Evaluative (feeling)</b> — liking or disliking something.</li>
-<li><b>Cognitive (belief)</b> — what we know or believe about it.</li>
-<li><b>Behavioural (action)</b> — how we actually act because of that feeling and belief.</li>
-</ul>
-<p>Attitudes can be measured using the <b>Thurston Scale</b>, <b>Likert's Scale</b> (the common "strongly agree to strongly disagree" scale), or through <b>interviews</b>.</p>
-<p>Important work-related attitudes include: <b>job satisfaction</b> (liking your job), <b>job involvement</b> (how much you identify with your job), <b>organisational commitment</b> (wanting to stay and support the company), and <b>employee engagement</b> (how energetically invested you are in your work).</p>
+<h3 class="topic">Attitude Formation</h3>
+<p>While attitudes are basically learned over the years, some inherited characteristics affect them. Five factors shape attitude formation: <b>Experiences</b>, <b>Perceptual Biases</b>, <b>Observation of the Other Person</b>, <b>Association</b>, and <b>Personality</b>.</p>
 
-<h3 class="topic">Learning Theories</h3>
+<h3 class="topic">Functions of Attitude — Daniel Katz</h3>
+<p>The American psychologist <b>Daniel Katz</b> outlined four functions of attitudes:</p>
 <ul>
-<li><b>Cognitive Learning</b> — learning by actively understanding, thinking and solving problems.</li>
-<li><b>Social Learning Theory (Bandura)</b> — learning by watching and copying others.</li>
-<li><b>Operant Conditioning (Skinner)</b> — behaviour changes based on rewards or punishments that follow it.</li>
-<li><b>Classical Conditioning (Pavlov)</b> — learning by associating two things together (like Pavlov's dogs linking a bell with food).</li>
-<li><b>Behaviorism</b> — focuses only on observable behaviour, not on inner feelings.</li>
+<li><b>Adjustment Function</b> — helps individuals adjust to their environment.</li>
+<li><b>Ego-Defensive Function</b> — holding attitudes that protect self-esteem or justify guilt-inducing actions.</li>
+<li><b>Value-Expressive Function</b> — enables expression of a person's centrally held values.</li>
+<li><b>Knowledge Function</b> — gives a consistent, stable sense of control by predicting what is likely to happen.</li>
 </ul>
 
-<h2 class="module page-break">MODULE 3 & 4: Groups, Power and Politics</h2>
+<h3 class="topic">Measurement of Attitude</h3>
+<ul>
+<li><b>Thurston(e) Attitude Scale</b> — a questionnaire-based scaling method, widely used before computers; less dominant today.</li>
+<li><b>Likert's Scale</b> — every statement has five/seven response options (strongly agree → strongly disagree); scores are assigned and totalled for an overall score.</li>
+<li><b>Interviews</b> — obtaining information about employees' attitudes through structured interviews, ideally by representatives from outside the organization.</li>
+</ul>
 
-<h3 class="topic">What is a Group and Why People Form Groups</h3>
-<p>A group is two or more people working together towards a shared goal. People form groups to: get tasks done, solve problems together, because they are physically close to each other (proximity), or for social/psychological comfort like safety and belonging.</p>
+<h3 class="topic">Work-Related Attitudes</h3>
+<ul>
+<li><b>Job satisfaction</b> — a general attitude of liking or disliking one's job.</li>
+<li><b>Job involvement</b> — degree to which a person identifies psychologically with their job; related to <i>psychological empowerment</i> (belief in having influence, capability, autonomy and meaningfulness at work).</li>
+<li><b>Organisational commitment</b> — identification with the organisation and its goals, with a positive relationship to productivity.</li>
+<li><b>Perceived organizational support</b> — degree to which employees feel the organization values them and cares for their well-being.</li>
+<li><b>Employee engagement</b> — an individual's level of involvement, satisfaction and interest in their job.</li>
+</ul>
+
+<h3 class="topic">Importance of Learning Theories</h3>
+<p>Learning theories matter because they: inform instruction (adapt teaching to learner needs), improve learning outcomes, facilitate professional development, guide research, and promote innovation in teaching methods.</p>
+
+<h3 class="topic">Theories of Learning</h3>
+<ul>
+<li><b>1. Cognitive Learning</b> — emphasizes the role of cognitive processes (active engagement, problem-solving, mindful thinking) in understanding, retaining and applying knowledge.</li>
+<li><b>2. Social Learning Theory — Albert Bandura</b> — people learn new skills by seeing, copying and imitating others' conduct in social situations; shaped by behavioural outcomes, personal characteristics and external factors.</li>
+<li><b>3. Operant Conditioning — B. F. Skinner</b> — behaviour is shaped by its outcomes (reinforcement or punishment); used in therapy, parenting and education to encourage desired actions.</li>
+<li><b>4. Classical Conditioning — Ivan Pavlov</b> — learning by associating stimuli, demonstrated by teaching dogs to associate food with the ring of a bell; explains phobias and other behavioural phenomena.</li>
+<li><b>5. Behaviorism — B. F. Skinner and John B. Watson</b> — focuses on measurable, observable behaviours rather than internal states; behaviour changes in response to consequences from interacting with the environment.</li>
+</ul>
+
+<!-- ════════════════════════════════════════ MODULE 3 & 4 ════════════════════════════════════════ -->
+<h2 class="module page-break">MODULE 3 &amp; 4: Groups, Power and Political Behaviour</h2>
+
+<h3 class="topic">What is a Group?</h3>
+<p>A group is defined as "two or more interacting and interdependent individuals who have come together to achieve particular objectives." Since an individual cannot perform all required activities alone, group formation is inevitable for achieving organizational goals. Groups may be formal (recognised) or informal (not recognised but functioning). Group dynamics is used to increase productivity and profitability — group behaviour differs from individual behaviour.</p>
+
+<h3 class="topic">Reasons for Group Formation</h3>
+<ul>
+<li><b>Task Accomplishment</b> — achieving objectives through task performance.</li>
+<li><b>Problem Solving</b> — uniting to solve foreseen or faced problems.</li>
+<li><b>Proximity</b> — based on "propinquity": people affiliate because of spatial/geographical closeness.</li>
+<li><b>Socio-psychological Factors</b> — sentiments and action-uniformities; groups also formed for safety, security and social achievement.</li>
+</ul>
 
 <h3 class="topic">Stages of Group Development</h3>
-<table>
-<tr><th>Stage</th><th>What Happens</th></tr>
-<tr><td>Forming</td><td>Members come together, decide purpose, structure and leadership.</td></tr>
-<tr><td>Storming</td><td>Members express different views, conflicts start appearing.</td></tr>
-<tr><td>Norming</td><td>Members settle differences and start bonding — trust and cohesion build up.</td></tr>
-<tr><td>Performing</td><td>The group becomes fully productive and works towards its goals.</td></tr>
-<tr><td>Adjourning</td><td>The group dissolves once the task/goal is complete.</td></tr>
-</table>
+<div class="flow-wrap">
+  <div class="flow-row"><div class="fbox blue">1. Forming</div><div class="fdetail">Group decides purpose, structure, leadership; membership grows; communication pattern develops</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox orange">2. Storming</div><div class="fdetail">Members express views forcibly; interpersonal conflicts; authorities criticised; group gains synergy if smoothened</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox green">3. Norming</div><div class="fdetail">Close relationships, cohesiveness, strong group identity and camaraderie develop</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox teal">4. Performing</div><div class="fdetail">Group is fully functional; works towards and achieves its goals</div></div>
+  <div class="farrow">↓</div>
+  <div class="flow-row"><div class="fbox red">5. Adjourning</div><div class="fdetail">Group dissolves, ideally after completing the task; premature adjournment is undesirable</div></div>
+</div>
 
 <h3 class="topic">Types of Groups</h3>
 <ul>
-<li><b>Formal Groups</b> — created officially by the organization: <b>Command groups</b> (manager + reporting staff) and <b>Task groups</b> (people working on a specific project).</li>
-<li><b>Informal Groups</b> — form naturally for social reasons: <b>Friendship groups</b>, <b>Interest groups</b>, <b>Reference groups</b> (used as a comparison point), and <b>Membership groups</b> (any group a person actually belongs to).</li>
+<li><b>Formal Groups</b> — set up by the organization for its goals: <b>Command groups</b> (a manager and reporting employees, defined by the org. hierarchy) and <b>Task groups</b> (employees working together on a particular task/project, which can cross command relationships).</li>
+<li><b>Informal Groups</b> — evolve naturally to meet social/affiliation needs: <b>Friendship groups</b> (common characteristics), <b>Interest groups</b> (a shared specific objective), <b>Reference groups</b> (used as a basis for comparison in decisions/opinions), <b>Membership groups</b> (any group a person actually belongs to).</li>
 </ul>
 
 <h3 class="topic">Power</h3>
-<p>Power is the ability to influence or control someone else's behaviour. It comes from two main sources:</p>
-<p><b>Interpersonal sources (French & Raven):</b></p>
+<div class="keypoint">According to <b>John K. Galbraith</b>, power is "the possibility of imposing one's will on the behavior of others." The essence of power is control over the behaviour of others, and a reflection of influence one person has over others.</div>
+<p>Power in an organizational setting comes from two sources: <b>Interpersonal sources</b> and <b>Organizationally-based structural sources</b>.</p>
+
+<h3 class="topic">Interpersonal Sources of Power — John R. P. French &amp; Bertram Raven</h3>
 <ul>
-<li><b>Legitimate power</b> — power that comes from one's official position.</li>
-<li><b>Reward power</b> — ability to give rewards.</li>
-<li><b>Coercive power</b> — ability to punish.</li>
-<li><b>Expert power</b> — power from special knowledge or skill.</li>
-<li><b>Referent power</b> — power from personal charisma that makes people want to follow you.</li>
+<li><b>Legitimate power</b> — vested in leadership to take certain actions.</li>
+<li><b>Reward power</b> — control over rewards (extrinsic/intrinsic) valued by another; the greater the perceived value, the greater the power.</li>
+<li><b>Coercive power</b> — the ability to influence through punishment.</li>
+<li><b>Expert power</b> — ability to control behaviour through possession of needed knowledge/expertise.</li>
+<li><b>Referent power</b> — also called charismatic power; based on personal attraction rather than position, so followers feel inclined to the leader.</li>
 </ul>
-<p><b>Structural sources:</b> Knowledge, control of resources, and the ability to influence decisions.</p>
+
+<h3 class="topic">Structural and Situational Sources of Power</h3>
+<ul>
+<li><b>Knowledge as power</b> — individuals/groups with knowledge critical to organizational goals hold power.</li>
+<li><b>Resources as power</b> — anyone who can provide resources (capital, personnel, equipment, raw materials, customers) critical to the organization acquires power.</li>
+<li><b>Decision making as power</b> — authority to decide, or the ability to influence decision-makers, is a source of power; real power may rest with those who strongly influence the final decision-maker rather than the decision-maker alone.</li>
+</ul>
 
 <h3 class="topic">Power Tactics</h3>
-<p>People use 9 common tactics to influence others: <b>Assertiveness, Bargaining, Coalition (forming alliances), Friendliness, Higher Authority (asking a senior person to step in), Reason (logic), Rules and Procedure, Sanctions (reward/punishment), and Symbolic protests (strikes, slowdowns).</b></p>
+<p>Power tactics are the manner in which authority figures exercise their ability to control or influence others, often to ensure compliance or enact behaviour/attitude change. There are nine commonly identified power tactics:</p>
+<table>
+<tr><th>Tactic</th><th>Meaning</th></tr>
+<tr><td>Assertiveness</td><td>Direct, bold approach to ensure compliance.</td></tr>
+<tr><td>Bargaining</td><td>Direct negotiation and compromise to reach agreement.</td></tr>
+<tr><td>Coalition</td><td>Mobilizing a group of people to back an idea or action.</td></tr>
+<tr><td>Friendliness</td><td>Charm, praise or flattery to win people over.</td></tr>
+<tr><td>Higher Authority</td><td>Seeking intervention/support of a higher-ranking individual.</td></tr>
+<tr><td>Reason</td><td>Using logic and evidence to build a strong case.</td></tr>
+<tr><td>Rule and Procedure</td><td>Adherence to established rules/protocols as a form of influence.</td></tr>
+<tr><td>Sanctions</td><td>Punitive measures for non-compliance, or rewards for compliance.</td></tr>
+<tr><td>Symbolic protests</td><td>Non-verbal disagreement — work slowdowns, strikes, boycotts.</td></tr>
+</table>
 
-<h3 class="topic">Organizational Politics</h3>
-<p>Politics means using power and influence to get what you want, especially when there's uncertainty or disagreement about decisions. Common political tactics: <b>networking, coalition building, lobbying, controlling information, favoritism, and impression management.</b></p>
-<p>Politics happens more when there is: scarce resources, unclear roles/policies, conflicting goals, or major organizational change.</p>
-<p>It can have <b>positive effects</b> (driving innovation, resolving conflict, helping careers) and <b>negative effects</b> (lower morale, less trust, inefficiency, higher staff turnover). It is best managed through transparency, clear policies, a positive culture, and training people in ethical influence.</p>
+<h3 class="topic">Meaning of Politics — J. Pfeffer</h3>
+<div class="keypoint">Politics has been defined by <b>J. Pfeffer</b> as "those activities taken within organizations to acquire, develop and use power and other resources to obtain one's preferred outcomes in a situation in which there is uncertainty or dissensus about choices." Political behaviour is typically self-serving, aimed at enhancing or protecting one's own interests or the interests of one's group.</div>
 
+<h3 class="topic">Types of Political Activities</h3>
+<ul>
+<li><b>Networking</b> — building relationships with influential people to gain support/resources.</li>
+<li><b>Coalition Building</b> — forming alliances to combine power and influence.</li>
+<li><b>Lobbying</b> — actively influencing decision-makers to support a position or policy.</li>
+<li><b>Controlling Information</b> — selectively sharing/withholding information to shape perceptions.</li>
+<li><b>Favoritism and Patronage</b> — providing favours/rewards to gain support and loyalty.</li>
+<li><b>Impression Management</b> — behaving to create a favourable impression, particularly with those in power.</li>
+</ul>
+
+<h3 class="topic">Factors Contributing to Organizational Politics</h3>
+<ul>
+<li><b>Resource Scarcity</b> — limited budgets, promotions, opportunities lead to competition.</li>
+<li><b>Ambiguity in Roles and Policies</b> — unclear roles/responsibilities create room for manoeuvring.</li>
+<li><b>Diverse Interests and Goals</b> — differing individual/group goals drive political activity.</li>
+<li><b>Organizational Change</b> — mergers/restructuring increase political behaviour as people protect their position.</li>
+</ul>
+
+<h3 class="topic">Positive and Negative Impacts of Organizational Politics</h3>
+<p><b>Positive:</b> drives innovation and change, helps resolve conflict (negotiation/compromise), and can aid career advancement through alliances and visibility.</p>
+<p><b>Negative:</b> reduces morale (perceived unfairness/favoritism), decreases trust, causes inefficiency (time/energy diverted), and increases employee turnover.</p>
+
+<h3 class="topic">Managing Organizational Politics</h3>
+<ul>
+<li><b>Promote Transparency</b> — clear communication and decision-making reduce the need for political behaviour.</li>
+<li><b>Establish Clear Policies</b> — well-defined roles/responsibilities minimise ambiguity.</li>
+<li><b>Foster a Positive Culture</b> — collaboration, fairness and ethics mitigate negative politics.</li>
+<li><b>Develop Political Skills</b> — train employees/leaders in ethical influence.</li>
+</ul>
+<p>Ethical considerations while engaging in political activity: <b>Fairness</b>, <b>Respect</b>, <b>Transparency</b>, and <b>Accountability</b>.</p>
+
+<!-- ════════════════════════════════════════ MODULE 5 ════════════════════════════════════════ -->
 <h2 class="module page-break">MODULE 5: International Organizational Behaviour (IOB)</h2>
 
-<h3 class="topic">What is IOB?</h3>
-<p>International Organizational Behaviour studies how people and groups behave inside companies that work across different countries. Since management and leadership styles vary a lot between cultures (e.g., American vs Japanese vs Chinese styles), understanding cultural differences becomes essential for global business.</p>
+<h3 class="topic">Definition of IOB</h3>
+<p>International Organizational Behavior (IOB) is the study of how individuals and groups act within organizations that operate across national boundaries. It encompasses understanding, predicting and managing behaviour in multicultural and multinational contexts, integrating sociology, psychology, anthropology and management. Management and leadership styles differ significantly between, say, European, Japanese, Chinese and U.S. organizations — understanding cultural differences is essential for global business.</p>
 
-<h3 class="topic">Key Cultural Dimensions</h3>
+<h3 class="topic">Dimensions of Culture</h3>
 <ul>
-<li><b>Self Image</b> — some cultures see people as naturally trustworthy, others as naturally suspicious.</li>
-<li><b>Relationship with the World</b> — some cultures try to dominate their environment (e.g., USA), others try to live in harmony with it (e.g., many Asian cultures).</li>
-<li><b>Individualism vs Collectivism</b> — individualist cultures (USA, UK, Canada) value personal achievement; collectivist cultures (Japan, China) value group harmony and loyalty.</li>
-<li><b>Time Orientation</b> — some cultures focus on the present/near future (USA), some value the past more (Europe), and some plan long-term (Japan).</li>
-<li><b>Public vs Private Space</b> — Western cultures often prefer private offices; Japanese workplaces are often more open, with bosses sitting among employees.</li>
+<li><b>Self Image</b> — in some countries people are treated as honest and trustworthy; in others, with suspicion. People carry their home-country values with them when travelling.</li>
+<li><b>Relationship with World</b> — some societies try to dominate their surroundings (e.g., USA, Canada); others build harmony with their environment (e.g., many Asian countries, who plant crops according to environmental conditions).</li>
+<li><b>Individualism vs Collectivism</b> — the USA, Great Britain and Canada have cultures that encourage individualism; Japan, China and Israel promote collectivism (group harmony, unity, loyalty). This affects hiring: individualist cultures evaluate applicants on personal/educational/professional achievement; collectivist cultures evaluate on trustworthiness, loyalty and compatibility with coworkers.</li>
+<li><b>Time Dimension</b> — the USA/Canada focus on the present and near future; Europeans give more importance to the past; Japanese firms have a long-term future orientation and often retain employees for a lifetime.</li>
+<li><b>Public and Private Space</b> — North America favours private space (a more restricted/confined manager is seen as more important; visitors go through a secretary first); Japan is more public-oriented (bosses sit together with employees in the same room).</li>
 </ul>
 
-<h3 class="topic">Cross-Cultural Communication Problems</h3>
+<h3 class="topic">Communication Problems Across Cultures</h3>
 <ul>
-<li><b>Perceptual problems</b> — people interpret the same situation differently based on their own viewpoint.</li>
-<li><b>Stereotyping</b> — assuming someone fits a fixed "type" because of their culture, ignoring individual differences.</li>
-<li><b>Ethnocentrism</b> — believing your own culture is superior to others, which creates friction.</li>
+<li><b>Perceptual Problems</b> — perception affects how people see and interpret the same reality differently.</li>
+<li><b>Stereotyping Problems</b> — assuming a person belongs to a particular class, ignoring individual differences within a culture; used to build an overall (often inaccurate) profile of others.</li>
+<li><b>Ethnocentric Problems (Ethnocentrism)</b> — the sense of superiority held by members of a particular culture (e.g., the belief that one's own country is "best in all areas"); promoted by all cultures to some degree, and a major source of communication problems.</li>
 </ul>
 
-<h3 class="topic">How Culture Affects Workplace Behaviour</h3>
+<h3 class="topic">Impact of Culture on Organizational Behaviour</h3>
 <ul>
-<li><b>Communication style</b> — high-context cultures (Japan, China) rely on implied meaning; low-context cultures (USA, Germany) prefer direct, explicit communication.</li>
-<li><b>Leadership style</b> — hierarchical cultures (India, Mexico) prefer top-down decisions; egalitarian cultures (Sweden) prefer participative leadership.</li>
-<li><b>Motivation</b> — individualist cultures reward personal achievement; collectivist cultures reward team achievement.</li>
-<li><b>Decision-making</b> — some cultures value group consensus (Japan); others value fast, individual decisions (USA).</li>
-<li><b>Conflict handling</b> — some cultures avoid direct confrontation and prefer mediation (China, Japan); others openly confront issues (USA, Israel).</li>
+<li><b>Communication Styles</b> — language barriers cause misunderstandings; high-context cultures (Japan, China) rely on implicit messages and context; low-context cultures (USA, Germany) communicate explicitly and directly.</li>
+<li><b>Leadership and Management Styles</b> — hierarchical cultures (India, Mexico) favour autocratic, top-down decisions; egalitarian cultures (Sweden, Netherlands) favour participative, collaborative decision-making.</li>
+<li><b>Motivation and Incentives</b> — individualistic cultures (USA, UK) emphasize personal achievement and individual rewards; collectivist cultures (Japan, Korea) emphasize group achievement and team-based rewards.</li>
+<li><b>Decision-Making Processes</b> — some cultures value consensus and harmony (Japan); others prioritise individual autonomy and speed (USA). Risk approach also varies: risk-averse/detailed planning (Germany) vs. risk-tolerant (USA).</li>
+<li><b>Conflict Resolution</b> — cultures avoiding direct confrontation prefer mediation (China, Japan); cultures valuing directness confront issues openly (USA, Israel). Collectivist cultures may suppress conflict to preserve harmony; individualist cultures address it openly.</li>
+<li><b>Workplace Relationships</b> — some cultures keep strict formal hierarchies (France, India); others are informal/egalitarian (Australia, Canada). In some cultures personal relationships are integral to business (Latin America, Middle East); in others, personal and professional lives are kept separate (USA, Germany).</li>
 </ul>
 
-<h3 class="topic">Motivation Differences Across Cultures</h3>
+<h3 class="topic">Motivational Differences Across Cultures</h3>
 <ul>
-<li><b>Religion</b> — religious values can shape work ethics and motivation.</li>
-<li><b>Uncertainty Avoidance</b> — people comfortable with uncertainty switch jobs more easily; people who avoid uncertainty prefer stable, specialized roles.</li>
-<li><b>Power Distance</b> — in countries like the USA/UK/Canada, people resist accepting that others hold more power, so empowerment programs work well there.</li>
+<li><b>Religion</b> — religious values directly and indirectly affect motivational levels, working style, and ultimately economic growth.</li>
+<li><b>Uncertainty</b> — employees comfortable with ambiguity switch jobs more freely and are unconcerned about job security; those with high uncertainty avoidance prefer to specialize, avoid conflict, and interact with others to understand the company's situation.</li>
+<li><b>Power Distance</b> — people in the U.S., Britain and Canada have more trouble accepting that others hold more power than them, so empowerment programmes are more successful there.</li>
 </ul>
 
 <h3 class="topic">Current Trends in OB</h3>
 <ul>
-<li>Remote and hybrid work becoming standard.</li>
-<li>Greater focus on employee mental health and well-being.</li>
-<li>Diversity, Equity and Inclusion (DEI) initiatives.</li>
-<li>AI, automation, and continuous upskilling.</li>
-<li>Agile, flexible organizational structures.</li>
-<li>Sustainability and Corporate Social Responsibility (CSR).</li>
-<li>Stronger focus on overall employee experience and engagement.</li>
+<li><b>Remote and Hybrid Work</b> — accelerated by COVID-19; affects performance management, team cohesion, employee engagement; reliance on virtual collaboration tools.</li>
+<li><b>Employee Well-being and Mental Health</b> — wellness programs, mental health resources, promoting work-life balance to reduce burnout.</li>
+<li><b>Diversity, Equity and Inclusion (DEI)</b> — DEI initiatives, bias training, fostering inclusive cultures to attract/retain talent and drive innovation.</li>
+<li><b>Technology and Automation</b> — AI, machine learning and automation enhance efficiency but require continuous learning and upskilling.</li>
+<li><b>Agile and Adaptive Organizations</b> — flexible, responsive structures; breaking down hierarchies; cross-functional teams.</li>
+<li><b>Sustainability and Corporate Social Responsibility (CSR)</b> — integrating sustainable practices, aligning with societal expectations.</li>
+<li><b>Employee Experience and Engagement</b> — leveraging feedback, technology and personalization to improve satisfaction, motivation and retention.</li>
 </ul>
 
 <h3 class="topic">Future Challenges in OB</h3>
-<p>Organizations will need to manage remote/distributed teams, keep up with fast-changing technology, protect employee well-being, balance automation with human jobs, handle economic/political uncertainty, meet sustainability goals, and keep employees engaged — all while staying ethical and people-focused.</p>
+<table>
+<tr><th>Challenge</th><th>Strategy</th></tr>
+<tr><td>Managing a distributed workforce</td><td>Invest in digital tools, clear communication protocols, strong remote culture.</td></tr>
+<tr><td>Adapting to technological advances</td><td>Continuous learning, upskilling, a culture of innovation and adaptability.</td></tr>
+<tr><td>Ensuring employee well-being</td><td>Comprehensive wellness programs, work-life balance, mental health resources.</td></tr>
+<tr><td>Balancing automation and human workforce</td><td>Reskilling, redefining job roles, focusing on human creativity/emotional intelligence.</td></tr>
+<tr><td>Navigating economic and political uncertainty</td><td>Resilient/adaptable business models, scenario planning, proactive change management.</td></tr>
+<tr><td>Sustainability and ethical responsibility</td><td>Sustainable practices in core strategy, green technology, ethical decision-making.</td></tr>
+<tr><td>Enhancing employee engagement</td><td>Regular feedback, recognition programs, meaningful and challenging work.</td></tr>
+</table>
 
 <hr>
-<footer>Easy-language summary of OB Modules 1–5 — prepared for quick revision</footer>
+<footer>Easy-language summary of OB Modules 1–5 — every theory credited to its source author as given in the course slides, prepared for quick revision</footer>
 </body>
 </html>
